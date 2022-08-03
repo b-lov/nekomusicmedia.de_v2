@@ -1,0 +1,54 @@
+<script>
+	import { page } from '$app/stores';
+	import { setLocale, locale } from '$i18n/i18n-svelte';
+	import { locales } from '$i18n/i18n-util';
+	import { loadLocaleAsync } from '$i18n/i18n-util.async';
+	import { replaceLocaleInUrl } from '../utils';
+
+	/**
+	 * @param { import('$i18n/i18n-types').Locales } newLocale
+	 * @param { boolean } updateHistoryState
+	 * @return { Promise<void> }
+	 */
+	const switchLocale = async (newLocale, updateHistoryState = true) => {
+		if (!newLocale || $locale === newLocale) return;
+
+		// load new dictionary from server
+		await loadLocaleAsync(newLocale);
+
+		// select locale
+		setLocale(newLocale);
+
+		// update `lang` attribute
+		const doc = document.querySelector('html');
+		if (doc !== null) doc.setAttribute('lang', newLocale);
+
+		if (updateHistoryState) {
+			// update url to reflect locale changes
+			history.pushState(
+				{ locale: newLocale },
+				'',
+				replaceLocaleInUrl(location.pathname, newLocale)
+			);
+		}
+	};
+
+	// update locale when navigating via browser back/forward buttons
+	/** @param { PopStateEvent } event */
+	const handlePopStateEvent = async (event) => switchLocale(event.state.locale, false);
+
+	// update locale when page store changes
+	$: switchLocale(
+		/** @type { import('$i18n/i18n-types').Locales } page.params.lang */
+		($page.params.lang),
+		false
+	);
+</script>
+
+<svelte:window on:popstate={handlePopStateEvent} />
+
+{#each locales as l}
+	<button type="button" class:active={l === $locale} on:click={() => switchLocale(l)}>
+		{l}
+	</button>
+{/each}
