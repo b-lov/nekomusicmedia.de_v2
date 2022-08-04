@@ -20,9 +20,7 @@ export const handle = async ({ event, resolve }) => {
 const getHeaders = (event) => {
 	/** @type { Record<string, string> } */
 	const headers = {};
-	event.request.headers.forEach((value, key) => {
-		headers[key] = value;
-	});
+	event.request.headers.forEach((value, key) => (headers[key] = value));
 	return headers;
 };
 
