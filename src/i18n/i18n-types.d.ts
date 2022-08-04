@@ -8,6 +8,7 @@ export type BaseLocale = 'de'
 export type Locales =
 	| 'de'
 	| 'en'
+	| 'ru'
 
 export type Translation = RootTranslation
 
@@ -23,6 +24,10 @@ type RootTranslation = {
 	 * test_de
 	 */
 	test: string
+	/**
+	 * hallo, ich bin eine neue seite
+	 */
+	testseite: string
 }
 
 export type TranslationFunctions = {
@@ -34,6 +39,10 @@ export type TranslationFunctions = {
 	 * test_de
 	 */
 	test: () => LocalizedString
+	/**
+	 * hallo, ich bin eine neue seite
+	 */
+	testseite: () => LocalizedString
 }
 
 export type Formatters = {}
