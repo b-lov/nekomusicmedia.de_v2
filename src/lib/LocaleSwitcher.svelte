@@ -40,11 +40,11 @@
 
 	// update locale when page store changes
 	$: if (browser) {
-		const lang = /** @type { import('$i18n/i18n-types').Locales } page.params.lang */ (
-			$page.params.lang
-		);
-		history.replaceState({ locale: lang }, '', replaceLocaleInUrl(location.pathname, lang));
+		const lang =
+			/** @type { import('$i18n/i18n-types').Locales } page.params.lang */
+			($page.params.lang);
 		switchLocale(lang, false);
+		history.replaceState({ locale: lang }, '', replaceLocaleInUrl(location.pathname, lang));
 	}
 </script>
 
