@@ -1,6 +1,6 @@
 <script>
-	import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
+	// import LocaleSwitcher from '$lib/LocaleSwitcher.svelte';
 </script>
 
-<LocaleSwitcher />
+<!-- <LocaleSwitcher /> -->
 <slot />
