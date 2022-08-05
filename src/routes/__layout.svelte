@@ -7,15 +7,14 @@
 	export const load = async ({ url, params, session }) => {
 		const lang =
 			/** @type { import('$i18n/i18n-types').Locales } */
-			('de');
-		// (params.lang || url.pathname.split('/')[1]);
+			(params.lang || url.pathname.split('/')[1]);
 
 		// redirect to preferred language if user comes from page root
-		if (url.pathname === '/') {
+		if (!lang) {
 			return {
 				status: 302,
-				redirect: lang
 				// redirect: `/${session.locale}`
+				redirect: `/${baseLocale}`
 			};
 		}
 
