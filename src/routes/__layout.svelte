@@ -13,8 +13,7 @@
 		if (!lang) {
 			return {
 				status: 302,
-				// redirect: `/${session.locale}`
-				redirect: `/${baseLocale}`
+				redirect: `/${session.locale}`
 			};
 		}
 
