@@ -17,7 +17,7 @@
 	</div>
 	<div>
 		<label for="email">{$LL.contact.form.email()}</label>
-		<input type="email" name="user_email" id="email" />
+		<input type="email" name="user_email" id="email" required />
 	</div>
 	<div>
 		<label for="phone">{$LL.contact.form.phone()}</label>
