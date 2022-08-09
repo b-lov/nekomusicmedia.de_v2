@@ -27,5 +27,5 @@
 		<label for="message">{$LL.contact.form.message()}</label>
 		<textarea id="message" name="user_message" rows="6" required />
 	</div>
-	<button>{$LL.contact.form.send_button()}</button>
+	<button type="submit">{$LL.contact.form.send_button()}</button>
 </form>
