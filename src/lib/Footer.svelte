@@ -1,6 +1,10 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import services from '$lib/services.json';
+
+	const services =
+		/** @type {Array.<keyof import('$i18n/i18n-types').Translation['services']['all']>} */
+		(Object.keys($LL.services.all));
+
 	const social_media = [
 		{ id: 'twitter', link: 'https://twitter.com/NEKOMusicMedia', icon: '' },
 		{ id: 'facebook', link: 'https://www.facebook.com/Neko-Music-Media-187715074593479', icon: '' },
@@ -26,8 +30,8 @@
 <a href="/{$locale}/agb">AGB</a>
 
 <h4>{$LL.footer.all_services()}</h4>
-{#each services as { name }}
-	<a href="/{$locale}/services/{name}">{$LL.services.all[name].title()}</a>&nbsp;
+{#each services as service}
+	<a href="/{$locale}/services/{service}">{$LL.services.all[service].title()}</a>&nbsp;
 {/each}
 
 <p>Copyright © {new Date().getFullYear()} NEKO Music & Media GmbH</p>
