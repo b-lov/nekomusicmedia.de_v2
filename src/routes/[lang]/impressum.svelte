@@ -1,13 +1,13 @@
 <h1>Impressum</h1>
 <h2>Angaben gemäß § 5 TMG</h2>
 <p>
-	Neko Music &amp; Media GmbH Adolf-Kempken-Weg 95-99 41189 Mönchengladbach GF: Vladimir Miller
-	Amtsgericht Düsseldorf, HRB 69698 USt-Id Nr.: DE289421105
+	Neko Music &amp; Media GmbH<br />Adolf-Kempken-Weg 95-99<br />41189 Mönchengladbach<br />GF:
+	Vladimir Miller<br />Amtsgericht Düsseldorf, HRB 69698<br />USt-Id Nr.: DE289421105
 </p>
 <h2>Kontakt</h2>
-<p>Tel: +49 2166 2784507 Fax: +49 2166 2784509 E-Mail: info@nekomusicmedia.de</p>
+<p>Tel: +49 2166 2784507<br />Fax: +49 2166 2784509<br />E-Mail: info@nekomusicmedia.de</p>
 <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-<p>Neko Music &amp; Media GmbH Adolf-Kempken-Weg 95-99 41189 Mönchengladbach</p>
+<p>Neko Music &amp; Media GmbH<br />Adolf-Kempken-Weg 95-99<br />41189 Mönchengladbach</p>
 <h2>Haftung für Inhalte</h2>
 <p>
 	Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
