@@ -2,10 +2,9 @@
 	import { LL, locale } from '$i18n/i18n-svelte';
 	import { page } from '$app/stores';
 
-	// TODO: fix type error here
-	/** @type { {slug: keyof import('$i18n/i18n-types').Translation['services']['all']} } */
-	// @ts-ignore
-	const { slug } = $page.params;
+	const { slug } =
+		/** @type { {slug: keyof import('$i18n/i18n-types').Translation['services']['all']} } */
+		($page.params);
 
 	const bullets = Object.values($LL.services.all[slug].bullets);
 </script>
