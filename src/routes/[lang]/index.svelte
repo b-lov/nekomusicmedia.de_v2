@@ -1,8 +1,9 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
 
-	/** @type {Array.<keyof import('$i18n/i18n-types').Translation['index']['examples']>} */
-	const examples = ['events', 'exhibitions', 'seminars', 'hotels'];
+	const examples =
+		/** @type {Array.<keyof import('$i18n/i18n-types').Translation['index']['examples']>} */
+		(Object.keys($LL.index.examples));
 </script>
 
 <h1>{$LL.index.heading()}</h1>
