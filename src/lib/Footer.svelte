@@ -34,4 +34,4 @@
 	<a href="/{$locale}/services/{service}">{$LL.services.all[service].title()}</a>&nbsp;
 {/each}
 
-<p>Copyright © {new Date().getFullYear()} NEKO Music & Media GmbH</p>
+<p>{$LL.footer.copyright({ year: new Date().getFullYear() })}</p>

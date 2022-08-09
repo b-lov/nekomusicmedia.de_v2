@@ -224,7 +224,8 @@ const de = {
 		social_media_heading: 'Auf Social Media unterwegs?',
 		social_media_subheading: 'Kontaktiere uns auf folgenden Plattformen.',
 		links: 'Links',
-		all_services: 'Alle Leistungen'
+		all_services: 'Alle Leistungen',
+		copyright: 'Copyright © {year: number} NEKO Music & Media GmbH'
 	}
 };
 
