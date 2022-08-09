@@ -54,8 +54,6 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-<a href="/{$locale}">Home</a>
-<a href="/{$locale}/test">Test</a>
 {#each locales as locale}
 	<button type="button" on:click={() => switchLocale(locale)}>
 		{locale}

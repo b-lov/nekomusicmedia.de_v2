@@ -8,7 +8,6 @@
 		const lang =
 			/** @type { import('$i18n/i18n-types').Locales } */
 			(params.lang || url.pathname.split('/')[1]);
-		// (params.lang);
 
 		// redirect to preferred language if user comes from page root
 		if (!lang) {
