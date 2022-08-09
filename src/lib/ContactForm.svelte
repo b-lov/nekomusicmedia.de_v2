@@ -21,7 +21,7 @@
 	</div>
 	<div>
 		<label for="phone">{$LL.contact.form.phone()}</label>
-		<input id="phone" type="tel" name="user_phone" pattern={String.raw`^\+?\d{(0, 13)}`} />
+		<input type="tel" name="user_phone" id="phone" pattern={String.raw`^\+?\d{(0, 13)}`} />
 	</div>
 	<div>
 		<label for="message">{$LL.contact.form.message()}</label>
