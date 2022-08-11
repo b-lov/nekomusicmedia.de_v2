@@ -15,4 +15,5 @@
 	<a href="/{$locale}/services/{service}">
 		<button type="button">{$LL.services.more_button()}</button>
 	</a>
+	<img src={$LL.services.all[service].img_card()} alt="" />
 {/each}

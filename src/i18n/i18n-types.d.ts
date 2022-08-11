@@ -269,6 +269,14 @@ type RootTranslation = {
 				 * Spüre mit uns die ganze Kraft des Klanges!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/sound_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/sound_hero.webp
+				 */
+				img_hero: string
 			}
 			light: {
 				/**
@@ -333,6 +341,14 @@ type RootTranslation = {
 				 * Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/light_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/light_hero.webp
+				 */
+				img_hero: string
 			}
 			video: {
 				/**
@@ -379,6 +395,14 @@ type RootTranslation = {
 				 * Lass Deine Bilder für sich sprechen.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/video_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/video_hero.webp
+				 */
+				img_hero: string
 			}
 			stage: {
 				/**
@@ -429,6 +453,14 @@ type RootTranslation = {
 				 * Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/stage_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/stage_hero.webp
+				 */
+				img_hero: string
 			}
 			presentation: {
 				/**
@@ -479,6 +511,14 @@ type RootTranslation = {
 				 * Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/presentation_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/presentation_hero.webp
+				 */
+				img_hero: string
 			}
 			service: {
 				/**
@@ -533,6 +573,14 @@ type RootTranslation = {
 				 * Dein Erfolg ist für uns das Wichtigste!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/service_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/service_hero.webp
+				 */
+				img_hero: string
 			}
 		}
 	}
@@ -892,6 +940,14 @@ export type TranslationFunctions = {
 				 * Spüre mit uns die ganze Kraft des Klanges!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/sound_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/sound_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			light: {
 				/**
@@ -956,6 +1012,14 @@ export type TranslationFunctions = {
 				 * Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/light_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/light_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			video: {
 				/**
@@ -1002,6 +1066,14 @@ export type TranslationFunctions = {
 				 * Lass Deine Bilder für sich sprechen.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/video_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/video_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			stage: {
 				/**
@@ -1052,6 +1124,14 @@ export type TranslationFunctions = {
 				 * Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/stage_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/stage_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			presentation: {
 				/**
@@ -1102,6 +1182,14 @@ export type TranslationFunctions = {
 				 * Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/presentation_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/presentation_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			service: {
 				/**
@@ -1156,6 +1244,14 @@ export type TranslationFunctions = {
 				 * Dein Erfolg ist für uns das Wichtigste!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/service_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/service_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 		}
 	}

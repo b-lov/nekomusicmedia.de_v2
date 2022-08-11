@@ -101,7 +101,9 @@ const de = {
 					'Mischpulte und Monitore',
 					'DJ Technik'
 				],
-				quote: 'Spüre mit uns die ganze Kraft des Klanges!'
+				quote: 'Spüre mit uns die ganze Kraft des Klanges!',
+				img_card: '/img/services/webp/sound_card.webp',
+				img_hero: '/img/services/webp/sound_hero.webp'
 			},
 			light: {
 				title: 'Lichttechnik',
@@ -123,7 +125,9 @@ const de = {
 					'Stromverteilungen und -generatoren',
 					'Traversen und Lichtstative'
 				],
-				quote: 'Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.'
+				quote: 'Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.',
+				img_card: '/img/services/webp/light_card.webp',
+				img_hero: '/img/services/webp/light_hero.webp'
 			},
 			video: {
 				title: 'Videotechnik',
@@ -140,7 +144,9 @@ const de = {
 					'Video-Mischpulte und Interfaces',
 					'Beamer und Prjektoren'
 				],
-				quote: 'Lass Deine Bilder für sich sprechen.'
+				quote: 'Lass Deine Bilder für sich sprechen.',
+				img_card: '/img/services/webp/video_card.webp',
+				img_hero: '/img/services/webp/video_hero.webp'
 			},
 			stage: {
 				title: 'Bühnenbau',
@@ -158,7 +164,9 @@ const de = {
 					'Truss Systeme',
 					'Planung und Aufbau'
 				],
-				quote: 'Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.'
+				quote: 'Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.',
+				img_card: '/img/services/webp/stage_card.webp',
+				img_hero: '/img/services/webp/stage_hero.webp'
 			},
 			presentation: {
 				title: 'Präsentationstechnik',
@@ -176,7 +184,9 @@ const de = {
 					'Audiotechnik',
 					'Befestigungssysteme'
 				],
-				quote: 'Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!'
+				quote: 'Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!',
+				img_card: '/img/services/webp/presentation_card.webp',
+				img_hero: '/img/services/webp/presentation_hero.webp'
 			},
 			service: {
 				title: 'Service & Reparatur',
@@ -195,7 +205,9 @@ const de = {
 					'Techniker-Notdienst',
 					'Reparatur und Wartung'
 				],
-				quote: 'Dein Erfolg ist für uns das Wichtigste!'
+				quote: 'Dein Erfolg ist für uns das Wichtigste!',
+				img_card: '/img/services/webp/service_card.webp',
+				img_hero: '/img/services/webp/service_hero.webp'
 			}
 		}
 	},

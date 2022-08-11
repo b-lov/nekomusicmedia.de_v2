@@ -12,6 +12,7 @@
 <h1>{$LL.services.all[slug].title()}</h1>
 <h3>{$LL.services.all[slug].subtitle()}</h3>
 <a href="/{$locale}/contact"><button>{$LL.contact_button_offer()}</button></a>
+<img src={$LL.services.all[slug].img_hero()} alt="" />
 
 <p style="white-space: pre-line;">{$LL.services.all[slug].par1()}</p>
 
