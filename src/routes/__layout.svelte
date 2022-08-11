@@ -34,6 +34,7 @@
 </script>
 
 <script>
+	import '../app.css';
 	import { setLocale } from '$i18n/i18n-svelte';
 
 	export let locale;
