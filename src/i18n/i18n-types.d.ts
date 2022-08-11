@@ -35,7 +35,7 @@ type RootTranslation = {
 		 */
 		subheading: string
 		/**
-		 * img/index/webp/hero.webp
+		 * /img/index/webp/hero.webp
 		 */
 		img_hero: string
 		examples: {
@@ -53,7 +53,7 @@ type RootTranslation = {
 				 */
 				text: string
 				/**
-				 * img/index/webp/events.webp
+				 * /img/index/webp/events.webp
 				 */
 				img: string
 			}
@@ -71,7 +71,7 @@ type RootTranslation = {
 				 */
 				text: string
 				/**
-				 * img/index/webp/exhibitions.webp
+				 * /img/index/webp/exhibitions.webp
 				 */
 				img: string
 			}
@@ -89,7 +89,7 @@ type RootTranslation = {
 				 */
 				text: string
 				/**
-				 * img/index/webp/seminars.webp
+				 * /img/index/webp/seminars.webp
 				 */
 				img: string
 			}
@@ -107,7 +107,7 @@ type RootTranslation = {
 				 */
 				text: string
 				/**
-				 * img/index/webp/hotels.webp
+				 * /img/index/webp/hotels.webp
 				 */
 				img: string
 			}
@@ -126,6 +126,10 @@ type RootTranslation = {
 		 * Unsere Leitsätze für Deinen Erfolg!
 		 */
 		subheading: string
+		/**
+		 * /img/about/webp/hero.webp
+		 */
+		img_hero: string
 		texts: {
 			experienced: {
 				/**
@@ -140,6 +144,10 @@ type RootTranslation = {
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/experienced.webp
+				 */
+				img: string
 			}
 			personal: {
 				/**
@@ -154,6 +162,10 @@ type RootTranslation = {
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/personal.webp
+				 */
+				img: string
 			}
 			diverse: {
 				/**
@@ -168,6 +180,10 @@ type RootTranslation = {
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/diverse.webp
+				 */
+				img: string
 			}
 			servicestrong: {
 				/**
@@ -182,6 +198,10 @@ type RootTranslation = {
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/servicestrong.webp
+				 */
+				img: string
 			}
 		}
 	}
@@ -638,7 +658,7 @@ export type TranslationFunctions = {
 		 */
 		subheading: () => LocalizedString
 		/**
-		 * img/index/webp/hero.webp
+		 * /img/index/webp/hero.webp
 		 */
 		img_hero: () => LocalizedString
 		examples: {
@@ -656,7 +676,7 @@ export type TranslationFunctions = {
 				 */
 				text: () => LocalizedString
 				/**
-				 * img/index/webp/events.webp
+				 * /img/index/webp/events.webp
 				 */
 				img: () => LocalizedString
 			}
@@ -674,7 +694,7 @@ export type TranslationFunctions = {
 				 */
 				text: () => LocalizedString
 				/**
-				 * img/index/webp/exhibitions.webp
+				 * /img/index/webp/exhibitions.webp
 				 */
 				img: () => LocalizedString
 			}
@@ -692,7 +712,7 @@ export type TranslationFunctions = {
 				 */
 				text: () => LocalizedString
 				/**
-				 * img/index/webp/seminars.webp
+				 * /img/index/webp/seminars.webp
 				 */
 				img: () => LocalizedString
 			}
@@ -710,7 +730,7 @@ export type TranslationFunctions = {
 				 */
 				text: () => LocalizedString
 				/**
-				 * img/index/webp/hotels.webp
+				 * /img/index/webp/hotels.webp
 				 */
 				img: () => LocalizedString
 			}
@@ -729,6 +749,10 @@ export type TranslationFunctions = {
 		 * Unsere Leitsätze für Deinen Erfolg!
 		 */
 		subheading: () => LocalizedString
+		/**
+		 * /img/about/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		texts: {
 			experienced: {
 				/**
@@ -743,6 +767,10 @@ export type TranslationFunctions = {
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/experienced.webp
+				 */
+				img: () => LocalizedString
 			}
 			personal: {
 				/**
@@ -757,6 +785,10 @@ export type TranslationFunctions = {
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/personal.webp
+				 */
+				img: () => LocalizedString
 			}
 			diverse: {
 				/**
@@ -771,6 +803,10 @@ export type TranslationFunctions = {
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/diverse.webp
+				 */
+				img: () => LocalizedString
 			}
 			servicestrong: {
 				/**
@@ -785,6 +821,10 @@ export type TranslationFunctions = {
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/servicestrong.webp
+				 */
+				img: () => LocalizedString
 			}
 		}
 	}
