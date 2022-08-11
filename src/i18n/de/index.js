@@ -11,26 +11,31 @@ const de = {
 		heading: 'Dein Auftrag ist unser Antrieb!',
 		subheading:
 			'NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.',
+		img_hero: 'img/index/webp/hero.webp',
 		examples: {
 			events: {
 				title: 'Events',
 				subtitle: 'Jede Veranstaltung ist einmalig.',
-				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!'
+				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!',
+				img: 'img/index/webp/events.webp'
 			},
 			exhibitions: {
 				title: 'Messen & Aussteller',
 				subtitle: 'Überlass nichts dem Zufall!',
-				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.'
+				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.',
+				img: 'img/index/webp/exhibitions.webp'
 			},
 			seminars: {
 				title: 'Kongresse & Seminare',
 				subtitle: 'Im großen oder kleinen Stil.',
-				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.'
+				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.',
+				img: 'img/index/webp/seminars.webp'
 			},
 			hotels: {
 				title: 'Hotels',
 				subtitle: 'Event- und Treffpunkt: Hotel.',
-				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.'
+				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.',
+				img: 'img/index/webp/hotels.webp'
 			}
 		}
 	},

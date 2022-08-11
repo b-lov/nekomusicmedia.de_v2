@@ -34,6 +34,10 @@ type RootTranslation = {
 		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
 		 */
 		subheading: string
+		/**
+		 * img/index/webp/hero.webp
+		 */
+		img_hero: string
 		examples: {
 			events: {
 				/**
@@ -48,6 +52,10 @@ type RootTranslation = {
 				 * NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!
 				 */
 				text: string
+				/**
+				 * img/index/webp/events.webp
+				 */
+				img: string
 			}
 			exhibitions: {
 				/**
@@ -62,6 +70,10 @@ type RootTranslation = {
 				 * Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.
 				 */
 				text: string
+				/**
+				 * img/index/webp/exhibitions.webp
+				 */
+				img: string
 			}
 			seminars: {
 				/**
@@ -76,6 +88,10 @@ type RootTranslation = {
 				 * Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.
 				 */
 				text: string
+				/**
+				 * img/index/webp/seminars.webp
+				 */
+				img: string
 			}
 			hotels: {
 				/**
@@ -90,6 +106,10 @@ type RootTranslation = {
 				 * Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.
 				 */
 				text: string
+				/**
+				 * img/index/webp/hotels.webp
+				 */
+				img: string
 			}
 		}
 	}
@@ -617,6 +637,10 @@ export type TranslationFunctions = {
 		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
 		 */
 		subheading: () => LocalizedString
+		/**
+		 * img/index/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		examples: {
 			events: {
 				/**
@@ -631,6 +655,10 @@ export type TranslationFunctions = {
 				 * NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!
 				 */
 				text: () => LocalizedString
+				/**
+				 * img/index/webp/events.webp
+				 */
+				img: () => LocalizedString
 			}
 			exhibitions: {
 				/**
@@ -645,6 +673,10 @@ export type TranslationFunctions = {
 				 * Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.
 				 */
 				text: () => LocalizedString
+				/**
+				 * img/index/webp/exhibitions.webp
+				 */
+				img: () => LocalizedString
 			}
 			seminars: {
 				/**
@@ -659,6 +691,10 @@ export type TranslationFunctions = {
 				 * Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.
 				 */
 				text: () => LocalizedString
+				/**
+				 * img/index/webp/seminars.webp
+				 */
+				img: () => LocalizedString
 			}
 			hotels: {
 				/**
@@ -673,6 +709,10 @@ export type TranslationFunctions = {
 				 * Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.
 				 */
 				text: () => LocalizedString
+				/**
+				 * img/index/webp/hotels.webp
+				 */
+				img: () => LocalizedString
 			}
 		}
 	}

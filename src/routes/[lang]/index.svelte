@@ -9,10 +9,12 @@
 <h1>{$LL.index.heading()}</h1>
 <h3>{$LL.index.subheading()}</h3>
 <a href="/{$locale}/contact"><button>{$LL.contact_button()}</button></a>
+<img src={$LL.index.img_hero()} alt="" />
 
 {#each examples as example}
 	<h2>{$LL.index.examples[example].title()}</h2>
 	<h3>{$LL.index.examples[example].subtitle()}</h3>
 	<a href="/{$locale}/contact"><button>{$LL.contact_button_offer()}</button></a>
 	<p>{$LL.index.examples[example].text()}</p>
+	<img src={$LL.index.examples[example].img()} alt="" />
 {/each}
