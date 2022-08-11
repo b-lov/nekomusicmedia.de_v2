@@ -34,6 +34,10 @@ type RootTranslation = {
 		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
 		 */
 		subheading: string
+		/**
+		 * /img/index/webp/hero.webp
+		 */
+		img_hero: string
 		examples: {
 			events: {
 				/**
@@ -48,6 +52,10 @@ type RootTranslation = {
 				 * NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!
 				 */
 				text: string
+				/**
+				 * /img/index/webp/events.webp
+				 */
+				img: string
 			}
 			exhibitions: {
 				/**
@@ -62,6 +70,10 @@ type RootTranslation = {
 				 * Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.
 				 */
 				text: string
+				/**
+				 * /img/index/webp/exhibitions.webp
+				 */
+				img: string
 			}
 			seminars: {
 				/**
@@ -76,6 +88,10 @@ type RootTranslation = {
 				 * Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.
 				 */
 				text: string
+				/**
+				 * /img/index/webp/seminars.webp
+				 */
+				img: string
 			}
 			hotels: {
 				/**
@@ -90,6 +106,10 @@ type RootTranslation = {
 				 * Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.
 				 */
 				text: string
+				/**
+				 * /img/index/webp/hotels.webp
+				 */
+				img: string
 			}
 		}
 	}
@@ -106,6 +126,10 @@ type RootTranslation = {
 		 * Unsere Leitsätze für Deinen Erfolg!
 		 */
 		subheading: string
+		/**
+		 * /img/about/webp/hero.webp
+		 */
+		img_hero: string
 		texts: {
 			experienced: {
 				/**
@@ -120,6 +144,10 @@ type RootTranslation = {
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/experienced.webp
+				 */
+				img: string
 			}
 			personal: {
 				/**
@@ -134,6 +162,10 @@ type RootTranslation = {
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/personal.webp
+				 */
+				img: string
 			}
 			diverse: {
 				/**
@@ -148,6 +180,10 @@ type RootTranslation = {
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/diverse.webp
+				 */
+				img: string
 			}
 			servicestrong: {
 				/**
@@ -162,6 +198,10 @@ type RootTranslation = {
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
 				text2: string
+				/**
+				 * /img/about/webp/servicestrong.webp
+				 */
+				img: string
 			}
 		}
 	}
@@ -229,6 +269,14 @@ type RootTranslation = {
 				 * Spüre mit uns die ganze Kraft des Klanges!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/sound_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/sound_hero.webp
+				 */
+				img_hero: string
 			}
 			light: {
 				/**
@@ -293,6 +341,14 @@ type RootTranslation = {
 				 * Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/light_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/light_hero.webp
+				 */
+				img_hero: string
 			}
 			video: {
 				/**
@@ -339,6 +395,14 @@ type RootTranslation = {
 				 * Lass Deine Bilder für sich sprechen.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/video_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/video_hero.webp
+				 */
+				img_hero: string
 			}
 			stage: {
 				/**
@@ -389,6 +453,14 @@ type RootTranslation = {
 				 * Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/stage_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/stage_hero.webp
+				 */
+				img_hero: string
 			}
 			presentation: {
 				/**
@@ -439,6 +511,14 @@ type RootTranslation = {
 				 * Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/presentation_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/presentation_hero.webp
+				 */
+				img_hero: string
 			}
 			service: {
 				/**
@@ -493,6 +573,14 @@ type RootTranslation = {
 				 * Dein Erfolg ist für uns das Wichtigste!
 				 */
 				quote: string
+				/**
+				 * /img/services/webp/service_card.webp
+				 */
+				img_card: string
+				/**
+				 * /img/services/webp/service_hero.webp
+				 */
+				img_hero: string
 			}
 		}
 	}
@@ -617,6 +705,10 @@ export type TranslationFunctions = {
 		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
 		 */
 		subheading: () => LocalizedString
+		/**
+		 * /img/index/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		examples: {
 			events: {
 				/**
@@ -631,6 +723,10 @@ export type TranslationFunctions = {
 				 * NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!
 				 */
 				text: () => LocalizedString
+				/**
+				 * /img/index/webp/events.webp
+				 */
+				img: () => LocalizedString
 			}
 			exhibitions: {
 				/**
@@ -645,6 +741,10 @@ export type TranslationFunctions = {
 				 * Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.
 				 */
 				text: () => LocalizedString
+				/**
+				 * /img/index/webp/exhibitions.webp
+				 */
+				img: () => LocalizedString
 			}
 			seminars: {
 				/**
@@ -659,6 +759,10 @@ export type TranslationFunctions = {
 				 * Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.
 				 */
 				text: () => LocalizedString
+				/**
+				 * /img/index/webp/seminars.webp
+				 */
+				img: () => LocalizedString
 			}
 			hotels: {
 				/**
@@ -673,6 +777,10 @@ export type TranslationFunctions = {
 				 * Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.
 				 */
 				text: () => LocalizedString
+				/**
+				 * /img/index/webp/hotels.webp
+				 */
+				img: () => LocalizedString
 			}
 		}
 	}
@@ -689,6 +797,10 @@ export type TranslationFunctions = {
 		 * Unsere Leitsätze für Deinen Erfolg!
 		 */
 		subheading: () => LocalizedString
+		/**
+		 * /img/about/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		texts: {
 			experienced: {
 				/**
@@ -703,6 +815,10 @@ export type TranslationFunctions = {
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/experienced.webp
+				 */
+				img: () => LocalizedString
 			}
 			personal: {
 				/**
@@ -717,6 +833,10 @@ export type TranslationFunctions = {
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/personal.webp
+				 */
+				img: () => LocalizedString
 			}
 			diverse: {
 				/**
@@ -731,6 +851,10 @@ export type TranslationFunctions = {
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/diverse.webp
+				 */
+				img: () => LocalizedString
 			}
 			servicestrong: {
 				/**
@@ -745,6 +869,10 @@ export type TranslationFunctions = {
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
 				text2: () => LocalizedString
+				/**
+				 * /img/about/webp/servicestrong.webp
+				 */
+				img: () => LocalizedString
 			}
 		}
 	}
@@ -812,6 +940,14 @@ export type TranslationFunctions = {
 				 * Spüre mit uns die ganze Kraft des Klanges!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/sound_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/sound_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			light: {
 				/**
@@ -876,6 +1012,14 @@ export type TranslationFunctions = {
 				 * Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/light_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/light_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			video: {
 				/**
@@ -922,6 +1066,14 @@ export type TranslationFunctions = {
 				 * Lass Deine Bilder für sich sprechen.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/video_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/video_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			stage: {
 				/**
@@ -972,6 +1124,14 @@ export type TranslationFunctions = {
 				 * Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/stage_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/stage_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			presentation: {
 				/**
@@ -1022,6 +1182,14 @@ export type TranslationFunctions = {
 				 * Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/presentation_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/presentation_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 			service: {
 				/**
@@ -1076,6 +1244,14 @@ export type TranslationFunctions = {
 				 * Dein Erfolg ist für uns das Wichtigste!
 				 */
 				quote: () => LocalizedString
+				/**
+				 * /img/services/webp/service_card.webp
+				 */
+				img_card: () => LocalizedString
+				/**
+				 * /img/services/webp/service_hero.webp
+				 */
+				img_hero: () => LocalizedString
 			}
 		}
 	}

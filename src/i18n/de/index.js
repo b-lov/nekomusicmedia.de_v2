@@ -11,26 +11,31 @@ const de = {
 		heading: 'Dein Auftrag ist unser Antrieb!',
 		subheading:
 			'NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.',
+		img_hero: '/img/index/webp/hero.webp',
 		examples: {
 			events: {
 				title: 'Events',
 				subtitle: 'Jede Veranstaltung ist einmalig.',
-				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!'
+				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!',
+				img: '/img/index/webp/events.webp'
 			},
 			exhibitions: {
 				title: 'Messen & Aussteller',
 				subtitle: 'Überlass nichts dem Zufall!',
-				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.'
+				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.',
+				img: '/img/index/webp/exhibitions.webp'
 			},
 			seminars: {
 				title: 'Kongresse & Seminare',
 				subtitle: 'Im großen oder kleinen Stil.',
-				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.'
+				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.',
+				img: '/img/index/webp/seminars.webp'
 			},
 			hotels: {
 				title: 'Hotels',
 				subtitle: 'Event- und Treffpunkt: Hotel.',
-				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.'
+				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.',
+				img: '/img/index/webp/hotels.webp'
 			}
 		}
 	},
@@ -38,34 +43,39 @@ const de = {
 		title: 'Über uns',
 		heading: 'Erfahren. Persönlich. Vielseitig. Servicestark.',
 		subheading: 'Unsere Leitsätze für Deinen Erfolg!',
+		img_hero: '/img/about/webp/hero.webp',
 		texts: {
 			experienced: {
 				title: 'erfahren',
 				text1:
 					'NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.',
 				text2:
-					'Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.'
+					'Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.',
+				img: '/img/about/webp/experienced.webp'
 			},
 			personal: {
 				title: 'persönlich',
 				text1:
 					'Gerne empfangen wir Dich zu einem unverbindlichen Gespräch in unserem Showroom in Mönchengladbach, wo Du Dich vom professionellen Equipment aus hauseigenem Technikbestand überzeugen kannst.',
 				text2:
-					'Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.'
+					'Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.',
+				img: '/img/about/webp/personal.webp'
 			},
 			diverse: {
 				title: 'vielfältig',
 				text1:
 					'Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.',
 				text2:
-					'Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.'
+					'Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.',
+				img: '/img/about/webp/diverse.webp'
 			},
 			servicestrong: {
 				title: 'servicestark',
 				text1:
 					'Bei uns bekommst Du nicht nur hochwertiges Equipment, sondern auf Wunsch auch Beratungs- und Serviceleistungen wie Unterstützung bei der Eventplanunglanung, Aufbau, Installation, Reparatur und vieles mehr.',
 				text2:
-					'Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!'
+					'Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!',
+				img: '/img/about/webp/servicestrong.webp'
 			}
 		}
 	},
@@ -91,7 +101,9 @@ const de = {
 					'Mischpulte und Monitore',
 					'DJ Technik'
 				],
-				quote: 'Spüre mit uns die ganze Kraft des Klanges!'
+				quote: 'Spüre mit uns die ganze Kraft des Klanges!',
+				img_card: '/img/services/webp/sound_card.webp',
+				img_hero: '/img/services/webp/sound_hero.webp'
 			},
 			light: {
 				title: 'Lichttechnik',
@@ -113,7 +125,9 @@ const de = {
 					'Stromverteilungen und -generatoren',
 					'Traversen und Lichtstative'
 				],
-				quote: 'Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.'
+				quote: 'Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.',
+				img_card: '/img/services/webp/light_card.webp',
+				img_hero: '/img/services/webp/light_hero.webp'
 			},
 			video: {
 				title: 'Videotechnik',
@@ -130,7 +144,9 @@ const de = {
 					'Video-Mischpulte und Interfaces',
 					'Beamer und Prjektoren'
 				],
-				quote: 'Lass Deine Bilder für sich sprechen.'
+				quote: 'Lass Deine Bilder für sich sprechen.',
+				img_card: '/img/services/webp/video_card.webp',
+				img_hero: '/img/services/webp/video_hero.webp'
 			},
 			stage: {
 				title: 'Bühnenbau',
@@ -148,7 +164,9 @@ const de = {
 					'Truss Systeme',
 					'Planung und Aufbau'
 				],
-				quote: 'Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.'
+				quote: 'Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.',
+				img_card: '/img/services/webp/stage_card.webp',
+				img_hero: '/img/services/webp/stage_hero.webp'
 			},
 			presentation: {
 				title: 'Präsentationstechnik',
@@ -166,7 +184,9 @@ const de = {
 					'Audiotechnik',
 					'Befestigungssysteme'
 				],
-				quote: 'Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!'
+				quote: 'Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!',
+				img_card: '/img/services/webp/presentation_card.webp',
+				img_hero: '/img/services/webp/presentation_hero.webp'
 			},
 			service: {
 				title: 'Service & Reparatur',
@@ -185,7 +205,9 @@ const de = {
 					'Techniker-Notdienst',
 					'Reparatur und Wartung'
 				],
-				quote: 'Dein Erfolg ist für uns das Wichtigste!'
+				quote: 'Dein Erfolg ist für uns das Wichtigste!',
+				img_card: '/img/services/webp/service_card.webp',
+				img_hero: '/img/services/webp/service_hero.webp'
 			}
 		}
 	},
