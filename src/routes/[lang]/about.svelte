@@ -1,5 +1,6 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
+	import Icon from '$lib/Icon.svelte';
 
 	const examples =
 		/** @type {Array.<keyof import('$i18n/i18n-types').Translation['about']['texts']>} */
@@ -12,6 +13,7 @@
 
 {#each examples as example}
 	<h2>{$LL.about.texts[example].title()}</h2>
+	<Icon name={example} />
 	<p>{$LL.about.texts[example].text1()}</p>
 	<p>{$LL.about.texts[example].text2()}</p>
 {/each}
