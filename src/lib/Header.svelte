@@ -4,6 +4,6 @@
 </script>
 
 <a href="/">
-	<Icon />
+	<Icon size={4} />
 </a>
 <Navigation />
