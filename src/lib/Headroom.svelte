@@ -3,7 +3,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let offset = 50;
-	export let tolerance = 5;
+	export let tolerance = 7;
 
 	let headerClass = 'pin';
 	let lastHeaderClass = 'pin';
