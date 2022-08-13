@@ -15,26 +15,28 @@
 	];
 </script>
 
-<h2>{$LL.footer.social_media_heading()}</h2>
-<h3>{$LL.footer.social_media_subheading()}</h3>
+<footer>
+	<h2>{$LL.footer.social_media_heading()}</h2>
+	<h3>{$LL.footer.social_media_subheading()}</h3>
 
-{#each social_media as item}
-	<a href={item.link} target="_blank">
-		<Icon name={item.id} />
-	</a>&nbsp;
-{/each}
+	{#each social_media as item}
+		<a href={item.link} target="_blank">
+			<Icon name={item.id} />
+		</a>&nbsp;
+	{/each}
 
-<h4>{$LL.footer.links()}</h4>
-<a href="/">{$LL.index.title()}</a>
-<a href="/{$locale}/about">{$LL.about.title()}</a>
-<a href="/{$locale}/contact">{$LL.contact.title()}</a>
-<a href="/{$locale}/impressum">Impressum</a>
-<a href="/{$locale}/datenschutz">Datenschutz</a>
-<a href="/{$locale}/agb">AGB</a>
+	<h4>{$LL.footer.links()}</h4>
+	<a href="/">{$LL.index.title()}</a>
+	<a href="/{$locale}/about">{$LL.about.title()}</a>
+	<a href="/{$locale}/contact">{$LL.contact.title()}</a>
+	<a href="/{$locale}/impressum">Impressum</a>
+	<a href="/{$locale}/datenschutz">Datenschutz</a>
+	<a href="/{$locale}/agb">AGB</a>
 
-<h4>{$LL.footer.all_services()}</h4>
-{#each services as service}
-	<a href="/{$locale}/services/{service}">{$LL.services.all[service].title()}</a>&nbsp;
-{/each}
+	<h4>{$LL.footer.all_services()}</h4>
+	{#each services as service}
+		<a href="/{$locale}/services/{service}">{$LL.services.all[service].title()}</a><br />
+	{/each}
 
-<p>{$LL.footer.copyright({ year: new Date().getFullYear() })}</p>
+	<p>{$LL.footer.copyright({ year: new Date().getFullYear() })}</p>
+</footer>
