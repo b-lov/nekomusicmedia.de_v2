@@ -1,5 +1,7 @@
-<!-- https://github.com/collardeau/svelte-headroom -->
 <script>
+	// https://github.com/collardeau/svelte-headroom
+	// TODO: dont hide header when reloading page in a scrolled down state
+	import { navMenuOpen } from './Navigation.svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	export let offset = 50;
@@ -17,7 +19,10 @@
 		if (!scrolled || Math.abs(scrolled) < tolerance) return headerClass;
 		const dir = scrolled < 0 ? 'down' : 'up';
 		if (dir === 'up') return 'pin';
-		if (dir === 'down') return 'unpin';
+		if (dir === 'down') {
+			navMenuOpen.set(false);
+			return 'unpin';
+		}
 		return headerClass;
 	};
 
