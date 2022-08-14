@@ -1,4 +1,6 @@
 <script>
+	import Hero from '$lib/Hero.svelte';
+
 	import { LL, locale } from '$i18n/i18n-svelte';
 
 	const examples =
@@ -6,10 +8,11 @@
 		(Object.keys($LL.index.examples));
 </script>
 
-<h1>{$LL.index.heading()}</h1>
-<h3>{$LL.index.subheading()}</h3>
-<a href="/{$locale}/contact"><button>{$LL.contact_button()}</button></a>
-<img src={$LL.index.img_hero()} alt="" />
+<Hero
+	image={$LL.index.img_hero()}
+	heading={$LL.index.heading()}
+	subheading={$LL.index.subheading()}
+/>
 
 {#each examples as example}
 	<h2>{$LL.index.examples[example].title()}</h2>
