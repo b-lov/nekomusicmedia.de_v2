@@ -3,24 +3,50 @@
 	import NavButton from './Hamburger.svelte';
 	import Icon from './Icon.svelte';
 	import Navigation from './Navigation.svelte';
-	import Headroom from './Headroom.svelte';
+	import { navMenuOpen } from './Navigation.svelte';
+
+	export let scrollOffset = 30;
+	export let scrollTolerance = 7;
+
+	let headerClass = 'show';
+	let scrollY = 0;
+	let lastY = 0;
+	let scrolledAmount = 0;
+
+	$: headerClass = (() => {
+		scrolledAmount = lastY === 0 ? 0 : lastY - scrollY;
+		lastY = scrollY;
+		if (scrollY < scrollOffset) return 'show';
+		if (Math.abs(scrolledAmount) <= scrollTolerance) return headerClass;
+		if (scrolledAmount < 0) {
+			navMenuOpen.set(false);
+			return 'hide';
+		}
+		return 'show';
+	})();
 </script>
 
-<Headroom>
-	<header>
-		<div>
-			<a href="/{$locale}"><Icon size={3.2} /></a>
-			<NavButton />
-		</div>
-		<Navigation />
-	</header>
-</Headroom>
+<svelte:window bind:scrollY />
+
+<header class={headerClass}>
+	<div>
+		<a href="/{$locale}"><Icon size={3.2} /></a>
+		<NavButton />
+	</div>
+	<Navigation />
+</header>
 
 <style lang="postcss">
 	header {
-		@apply border-b-2 w-full bg-white;
+		@apply border-b-2 w-full bg-white fixed top-0 transition-transform duration-200 ease-linear;
 	}
 	div {
 		@apply flex justify-between items-center pl-3 overflow-hidden;
+	}
+	.show {
+		@apply translate-y-0;
+	}
+	.hide {
+		@apply -translate-y-full;
 	}
 </style>
