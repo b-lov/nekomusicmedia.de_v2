@@ -38,7 +38,7 @@
 
 <style lang="postcss">
 	header {
-		@apply border-b-2 w-full bg-white fixed top-0 transition-transform duration-200 ease-linear;
+		@apply w-full bg-white fixed top-0 transition-transform duration-200 ease-linear z-10;
 	}
 	div {
 		@apply flex justify-between items-center pl-3 overflow-hidden;
