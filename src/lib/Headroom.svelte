@@ -1,6 +1,8 @@
 <script>
 	// https://github.com/collardeau/svelte-headroom
 	// TODO: dont hide header when reloading page in a scrolled down state
+	// https://blog.kowalczyk.info/article/de13a71a392f488b9352b300b3ed722d/hide-header-on-scroll-in-svelte.html
+	// https://dev.to/collardeau/building-a-headroom-style-header-in-svelte-e12
 	import { navMenuOpen } from './Navigation.svelte';
 	import { createEventDispatcher } from 'svelte';
 
