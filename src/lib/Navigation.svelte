@@ -33,11 +33,11 @@
 <style lang="postcss">
 	nav {
 		@apply flex flex-col;
-	}
-	a {
-		@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6;
-	}
-	.active {
-		@apply underline;
+		a {
+			@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6;
+		}
+		.active {
+			@apply underline;
+		}
 	}
 </style>
