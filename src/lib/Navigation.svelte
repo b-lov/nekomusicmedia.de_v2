@@ -1,6 +1,6 @@
 <script context="module">
 	import { writable } from 'svelte/store';
-	import { navigating } from '$app/stores';
+	import { navigating, page } from '$app/stores';
 
 	export const navMenuOpen = writable(false);
 	export const toggleMenu = () => {
@@ -23,7 +23,9 @@
 {#if $navMenuOpen}
 	<nav transition:slide>
 		{#each links as link}
-			<a href="/{$locale}/{link}">{$LL[link].title()}</a>
+			<a class:active={$page.url.pathname.includes(`/${$locale}/${link}`)} href="/{$locale}/{link}">
+				{$LL[link].title()}
+			</a>
 		{/each}
 	</nav>
 {/if}
@@ -34,5 +36,8 @@
 	}
 	a {
 		@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6;
+	}
+	.active {
+		@apply underline;
 	}
 </style>
