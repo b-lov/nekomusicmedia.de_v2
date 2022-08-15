@@ -37,10 +37,12 @@
 		span {
 			@apply absolute h-full w-full bg-gray-800 opacity-75;
 		}
-		div.outer {
-			@apply min-h-screen relative h-full flex flex-col justify-evenly items-center
-			text-neutral-100 gap-12 pt-24 p-4 text-center;
-			div.inner {
+		.outer {
+			@apply relative h-full flex flex-col justify-evenly items-center
+			text-neutral-100 gap-12 p-4 text-center;
+			/* minus header */
+			min-height: calc(100vh - 80px);
+			.inner {
 				@apply flex flex-col gap-10;
 				h1 {
 					@apply font-oswald text-4xl leading-normal;

@@ -17,3 +17,10 @@
 	<slot />
 </main>
 <Footer />
+
+<style lang="postcss">
+	main {
+		/* minus header */
+		@apply pt-20;
+	}
+</style>
