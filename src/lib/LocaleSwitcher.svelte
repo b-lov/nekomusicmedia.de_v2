@@ -21,8 +21,7 @@
 		setLocale(newLocale);
 
 		// update `lang` attribute
-		const doc = document.querySelector('html');
-		if (doc !== null) doc.setAttribute('lang', newLocale);
+		document.querySelector('html')?.setAttribute('lang', newLocale);
 
 		if (updateHistoryState) {
 			// update url to reflect locale changes
