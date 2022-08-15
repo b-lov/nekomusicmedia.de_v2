@@ -9,16 +9,13 @@
 	export let heading = 'Title';
 	export let subheading = 'Subtitle';
 
-	/** @type { HTMLElement } */
-	let thisSection;
-
 	const handleScrollDown = () => {
-		const nextSection = thisSection.nextElementSibling;
-		if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
+		const nextSection = document.querySelector('#hero')?.nextElementSibling;
+		nextSection?.scrollIntoView({ behavior: 'smooth' });
 	};
 </script>
 
-<section bind:this={thisSection}>
+<section id="hero">
 	<img src={image} alt="" />
 	<span />
 	<div class="outer">
