@@ -66,7 +66,7 @@
 		#social-media {
 			@apply flex gap-4 justify-center flex-wrap;
 			a {
-				@apply p-2 bg-gray-200 rounded-full w-11 aspect-square flex items-center justify-center;
+				@apply p-2 bg-gray-200 rounded-full w-12 aspect-square flex items-center justify-center;
 			}
 		}
 		#links {
