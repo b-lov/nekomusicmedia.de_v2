@@ -34,9 +34,9 @@
 		transform: rotate(45deg);
 	}
 	.line {
+		@apply stroke-gray-800;
 		fill: none;
 		transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-		stroke: #000;
 		stroke-width: 5;
 		stroke-linecap: round;
 	}

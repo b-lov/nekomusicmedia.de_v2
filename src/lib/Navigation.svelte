@@ -34,7 +34,7 @@
 	nav {
 		@apply flex flex-col;
 		a {
-			@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6;
+			@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6 text-gray-800;
 		}
 		.active {
 			@apply underline;

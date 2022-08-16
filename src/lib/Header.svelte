@@ -30,7 +30,7 @@
 
 <header class={headerClass}>
 	<div>
-		<a href="/{$locale}"><Icon size={3.2} /></a>
+		<a href="/{$locale}"><Icon class="fill-gray-800" size={3.2} /></a>
 		<NavButton />
 	</div>
 	<Navigation />
