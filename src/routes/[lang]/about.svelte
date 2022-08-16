@@ -1,5 +1,8 @@
 <script>
+	import AboutCard from '$lib/AboutCard.svelte';
+
 	import { LL, locale } from '$i18n/i18n-svelte';
+	import Hero from '$lib/Hero.svelte';
 	import Icon from '$lib/Icon.svelte';
 
 	const examples =
@@ -7,15 +10,34 @@
 		(Object.keys($LL.about.texts));
 </script>
 
-<h1>{$LL.about.heading()}</h1>
-<h3>{$LL.about.subheading()}</h3>
-<a href="/{$locale}/contact"><button>{$LL.contact_button()}</button></a>
-<img src={$LL.about.img_hero()} alt="" />
+<Hero
+	image={$LL.about.img_hero()}
+	heading={$LL.about.heading()}
+	subheading={$LL.about.subheading()}
+/>
 
-{#each examples as example}
-	<h2>{$LL.about.texts[example].title()}</h2>
-	<Icon name={example} />
-	<p>{$LL.about.texts[example].text1()}</p>
-	<img src={$LL.about.texts[example].img()} alt="" />
-	<p>{$LL.about.texts[example].text2()}</p>
-{/each}
+<section>
+	{#each examples as example}
+		<AboutCard
+			heading={$LL.about.texts[example].title()}
+			image={$LL.about.texts[example].img()}
+			text={$LL.about.texts[example].text_card()}
+		/>
+		<div id="paragraph">
+			<Icon class="fill-gray-800" size={3} name={example} />
+			<p>{$LL.about.texts[example].text()}</p>
+		</div>
+	{/each}
+</section>
+
+<style lang="postcss">
+	section {
+		@apply flex flex-col items-start gap-6 px-4 pt-8 pb-4;
+		#paragraph {
+			@apply flex flex-col gap-6 p-4;
+			p {
+				@apply prose;
+			}
+		}
+	}
+</style>
