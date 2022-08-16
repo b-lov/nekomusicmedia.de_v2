@@ -56,9 +56,6 @@
 
 <style lang="postcss">
 	footer {
-		box-shadow: 0px -2.8px 2.2px rgba(0, 0, 0, 0.02), 0px -6.7px 5.3px rgba(0, 0, 0, 0.028),
-			0px -12.5px 10px rgba(0, 0, 0, 0.035), 0px -22.3px 17.9px rgba(0, 0, 0, 0.042),
-			0px -41.8px 33.4px rgba(0, 0, 0, 0.05), 0px -100px 80px rgba(0, 0, 0, 0.07);
 		@apply bg-gray-800 text-gray-200 px-4 py-6 flex flex-col items-stretch gap-8;
 		#footer-heading {
 			@apply flex flex-col gap-2 text-center;
