@@ -45,7 +45,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * Jede Veranstaltung ist einmalig.
+				 * Jede Veranstaltung ist einmalig
 				 */
 				subtitle: string
 				/**
@@ -63,7 +63,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * Überlass nichts dem Zufall!
+				 * Überlass nichts dem Zufall
 				 */
 				subtitle: string
 				/**
@@ -81,7 +81,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * Im großen oder kleinen Stil.
+				 * Im großen oder kleinen Stil
 				 */
 				subtitle: string
 				/**
@@ -99,7 +99,7 @@ type RootTranslation = {
 				 */
 				title: string
 				/**
-				 * Event- und Treffpunkt: Hotel.
+				 * Event- und Treffpunkt
 				 */
 				subtitle: string
 				/**
@@ -133,17 +133,17 @@ type RootTranslation = {
 		texts: {
 			experienced: {
 				/**
-				 * erfahren
+				 * Erfahren.
 				 */
 				title: string
 				/**
-				 * NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.
-				 */
-				text1: string
-				/**
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
-				text2: string
+				text_card: string
+				/**
+				 * NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.
+				 */
+				text: string
 				/**
 				 * /img/about/webp/experienced.webp
 				 */
@@ -151,17 +151,17 @@ type RootTranslation = {
 			}
 			personal: {
 				/**
-				 * persönlich
+				 * Persönlich.
 				 */
 				title: string
 				/**
 				 * Gerne empfangen wir Dich zu einem unverbindlichen Gespräch in unserem Showroom in Mönchengladbach, wo Du Dich vom professionellen Equipment aus hauseigenem Technikbestand überzeugen kannst.
 				 */
-				text1: string
+				text_card: string
 				/**
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
-				text2: string
+				text: string
 				/**
 				 * /img/about/webp/personal.webp
 				 */
@@ -169,17 +169,17 @@ type RootTranslation = {
 			}
 			diverse: {
 				/**
-				 * vielfältig
+				 * Vielfältig.
 				 */
 				title: string
 				/**
-				 * Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.
-				 */
-				text1: string
-				/**
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
-				text2: string
+				text_card: string
+				/**
+				 * Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.
+				 */
+				text: string
 				/**
 				 * /img/about/webp/diverse.webp
 				 */
@@ -187,17 +187,17 @@ type RootTranslation = {
 			}
 			servicestrong: {
 				/**
-				 * servicestark
+				 * Servicestark.
 				 */
 				title: string
 				/**
 				 * Bei uns bekommst Du nicht nur hochwertiges Equipment, sondern auf Wunsch auch Beratungs- und Serviceleistungen wie Unterstützung bei der Eventplanunglanung, Aufbau, Installation, Reparatur und vieles mehr.
 				 */
-				text1: string
+				text_card: string
 				/**
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
-				text2: string
+				text: string
 				/**
 				 * /img/about/webp/servicestrong.webp
 				 */
@@ -716,7 +716,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * Jede Veranstaltung ist einmalig.
+				 * Jede Veranstaltung ist einmalig
 				 */
 				subtitle: () => LocalizedString
 				/**
@@ -734,7 +734,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * Überlass nichts dem Zufall!
+				 * Überlass nichts dem Zufall
 				 */
 				subtitle: () => LocalizedString
 				/**
@@ -752,7 +752,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * Im großen oder kleinen Stil.
+				 * Im großen oder kleinen Stil
 				 */
 				subtitle: () => LocalizedString
 				/**
@@ -770,7 +770,7 @@ export type TranslationFunctions = {
 				 */
 				title: () => LocalizedString
 				/**
-				 * Event- und Treffpunkt: Hotel.
+				 * Event- und Treffpunkt
 				 */
 				subtitle: () => LocalizedString
 				/**
@@ -804,17 +804,17 @@ export type TranslationFunctions = {
 		texts: {
 			experienced: {
 				/**
-				 * erfahren
+				 * Erfahren.
 				 */
 				title: () => LocalizedString
 				/**
-				 * NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.
-				 */
-				text1: () => LocalizedString
-				/**
 				 * Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.
 				 */
-				text2: () => LocalizedString
+				text_card: () => LocalizedString
+				/**
+				 * NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.
+				 */
+				text: () => LocalizedString
 				/**
 				 * /img/about/webp/experienced.webp
 				 */
@@ -822,17 +822,17 @@ export type TranslationFunctions = {
 			}
 			personal: {
 				/**
-				 * persönlich
+				 * Persönlich.
 				 */
 				title: () => LocalizedString
 				/**
 				 * Gerne empfangen wir Dich zu einem unverbindlichen Gespräch in unserem Showroom in Mönchengladbach, wo Du Dich vom professionellen Equipment aus hauseigenem Technikbestand überzeugen kannst.
 				 */
-				text1: () => LocalizedString
+				text_card: () => LocalizedString
 				/**
 				 * Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.
 				 */
-				text2: () => LocalizedString
+				text: () => LocalizedString
 				/**
 				 * /img/about/webp/personal.webp
 				 */
@@ -840,17 +840,17 @@ export type TranslationFunctions = {
 			}
 			diverse: {
 				/**
-				 * vielfältig
+				 * Vielfältig.
 				 */
 				title: () => LocalizedString
 				/**
-				 * Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.
-				 */
-				text1: () => LocalizedString
-				/**
 				 * Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.
 				 */
-				text2: () => LocalizedString
+				text_card: () => LocalizedString
+				/**
+				 * Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.
+				 */
+				text: () => LocalizedString
 				/**
 				 * /img/about/webp/diverse.webp
 				 */
@@ -858,17 +858,17 @@ export type TranslationFunctions = {
 			}
 			servicestrong: {
 				/**
-				 * servicestark
+				 * Servicestark.
 				 */
 				title: () => LocalizedString
 				/**
 				 * Bei uns bekommst Du nicht nur hochwertiges Equipment, sondern auf Wunsch auch Beratungs- und Serviceleistungen wie Unterstützung bei der Eventplanunglanung, Aufbau, Installation, Reparatur und vieles mehr.
 				 */
-				text1: () => LocalizedString
+				text_card: () => LocalizedString
 				/**
 				 * Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!
 				 */
-				text2: () => LocalizedString
+				text: () => LocalizedString
 				/**
 				 * /img/about/webp/servicestrong.webp
 				 */
