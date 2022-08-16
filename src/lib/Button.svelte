@@ -8,6 +8,6 @@
 
 <style lang="postcss">
 	button {
-		@apply font-oswald px-6 py-4 font-normal;
+		@apply font-oswald px-6 py-4 font-normal shadow-md;
 	}
 </style>
