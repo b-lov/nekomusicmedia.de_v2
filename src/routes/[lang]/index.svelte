@@ -15,7 +15,7 @@
 	subheading={$LL.index.subheading()}
 />
 
-{#each examples as example, i}
+{#each examples as example}
 	<section>
 		<div>
 			<h2>{$LL.index.examples[example].title()}</h2>
