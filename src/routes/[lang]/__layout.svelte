@@ -21,6 +21,6 @@
 <style lang="postcss">
 	main {
 		/* minus header */
-		@apply pt-20 pb-4;
+		@apply pt-20;
 	}
 </style>
