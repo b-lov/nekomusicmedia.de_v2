@@ -15,43 +15,41 @@
 	subheading={$LL.index.subheading()}
 />
 
-<div id="wrapper">
-	{#each examples as example, i}
-		<section>
-			<div>
-				<h2>{$LL.index.examples[example].title()}</h2>
-				<h3>{$LL.index.examples[example].subtitle()}</h3>
-			</div>
-			<img src={$LL.index.examples[example].img()} alt="" />
-			<p>{$LL.index.examples[example].text()}</p>
-			<a href="/{$locale}/contact"><Button dark>{$LL.contact_button_offer()}</Button></a>
-		</section>
-	{/each}
-</div>
+{#each examples as example, i}
+	<section>
+		<div>
+			<h2>{$LL.index.examples[example].title()}</h2>
+			<h3>{$LL.index.examples[example].subtitle()}</h3>
+		</div>
+		<img src={$LL.index.examples[example].img()} alt="" />
+		<p>{$LL.index.examples[example].text()}</p>
+		<a href="/{$locale}/contact"><Button dark>{$LL.contact_button_offer()}</Button></a>
+	</section>
+{/each}
 
 <style lang="postcss">
-	#wrapper {
-		@apply pb-4;
-		section {
-			@apply flex flex-col gap-6 p-4;
-			div {
-				@apply flex flex-col gap-2;
-				h2 {
-					@apply font-oswald text-3xl leading-normal;
-				}
-				h3 {
-					@apply text-xl text-gray-400 font-oswald font-light;
-				}
+	section {
+		&:last-child {
+			@apply mb-4;
+		}
+		@apply flex flex-col gap-6 p-4;
+		div {
+			@apply flex flex-col gap-2;
+			h2 {
+				@apply font-oswald text-3xl leading-normal;
 			}
-			img {
-				@apply shadow-lg;
+			h3 {
+				@apply text-xl text-gray-400 font-oswald font-light;
 			}
-			p {
-				@apply prose;
-			}
-			a {
-				@apply self-start;
-			}
+		}
+		img {
+			@apply shadow-lg;
+		}
+		p {
+			@apply prose;
+		}
+		a {
+			@apply self-start;
 		}
 	}
 </style>
