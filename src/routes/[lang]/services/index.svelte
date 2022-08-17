@@ -23,6 +23,6 @@
 
 <style lang="postcss">
 	section {
-		@apply flex flex-col gap-6 px-4 py-6;
+		@apply flex flex-col gap-8 px-4 py-8;
 	}
 </style>
