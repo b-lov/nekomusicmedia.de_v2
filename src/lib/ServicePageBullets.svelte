@@ -18,7 +18,7 @@
 
 <style lang="postcss">
 	article {
-		@apply flex flex-col gap-8 px-4 py-8 bg-gray-800 text-gray-100;
+		@apply flex flex-col gap-8 p-6 bg-gray-800 text-gray-100 w-fit mx-auto shadow-lg;
 		h2 {
 			@apply text-4xl font-oswald;
 		}
