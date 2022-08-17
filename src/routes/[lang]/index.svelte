@@ -31,7 +31,7 @@
 	section {
 		@apply flex flex-col gap-6 p-4;
 		&:last-child {
-			@apply mb-4;
+			@apply pb-8;
 		}
 		div {
 			@apply flex flex-col gap-2;
