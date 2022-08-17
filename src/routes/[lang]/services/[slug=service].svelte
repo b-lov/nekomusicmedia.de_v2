@@ -34,7 +34,7 @@
 <ServicePageBullets {bullets} title={$LL.services.products_title()} />
 
 <article>
-	<Icon name="rocket" />
+	<Icon name="rocket" size={3} />
 	<p style="white-space: pre-line;">{$LL.services.all[slug].par2()}</p>
 </article>
 
