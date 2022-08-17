@@ -579,38 +579,28 @@ type RootTranslation = {
 		 */
 		heading: string
 		/**
-		 * Hinterlasse eine Nachticht mit Deinem Anliegen.
-				Wir melden uns so schnell wie möglich, versprochen!
-				Alternativ kannst Du auch direkt mit uns chatten.
+		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.
 		 */
 		subheading: string
 		form: {
 			/**
-			 * Vorname
+			 * Name
 			 */
 			name: string
-			/**
-			 * Nachname (optional)
-			 */
-			surname: string
-			/**
-			 * Firma (optional)
-			 */
-			company: string
 			/**
 			 * E-Mail
 			 */
 			email: string
 			/**
-			 * Telefonnummer (optional)
+			 * Tel (optional)
 			 */
-			phone: string
+			tel: string
 			/**
 			 * Nachricht
 			 */
 			message: string
 			/**
-			 * Lass uns reden!
+			 * Abschicken!
 			 */
 			send_button: string
 			/**
@@ -628,8 +618,7 @@ type RootTranslation = {
 			 */
 			heading: string
 			/**
-			 * Besuche uns in unserem Büro/Showroom in Mönchengladbach.
-							Parkplätze vorhanden.
+			 * Besuche uns in unserem Büro/Showroom in Mönchengladbach. Parkplätze vorhanden.
 			 */
 			subheading: string
 			/**
@@ -1235,38 +1224,28 @@ export type TranslationFunctions = {
 		 */
 		heading: () => LocalizedString
 		/**
-		 * Hinterlasse eine Nachticht mit Deinem Anliegen.
-				Wir melden uns so schnell wie möglich, versprochen!
-				Alternativ kannst Du auch direkt mit uns chatten.
+		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.
 		 */
 		subheading: () => LocalizedString
 		form: {
 			/**
-			 * Vorname
+			 * Name
 			 */
 			name: () => LocalizedString
-			/**
-			 * Nachname (optional)
-			 */
-			surname: () => LocalizedString
-			/**
-			 * Firma (optional)
-			 */
-			company: () => LocalizedString
 			/**
 			 * E-Mail
 			 */
 			email: () => LocalizedString
 			/**
-			 * Telefonnummer (optional)
+			 * Tel (optional)
 			 */
-			phone: () => LocalizedString
+			tel: () => LocalizedString
 			/**
 			 * Nachricht
 			 */
 			message: () => LocalizedString
 			/**
-			 * Lass uns reden!
+			 * Abschicken!
 			 */
 			send_button: () => LocalizedString
 			/**
@@ -1284,8 +1263,7 @@ export type TranslationFunctions = {
 			 */
 			heading: () => LocalizedString
 			/**
-			 * Besuche uns in unserem Büro/Showroom in Mönchengladbach.
-							Parkplätze vorhanden.
+			 * Besuche uns in unserem Büro/Showroom in Mönchengladbach. Parkplätze vorhanden.
 			 */
 			subheading: () => LocalizedString
 			/**
