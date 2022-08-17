@@ -1,23 +1,19 @@
-<!-- <script context="module">
-	export async function load({ params }) {
-		return { props: { slug: params.slug } };
+<script context="module">
+	/** @type { import('@sveltejs/kit').Load } */
+	export async function load({ params: { slug } }) {
+		return { props: { slug } };
 	}
-</script> -->
+</script>
+
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import { page } from '$app/stores';
 	import Icon from '$lib/Icon.svelte';
 	import ServicePageHero from '$lib/ServicePageHero.svelte';
 	import ServicePageBullets from '$lib/ServicePageBullets.svelte';
 	import ServicePageQuote from '$lib/ServicePageQuote.svelte';
 
-	// this doesnt work when navigatin from one [slug] route to another...
-	const { slug } =
-		/** @type { {slug: keyof import('$i18n/i18n-types').Translation['services']['all']} } */
-		($page.params);
-
-	// /** @type { keyof import('$i18n/i18n-types').Translation['services']['all'] } */
-	// export let slug;
+	/** @type { keyof import('$i18n/i18n-types').Translation['services']['all'] } */
+	export let slug;
 
 	const bullets = Object.values($LL.services.all[slug].bullets);
 </script>
