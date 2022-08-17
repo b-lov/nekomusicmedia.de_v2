@@ -30,12 +30,13 @@
 			@apply absolute w-full h-full bg-gray-800 opacity-75;
 		}
 		div {
-			@apply text-center flex flex-col gap-6;
+			@apply relative text-center flex flex-col gap-6;
 			h1 {
-				@apply relative text-gray-100 font-oswald text-5xl;
+				@apply text-gray-100 font-oswald text-5xl;
+				hyphens: auto;
 			}
 			h3 {
-				@apply relative text-gray-100 text-xl;
+				@apply text-gray-100 text-xl;
 			}
 		}
 		a {
