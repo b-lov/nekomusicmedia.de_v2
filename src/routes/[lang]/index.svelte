@@ -29,10 +29,10 @@
 
 <style lang="postcss">
 	section {
+		@apply flex flex-col gap-6 p-4;
 		&:last-child {
 			@apply mb-4;
 		}
-		@apply flex flex-col gap-6 p-4;
 		div {
 			@apply flex flex-col gap-2;
 			h2 {
