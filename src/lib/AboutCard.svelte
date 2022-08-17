@@ -15,7 +15,7 @@
 
 <style lang="postcss">
 	article {
-		@apply shadow-2xl;
+		@apply shadow-xl;
 		#head {
 			@apply relative flex items-center justify-center p-6 bg-blue-300;
 			img {
