@@ -1,15 +1,31 @@
 <script>
+	import { browser } from '$app/env';
+	import { writable } from 'svelte/store';
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
 
 	/** @param { KeyboardEvent } e */
 	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
+
+	// get form values from localstorage or reset to empty
+	const messageData = writable(
+		browser &&
+			JSON.parse(
+				localStorage.getItem('messageData') || '{"name": "", "email": "", "tel": "", "message": ""}'
+			)
+	);
+
+	// write form values to localstorage to keep on reload
+	messageData.subscribe((value) => {
+		if (browser) localStorage.setItem('messageData', JSON.stringify(value));
+	});
 </script>
 
 <form name="contact" action="/" method="POST" data-netlify="true" on:submit|preventDefault>
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
+			bind:value={$messageData.name}
 			type="text"
 			name="user_name"
 			id="name"
@@ -23,6 +39,7 @@
 	<div>
 		<label for="email">{$LL.contact.form.email()}</label>
 		<input
+			bind:value={$messageData.email}
 			type="email"
 			name="user_email"
 			id="email"
@@ -34,6 +51,7 @@
 	<div>
 		<label for="tel">{$LL.contact.form.tel()}</label>
 		<input
+			bind:value={$messageData.tel}
 			type="tel"
 			name="user_tel"
 			id="tel"
@@ -46,6 +64,7 @@
 	<div>
 		<label for="message">{$LL.contact.form.message()}</label>
 		<textarea
+			bind:value={$messageData.message}
 			name="user_message"
 			id="message"
 			rows="6"
