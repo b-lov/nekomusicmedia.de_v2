@@ -18,10 +18,25 @@
 	$: if ($navigating) {
 		navMenuOpen.set(false);
 	}
+
+	/** @param { HTMLElement } node */
+	const closeOnClickOutsideHeader = (node) => {
+		/** @param { MouseEvent } event */
+		const handleClick = (event) => {
+			const header = /** @type { HTMLElement } */ (document.querySelector('header'));
+			if (!event.composedPath().includes(header)) navMenuOpen.set(false);
+		};
+		document.addEventListener('click', handleClick);
+		return {
+			destroy() {
+				document.removeEventListener('click', handleClick);
+			}
+		};
+	};
 </script>
 
 {#if $navMenuOpen}
-	<nav transition:slide>
+	<nav transition:slide use:closeOnClickOutsideHeader>
 		{#each links as link}
 			<a class:active={$page.url.pathname.includes(`/${$locale}/${link}`)} href="/{$locale}/{link}">
 				{$LL[link].title()}
