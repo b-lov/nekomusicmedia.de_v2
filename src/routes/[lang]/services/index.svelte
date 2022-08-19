@@ -1,5 +1,6 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
+	import ServiceCard from '$lib/ServiceCard.svelte';
 	const services =
 		/** @type {Array.<keyof import('$i18n/i18n-types').Translation['services']['all']>} */
 		(Object.keys($LL.services.all));
@@ -9,11 +10,19 @@
 	<title>{$LL.services.title()}</title>
 </svelte:head>
 
-{#each services as service}
-	<h2>{$LL.services.all[service].title()}</h2>
-	<p>{$LL.services.all[service].teaser()}</p>
-	<a href="/{$locale}/services/{service}">
-		<button type="button">{$LL.services.more_button()}</button>
-	</a>
-	<img src={$LL.services.all[service].img_card()} alt="" />
-{/each}
+<section>
+	{#each services as service}
+		<ServiceCard
+			title={$LL.services.all[service].title()}
+			teaser={$LL.services.all[service].teaser()}
+			link="/{$locale}/services/{service}"
+			img={$LL.services.all[service].img_card()}
+		/>
+	{/each}
+</section>
+
+<style lang="postcss">
+	section {
+		@apply flex flex-col gap-8 px-4 py-8;
+	}
+</style>

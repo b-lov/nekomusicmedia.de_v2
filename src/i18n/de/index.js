@@ -15,25 +15,25 @@ const de = {
 		examples: {
 			events: {
 				title: 'Events',
-				subtitle: 'Jede Veranstaltung ist einmalig.',
+				subtitle: 'Jede Veranstaltung ist einmalig',
 				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!',
 				img: '/img/index/webp/events.webp'
 			},
 			exhibitions: {
 				title: 'Messen & Aussteller',
-				subtitle: 'Überlass nichts dem Zufall!',
+				subtitle: 'Überlass nichts dem Zufall',
 				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.',
 				img: '/img/index/webp/exhibitions.webp'
 			},
 			seminars: {
 				title: 'Kongresse & Seminare',
-				subtitle: 'Im großen oder kleinen Stil.',
+				subtitle: 'Im großen oder kleinen Stil',
 				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.',
 				img: '/img/index/webp/seminars.webp'
 			},
 			hotels: {
 				title: 'Hotels',
-				subtitle: 'Event- und Treffpunkt: Hotel.',
+				subtitle: 'Event- und Treffpunkt',
 				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.',
 				img: '/img/index/webp/hotels.webp'
 			}
@@ -46,35 +46,31 @@ const de = {
 		img_hero: '/img/about/webp/hero.webp',
 		texts: {
 			experienced: {
-				title: 'erfahren',
-				text1:
-					'NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.',
-				text2:
+				title: 'Erfahren.',
+				text_card:
 					'Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.',
+				text: 'NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.',
 				img: '/img/about/webp/experienced.webp'
 			},
 			personal: {
-				title: 'persönlich',
-				text1:
+				title: 'Persönlich.',
+				text_card:
 					'Gerne empfangen wir Dich zu einem unverbindlichen Gespräch in unserem Showroom in Mönchengladbach, wo Du Dich vom professionellen Equipment aus hauseigenem Technikbestand überzeugen kannst.',
-				text2:
-					'Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.',
+				text: 'Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.',
 				img: '/img/about/webp/personal.webp'
 			},
 			diverse: {
-				title: 'vielfältig',
-				text1:
-					'Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.',
-				text2:
+				title: 'Vielfältig.',
+				text_card:
 					'Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.',
+				text: 'Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.',
 				img: '/img/about/webp/diverse.webp'
 			},
 			servicestrong: {
-				title: 'servicestark',
-				text1:
+				title: 'Servicestark.',
+				text_card:
 					'Bei uns bekommst Du nicht nur hochwertiges Equipment, sondern auf Wunsch auch Beratungs- und Serviceleistungen wie Unterstützung bei der Eventplanunglanung, Aufbau, Installation, Reparatur und vieles mehr.',
-				text2:
-					'Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!',
+				text: 'Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!',
 				img: '/img/about/webp/servicestrong.webp'
 			}
 		}
@@ -89,11 +85,8 @@ const de = {
 				subtitle: 'Wir sorgen für guten Ton!',
 				teaser:
 					'NEKO liefert optimale Beschallung, egal welche technischen Herausforderungen der Veranstaltungsort mit sich bringen mag.',
-				par1: `Ob Tagungen, Hotels oder Konzerthallen – die technischen und örtlichen Gegebenheiten sind in jeder Location unterschiedlich und beeinflussen die Klangqualität in entscheidendem Maße.
-					Sauberer Klang ist eine unabdingbare Komponente für den Erfolg Deiner Veranstaltung.
-					NEKO liefert die optimale Beschallung, egal welche Herausforderungen der Veranstaltungsort mit sich bringen mag.`,
-				par2: `Zusammen machen wir einen Plan und stellen Dir ausgezeichnetes Equipment von namhaften Herstellern zur Verfügung. Darüber hinaus installieren wir die Technik und führen die Veranstaltung fachlich versiert und Deinen Erwartungen entsprechend durch.
-					Es kommen ausschließlich aufeinander abgestimmte Soundsysteme, moderne Mikrophone und leistungsfähige Peripheriegeräte zum Einsatz.`,
+				par1: `Ob Tagungen, Hotels oder Konzerthallen – die technischen und örtlichen Gegebenheiten sind in jeder Location unterschiedlich und beeinflussen die Klangqualität in entscheidendem Maße. Sauberer Klang ist eine unabdingbare Komponente für den Erfolg Deiner Veranstaltung. NEKO liefert die optimale Beschallung, egal welche Herausforderungen der Veranstaltungsort mit sich bringen mag.`,
+				par2: `Zusammen machen wir einen Plan und stellen Dir ausgezeichnetes Equipment von namhaften Herstellern zur Verfügung. Darüber hinaus installieren wir die Technik und führen die Veranstaltung fachlich versiert und Deinen Erwartungen entsprechend durch. Es kommen ausschließlich aufeinander abgestimmte Soundsysteme, moderne Mikrophone und leistungsfähige Peripheriegeräte zum Einsatz.`,
 				bullets: [
 					'Aktive und Passive Lautsprecher',
 					'Endstufen und Soundmanager',
@@ -109,12 +102,8 @@ const de = {
 				title: 'Lichttechnik',
 				subtitle: 'Wir bringen Licht ins Dunkel!',
 				teaser: 'Bewegtes Licht, LED oder beides? Bühne, Show oder Messestand? Licht ist Pflicht!',
-				par1: `Bewegtes Licht, LED oder beides? Bühne, Show oder Messestand? Eins steht fest: Licht ist Pflicht und Du hast die Wahl!
-					NEKO hat einen außergewöhnlich breiten Lichttechnik-Park, der keinen Deiner Wünsche offen lässt.
-					Verzaubere Dein Publikum und profitiere von modernen, spektakulären Lichteffekten.`,
-				par2: `Keine Komponente der Veranstaltungstechnik berührt so sehr wie das Lichtdesign.
-					Es ist ein Gestaltungsmittel, welches Räume in eine beeindruckende Atmosphäre rückt und wirkungsvolle Stimmungen erzeugt.
-					Unsere Lichtdesigner wissen, wie man dieses Mittel gekonnt einsetzt und entwickeln ein überzeugendes Lichtkonzept, das Deinen Räumen Charakter verleiht. Wir beraten Dich bei der Auswahl und bieten Dir Dein ganz individuelles Lichtspektakel.`,
+				par1: `Bewegtes Licht, LED oder beides? Bühne, Show oder Messestand? Eins steht fest: Licht ist Pflicht und Du hast die Wahl! NEKO hat einen außergewöhnlich breiten Lichttechnik-Park, der keinen Deiner Wünsche offen lässt. Verzaubere Dein Publikum und profitiere von modernen, spektakulären Lichteffekten.`,
+				par2: `Keine Komponente der Veranstaltungstechnik berührt so sehr wie das Lichtdesign. Es ist ein Gestaltungsmittel, welches Räume in eine beeindruckende Atmosphäre rückt und wirkungsvolle Stimmungen erzeugt. Unsere Lichtdesigner wissen, wie man dieses Mittel gekonnt einsetzt und entwickeln ein überzeugendes Lichtkonzept, das Deinen Räumen Charakter verleiht. Wir beraten Dich bei der Auswahl und bieten Dir Dein ganz individuelles Lichtspektakel.`,
 				bullets: [
 					'Kunst- und Tageslichtscheinwerfer',
 					'LED Scheinwerfer und LED Panels',
@@ -134,10 +123,8 @@ const de = {
 				subtitle: 'Wir bringen Deine Bilder in Bewegung!',
 				teaser:
 					'Animationen, Imagefilme, Präsentationscharts oder Grafiken - mit uns gibst Du immer ein gutes Bild ab.',
-				par1: `Durch ein reibungsloses Zusammenspiel von Bild und Ton hinterlässt Du bei Deinen Zuschauern einen bleibenden Eindruck.
-					Eine visuelle Untermalung verleiht dem Gesagten mehr Ausdruck, fokussiert die Sinne der Zuschauer auf die Kernbotschaften des Vortrags und hebt diese eindrucksvoll und nachhaltig hervor.`,
-				par2: `Wir bringen unsere ganze Erfahrung mit der medientechnischen Umsetzung von Vorträgen, Reportagen und Live-Übertragungen in Deinen Auftrag ein.
-					Unser kompetentes Berater- und Technikerteam zeigt Dir, welche Methoden und Techniken sich in Abhängigkeit von den örtlichen und bautechnischen Besonderheiten des Veranstaltungsortes am besten in Dein Eventkonzept integrieren lassen.`,
+				par1: `Durch ein reibungsloses Zusammenspiel von Bild und Ton hinterlässt Du bei Deinen Zuschauern einen bleibenden Eindruck. Eine visuelle Untermalung verleiht dem Gesagten mehr Ausdruck, fokussiert die Sinne der Zuschauer auf die Kernbotschaften des Vortrags und hebt diese eindrucksvoll und nachhaltig hervor.`,
+				par2: `Wir bringen unsere ganze Erfahrung mit der medientechnischen Umsetzung von Vorträgen, Reportagen und Live-Übertragungen in Deinen Auftrag ein. Unser kompetentes Berater- und Technikerteam zeigt Dir, welche Methoden und Techniken sich in Abhängigkeit von den örtlichen und bautechnischen Besonderheiten des Veranstaltungsortes am besten in Dein Eventkonzept integrieren lassen.`,
 				bullets: [
 					'LCD- und Plasmabildschirme',
 					'Videokameras',
@@ -153,10 +140,8 @@ const de = {
 				subtitle: 'Wir sorgen für Deinen großen Auftritt!',
 				teaser:
 					'The stage is yours - der Mittelpunkt Deiner Inszenierung und das zentrale Element des gesamten Location- und Eventdesigns.',
-				par1: `Die Bühne ist das zentrale Element des gesamten Location- und Eventdesigns. Ob Gala, Kongress oder Messe – überlass auch in puncto Bühnenbau nichts dem Zufall!
-					Im Bereich Bühnen- und Messebau greift NEKO auf eine 10-jährige Erfahrung zurück, welche wir in zahlreichen Aufträgen für namhafte Firmen und Veranstalter sammeln durften. Diese Erfahrung lassen wir auch in Dein Projekt einfließen.`,
-				par2: `Für Deinen Bühnen- und Messeauftritt haben wir das gesamte technische Equipment. Mal ist es nur das Licht, mal nur die Audio- oder Videoanlage, mal eine Aluminium- bzw. Traversenstruktur. Manchmal sind es aber auch alle Elemente zusammen.
-					Neben der sorgfältigen Erstellung technisch optimaler Konstruktionen berücksichtigen wir auch optische Aspekte. Durch ansprechenden Dekorationsbau können beispielsweise technische Einrichtungen kinderleicht kaschiert werden. Damit verbinden wir zwei wesentliche Anforderungen: Sicherheit und Ästhetik.`,
+				par1: `Die Bühne ist das zentrale Element des gesamten Location- und Eventdesigns. Ob Gala, Kongress oder Messe – überlass auch in puncto Bühnenbau nichts dem Zufall! Im Bereich Bühnen- und Messebau greift NEKO auf eine 10-jährige Erfahrung zurück, welche wir in zahlreichen Aufträgen für namhafte Firmen und Veranstalter sammeln durften. Diese Erfahrung lassen wir auch in Dein Projekt einfließen.`,
+				par2: `Für Deinen Bühnen- und Messeauftritt haben wir das gesamte technische Equipment. Mal ist es nur das Licht, mal nur die Audio- oder Videoanlage, mal eine Aluminium- bzw. Traversenstruktur. Manchmal sind es aber auch alle Elemente zusammen. Neben der sorgfältigen Erstellung technisch optimaler Konstruktionen berücksichtigen wir auch optische Aspekte. Durch ansprechenden Dekorationsbau können beispielsweise technische Einrichtungen kinderleicht kaschiert werden. Damit verbinden wir zwei wesentliche Anforderungen: Sicherheit und Ästhetik.`,
 				bullets: [
 					'Bühnenpodeste',
 					'Bühnenrückwände',
@@ -173,10 +158,8 @@ const de = {
 				subtitle: 'Wir verschaffen Dir Aufmerksamkeit!',
 				teaser:
 					'Bei Produktpräsentationen, Seminaren und Tagungen ist multimediale Kommunikation auf höchstem Niveau gefragt.',
-				par1: `Produktpräsentationen, Seminare und Tagungen stellen eine besondere Herausforderung dar. Hier ist multimediale Kommunikation auf höchstem Niveau gefragt. Unser Expertenteam sorgt für optimale Akustik und ein gestochen scharfes Bild.
-					Gemeinsam finden wir maßgeschneiderte Lösungen für Dein ganz persönliches Business-Programm und eine gelungene, störungsfreie Konferenz.`,
-				par2: `Es spielt keine Rolle in welchen Dimensionen Deine Tagung geplant ist. NEKO hat für alle Belange das passende Equipment und die Kompetenz, alle Komponenten einzurichten und aufeinander abzustimmen.
-					Unsere Produktpalette besteht ausschließlich aus modernster Technik. So werden Deine Botschaften besonders wirksam und finden Anklang bei allen Zuschauern.`,
+				par1: `Produktpräsentationen, Seminare und Tagungen stellen eine besondere Herausforderung dar. Hier ist multimediale Kommunikation auf höchstem Niveau gefragt. Unser Expertenteam sorgt für optimale Akustik und ein gestochen scharfes Bild. Gemeinsam finden wir maßgeschneiderte Lösungen für Dein ganz persönliches Business-Programm und eine gelungene, störungsfreie Konferenz.`,
+				par2: `Es spielt keine Rolle in welchen Dimensionen Deine Tagung geplant ist. NEKO hat für alle Belange das passende Equipment und die Kompetenz, alle Komponenten einzurichten und aufeinander abzustimmen. Unsere Produktpalette besteht ausschließlich aus modernster Technik. So werden Deine Botschaften besonders wirksam und finden Anklang bei allen Zuschauern.`,
 				bullets: [
 					'Beamer und Leinwände',
 					'LED-Wände und Bildschirme',
@@ -193,10 +176,8 @@ const de = {
 				subtitle: 'Wir sind für Dich da.',
 				teaser:
 					'Von individuellen Reparatur- und Wartungsleistungen bis zum Service auf Abruf mit kurzen Reaktionszeiten.',
-				par1: `Ganz egal was Du vorhast: Wir sind da, wenn Du uns brauchst. Vom Briefing, über die Konzeption und Durchführung des Events, bis hin zur Wartung und Installation von Equipment.
-					In enger Zusammenarbeit eruieren wir den Umfang Deines Vorhabens und prüfen den Auftrag auf technische Umsetzbarkeit sowie Budgetvorstellung. Bei der Konzeption greifen wir voll und ganz auf unsere jahrelange Erfahrung im Bereich des Veranstaltungsmanagements zurück.`,
-				par2: `Aus Deinen Vorgaben und unserem Know-how entsteht ein persönliches, einzigartiges Konzept und ein präziser Aufbau- und Ablaufplan der Veranstaltung. Daraufhin erwecken wir diesen Plan bis zum letzten Detail zum Leben.
-					Doch damit ist unsere Arbeit noch nicht getan: Individuelle Reparatur- und Wartungsleistungen und kurzfristiger Service auf Abruf sind bei uns standart. Die Sicherheit der Beteiligten und die Makellosigkeit des Equipments sind das A und O eines gelungenen Events. Auf Wunsch bieten wir einen Techniker-Notdienst sowie einen Hotline-Support an.`,
+				par1: `Ganz egal was Du vorhast: Wir sind da, wenn Du uns brauchst. Vom Briefing, über die Konzeption und Durchführung des Events, bis hin zur Wartung und Installation von Equipment. In enger Zusammenarbeit eruieren wir den Umfang Deines Vorhabens und prüfen den Auftrag auf technische Umsetzbarkeit sowie Budgetvorstellung. Bei der Konzeption greifen wir voll und ganz auf unsere jahrelange Erfahrung im Bereich des Veranstaltungsmanagements zurück.`,
+				par2: `Aus Deinen Vorgaben und unserem Know-how entsteht ein persönliches, einzigartiges Konzept und ein präziser Aufbau- und Ablaufplan der Veranstaltung. Daraufhin erwecken wir diesen Plan bis zum letzten Detail zum Leben. Doch damit ist unsere Arbeit noch nicht getan: Individuelle Reparatur- und Wartungsleistungen und kurzfristiger Service auf Abruf sind bei uns standart. Die Sicherheit der Beteiligten und die Makellosigkeit des Equipments sind das A und O eines gelungenen Events. Auf Wunsch bieten wir einen Techniker-Notdienst sowie einen Hotline-Support an.`,
 				bullets: [
 					'Briefing und Konzepterstellung',
 					'Erstellung eines Event-Ablaufplans',
@@ -214,17 +195,17 @@ const de = {
 	contact: {
 		title: 'Kontakt',
 		heading: 'Schreib uns.',
-		subheading: `Hinterlasse eine Nachticht mit Deinem Anliegen.
-			Wir melden uns so schnell wie möglich, versprochen!
-			Alternativ kannst Du auch direkt mit uns chatten.`,
+		subheading:
+			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.',
 		form: {
-			name: 'Vorname',
-			surname: 'Nachname (optional)',
-			company: 'Firma (optional)',
+			name: 'Name',
+			name_error:
+				'Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie "-" und  "." erlaubt.',
 			email: 'E-Mail',
-			phone: 'Telefonnummer (optional)',
+			tel: 'Tel (optional)',
+			tel_error: 'Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.',
 			message: 'Nachricht',
-			send_button: 'Lass uns reden!',
+			send_button: 'Abschicken!',
 			success_message:
 				'Deine Nachricht wurde erfolgreich versendet. Wir melden uns so schnell wie möglich.',
 			failure_message:
@@ -232,8 +213,7 @@ const de = {
 		},
 		contact_data: {
 			heading: 'Finde den Weg zu uns.',
-			subheading: `Besuche uns in unserem Büro/Showroom in Mönchengladbach.
-					Parkplätze vorhanden.`,
+			subheading: `Besuche uns in unserem Büro/Showroom in Mönchengladbach. Parkplätze vorhanden.`,
 			address: `Neko Music & Media GmbH
 				Adolf-Kempken-Weg 95-99
 				41189 Mönchengladbach

@@ -1,31 +1,50 @@
+<script context="module">
+	/** @type { import('@sveltejs/kit').Load } */
+	export async function load({ params: { slug } }) {
+		return { props: { slug } };
+	}
+</script>
+
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import { page } from '$app/stores';
 	import Icon from '$lib/Icon.svelte';
+	import ServicePageHero from '$lib/ServicePageHero.svelte';
+	import ServicePageBullets from '$lib/ServicePageBullets.svelte';
+	import ServicePageQuote from '$lib/ServicePageQuote.svelte';
 
-	const { slug } =
-		/** @type { {slug: keyof import('$i18n/i18n-types').Translation['services']['all']} } */
-		($page.params);
+	/** @type { keyof import('$i18n/i18n-types').Translation['services']['all'] } */
+	export let slug;
 
 	const bullets = Object.values($LL.services.all[slug].bullets);
 </script>
 
-<h1>{$LL.services.all[slug].title()}</h1>
-<h3>{$LL.services.all[slug].subtitle()}</h3>
-<a href="/{$locale}/contact"><button>{$LL.contact_button_offer()}</button></a>
-<img src={$LL.services.all[slug].img_hero()} alt="" />
+<ServicePageHero
+	heading={$LL.services.all[slug].title()}
+	subheading={$LL.services.all[slug].subtitle()}
+	link="/{$locale}/contact"
+	button_text={$LL.contact_button_offer()}
+	image={$LL.services.all[slug].img_hero()}
+/>
 
-<Icon name="info" />
-<p style="white-space: pre-line;">{$LL.services.all[slug].par1()}</p>
+<article>
+	<Icon name="info" size={3} class="fill-gray-800" />
+	<p style="white-space: pre-line;">{$LL.services.all[slug].par1()}</p>
+</article>
 
-<h2>{$LL.services.products_title()}</h2>
-{#each bullets as bullet}
-	<span>&#10007;</span>
-	{bullet()}
-{/each}
+<ServicePageBullets {bullets} title={$LL.services.products_title()} />
 
-<Icon name="quote" />
-<h2>{$LL.services.all[slug].quote()}</h2>
+<article>
+	<Icon name="rocket" size={3} class="fill-gray-800" />
+	<p style="white-space: pre-line;">{$LL.services.all[slug].par2()}</p>
+</article>
 
-<Icon name="rocket" />
-<p style="white-space: pre-line;">{$LL.services.all[slug].par1()}</p>
+<ServicePageQuote quote={$LL.services.all[slug].quote()} />
+
+<style lang="postcss">
+	article {
+		@apply flex flex-col gap-4 px-4 py-8;
+		p {
+			@apply prose;
+		}
+	}
+</style>
