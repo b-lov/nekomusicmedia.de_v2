@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 // TODO: clam font sizes
+// https://github.com/tailwindlabs/tailwindcss/discussions/4796
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
