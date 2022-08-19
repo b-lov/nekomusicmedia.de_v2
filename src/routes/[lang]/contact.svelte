@@ -27,7 +27,7 @@
 		p {
 			@apply prose text-center;
 			&:last-child {
-				@apply text-left;
+				@apply font-oswald font-light text-xl text-gray-500 leading-normal tracking-wide;
 			}
 		}
 	}
