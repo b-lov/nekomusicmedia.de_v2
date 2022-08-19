@@ -195,11 +195,15 @@ const de = {
 	contact: {
 		title: 'Kontakt',
 		heading: 'Schreib uns.',
-		subheading: `Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.`,
+		subheading:
+			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.',
 		form: {
 			name: 'Name',
+			name_error:
+				'Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie "-" und  "." erlaubt.',
 			email: 'E-Mail',
 			tel: 'Tel (optional)',
+			tel_error: 'Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.',
 			message: 'Nachricht',
 			send_button: 'Abschicken!',
 			success_message:

@@ -588,6 +588,10 @@ type RootTranslation = {
 			 */
 			name: string
 			/**
+			 * Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie "-" und  "." erlaubt.
+			 */
+			name_error: string
+			/**
 			 * E-Mail
 			 */
 			email: string
@@ -595,6 +599,10 @@ type RootTranslation = {
 			 * Tel (optional)
 			 */
 			tel: string
+			/**
+			 * Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.
+			 */
+			tel_error: string
 			/**
 			 * Nachricht
 			 */
@@ -1233,6 +1241,10 @@ export type TranslationFunctions = {
 			 */
 			name: () => LocalizedString
 			/**
+			 * Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie "-" und  "." erlaubt.
+			 */
+			name_error: () => LocalizedString
+			/**
 			 * E-Mail
 			 */
 			email: () => LocalizedString
@@ -1240,6 +1252,10 @@ export type TranslationFunctions = {
 			 * Tel (optional)
 			 */
 			tel: () => LocalizedString
+			/**
+			 * Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.
+			 */
+			tel_error: () => LocalizedString
 			/**
 			 * Nachricht
 			 */

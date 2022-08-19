@@ -7,7 +7,7 @@
 	/** @param { KeyboardEvent } e */
 	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
 
-	// get form values from localstorage or reset to empty
+	// get form values from localstorage or set to empty
 	const messageData = writable(
 		browser &&
 			JSON.parse(
@@ -32,7 +32,7 @@
 			placeholder={$LL.contact.form.name()}
 			pattern={String.raw`[A-zÀ-ž\u0400-\u04ff\s.-]{2,}`}
 			maxlength="25"
-			title="Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie '-' und  '.' erlaubt."
+			title={$LL.contact.form.name_error()}
 			required
 		/>
 	</div>
@@ -58,7 +58,7 @@
 			placeholder={$LL.contact.form.tel()}
 			pattern={String.raw`[0-9+\s]{4,}`}
 			maxlength="25"
-			title="Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und '+' erlaubt."
+			title={$LL.contact.form.tel_error()}
 		/>
 	</div>
 	<div>
