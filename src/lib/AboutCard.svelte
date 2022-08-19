@@ -22,7 +22,7 @@
 				@apply absolute top-0 left-0 w-full h-full object-cover;
 			}
 			span {
-				@apply absolute top-0 left-0 w-full h-full bg-gray-800 opacity-70;
+				@apply absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75;
 			}
 			h2 {
 				@apply relative text-gray-100 font-oswald text-3xl;
