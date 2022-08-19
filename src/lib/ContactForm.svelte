@@ -1,3 +1,4 @@
+<!-- TODO: error messages based on current locale -->
 <script>
 	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
@@ -106,8 +107,8 @@
 			}
 			input,
 			textarea {
-				@apply p-3 border border-gray-300 shadow focus:outline-none
-				focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
+				@apply p-3 border border-gray-300 shadow-md focus:outline-none focus:ring-2
+				focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
 				&:invalid:not(:placeholder-shown) {
 					@apply bg-red-50;
 				}
