@@ -4,9 +4,6 @@
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
 
-	/** @param { KeyboardEvent } e */
-	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
-
 	// get form values from localstorage or set to empty
 	const messageData = writable(
 		browser &&
@@ -19,9 +16,30 @@
 	messageData.subscribe((value) => {
 		if (browser) localStorage.setItem('messageData', JSON.stringify(value));
 	});
+
+	// dont allow spaces in email filed
+	/** @param { KeyboardEvent } e */
+	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
+
+	// trim possible whitespace on in form fields before submit
+	const trimWhitespace = () => {
+		Object.keys($messageData).forEach(
+			(k) => ($messageData[k] = $messageData[k].trim().replace(/\s+/g, ' '))
+		);
+	};
+
+	const handleSubmit = () => {
+		console.log($messageData);
+	};
 </script>
 
-<form name="contact" action="/" method="POST" data-netlify="true" on:submit|preventDefault>
+<form
+	name="contact"
+	action="/"
+	method="POST"
+	data-netlify="true"
+	on:submit|preventDefault={handleSubmit}
+>
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
@@ -73,7 +91,9 @@
 			required
 		/>
 	</div>
-	<Button class="self-center" dark>{$LL.contact.form.send_button()}</Button>
+	<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
+		{$LL.contact.form.send_button()}
+	</Button>
 </form>
 
 <style lang="postcss">
@@ -88,6 +108,12 @@
 			textarea {
 				@apply p-3 border border-gray-300 shadow focus:outline-none
 				focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
+				&:invalid:not(:placeholder-shown) {
+					@apply bg-red-50;
+				}
+				&:valid:not(:placeholder-shown) {
+					@apply bg-green-50;
+				}
 			}
 		}
 	}

@@ -5,6 +5,7 @@
 </script>
 
 <button
+	on:mousedown
 	class="{$$props.class} {dark ? 'bg-gray-800 text-neutral-100' : 'bg-neutral-100 text-gray-800'}"
 >
 	<slot />
