@@ -36,7 +36,6 @@
 
 <!-- TODO: error messages based on current locale -->
 
-
 <form
 	name="contact"
 	action="/"
