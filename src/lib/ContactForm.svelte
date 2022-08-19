@@ -1,4 +1,4 @@
-<!-- TODO: error messages based on current locale -->
+<!-- TODO: add netfliy forms -->
 <script>
 	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
@@ -33,6 +33,9 @@
 		console.log($messageData);
 	};
 </script>
+
+<!-- TODO: error messages based on current locale -->
+
 
 <form
 	name="contact"
