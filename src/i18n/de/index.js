@@ -205,6 +205,8 @@ const de = {
 			tel: 'Tel (optional)',
 			tel_error: 'Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.',
 			message: 'Nachricht',
+			privacy:
+				'Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.',
 			send_button: 'Abschicken!',
 			success_message:
 				'Deine Nachricht wurde erfolgreich versendet. Wir melden uns so schnell wie möglich.',

@@ -608,6 +608,10 @@ type RootTranslation = {
 			 */
 			message: string
 			/**
+			 * Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.
+			 */
+			privacy: string
+			/**
 			 * Abschicken!
 			 */
 			send_button: string
@@ -1260,6 +1264,10 @@ export type TranslationFunctions = {
 			 * Nachricht
 			 */
 			message: () => LocalizedString
+			/**
+			 * Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.
+			 */
+			privacy: () => LocalizedString
 			/**
 			 * Abschicken!
 			 */
