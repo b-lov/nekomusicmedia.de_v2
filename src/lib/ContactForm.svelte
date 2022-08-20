@@ -30,25 +30,25 @@
 	};
 
 	const handleSubmit = () => {
-		console.log($messageData);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams($messageData).toString()
+		})
+			.then(() => alert('Nachricht verschickt!'))
+			.catch((error) => alert(error));
 	};
 </script>
 
 <!-- TODO: error messages based on current locale -->
 
-<form
-	name="contact"
-	action="/"
-	method="POST"
-	data-netlify="true"
-	on:submit|preventDefault={handleSubmit}
->
+<form name="contact" data-netlify="true" on:submit|preventDefault={handleSubmit}>
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
 			bind:value={$messageData.name}
 			type="text"
-			name="user_name"
+			name="name"
 			id="name"
 			placeholder={$LL.contact.form.name()}
 			pattern={String.raw`[A-zÀ-ž\u0400-\u04ff\s.-]{2,}`}
@@ -62,7 +62,7 @@
 		<input
 			bind:value={$messageData.email}
 			type="email"
-			name="user_email"
+			name="email"
 			id="email"
 			placeholder={$LL.contact.form.email()}
 			required
@@ -74,7 +74,7 @@
 		<input
 			bind:value={$messageData.tel}
 			type="tel"
-			name="user_tel"
+			name="tel"
 			id="tel"
 			placeholder={$LL.contact.form.tel()}
 			pattern={String.raw`[0-9+\s]{4,}`}
@@ -86,13 +86,17 @@
 		<label for="message">{$LL.contact.form.message()}</label>
 		<textarea
 			bind:value={$messageData.message}
-			name="user_message"
+			name="message"
 			id="message"
 			rows="6"
 			placeholder={$LL.contact.form.message()}
 			maxlength="700"
 			required
 		/>
+	</div>
+	<div id="privacy-wrapper">
+		<input type="checkbox" name="privacy" id="privacy" required />
+		<label for="privacy"><p>{$LL.contact.form.privacy()}</p></label>
 	</div>
 	<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
 		{$LL.contact.form.send_button()}
@@ -104,10 +108,10 @@
 		@apply flex flex-col gap-6 w-full;
 		div {
 			@apply flex flex-col gap-2;
-			label {
+			label:not([for='privacy']) {
 				@apply text-sm hidden;
 			}
-			input,
+			input:not([type='checkbox']),
 			textarea {
 				@apply p-3 border border-gray-300 shadow-md focus:outline-none focus:ring-2
 				focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
@@ -116,6 +120,18 @@
 				}
 				&:valid:not(:placeholder-shown) {
 					@apply bg-green-50;
+				}
+			}
+		}
+		#privacy-wrapper {
+			@apply flex flex-row;
+			input {
+				@apply p-2 text-gray-800 focus:ring-0 focus:ring-offset-0 mt-1;
+			}
+			label {
+				@apply cursor-pointer select-none;
+				p {
+					@apply prose prose-sm;
 				}
 			}
 		}
