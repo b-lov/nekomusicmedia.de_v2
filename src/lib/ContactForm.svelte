@@ -1,4 +1,3 @@
-<!-- TODO: add netfliy forms -->
 <script>
 	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
@@ -30,21 +29,19 @@
 	};
 
 	const handleSubmit = () => {
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams($messageData).toString()
-		})
-			.then(() => alert('Nachricht verschickt!'))
-			.catch((error) => alert(error));
+		console.log($messageData);
+		// fetch('/', {
+		// 	method: 'POST',
+		// 	headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+		// 	body: new URLSearchParams($messageData).toString()
+		// })
+		// 	.then(() => alert('Nachricht verschickt!'))
+		// 	.catch((error) => alert(error));
 	};
 </script>
 
 <!-- TODO: error messages based on current locale -->
-
-<form name="contact" method="POST" data-netlify="true" on:submit|preventDefault={handleSubmit}>
-	<!-- for netlify -->
-	<input type="hidden" name="form-name" value="contact" />
+<form name="contact" on:submit|preventDefault={handleSubmit}>
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
