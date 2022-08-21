@@ -1,7 +1,6 @@
-<script context="module">
+<!-- <script context="module">
 	export const prerender = true;
-</script>
-
+</script> -->
 <script>
 	import LL from '$i18n/i18n-svelte';
 	import ContactForm from '$lib/ContactForm.svelte';
