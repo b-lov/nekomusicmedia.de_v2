@@ -127,9 +127,9 @@
 		}
 		#privacy-wrapper {
 			@apply flex flex-row;
-			input {
+			shadow input {
 				@apply p-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 mt-1
-				border-gray-300 focus:ring-gray-500;
+				border-gray-300 focus:ring-gray-500 shadow;
 			}
 			label {
 				@apply cursor-pointer select-none;
