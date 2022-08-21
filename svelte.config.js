@@ -9,7 +9,10 @@ const config = {
 			$i18n: './src/i18n'
 		},
 		prerender: {
-			onError: 'continue'
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			pages: ['*']
 		}
 	},
 
