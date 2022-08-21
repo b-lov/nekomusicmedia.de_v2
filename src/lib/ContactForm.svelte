@@ -42,7 +42,7 @@
 
 <!-- TODO: error messages based on current locale -->
 
-<form name="contact" data-netlify="true" on:submit|preventDefault={handleSubmit}>
+<form name="contact" method="POST" data-netlify="true" on:submit|preventDefault={handleSubmit}>
 	<!-- for netlify -->
 	<input type="hidden" name="form-name" value="contact" />
 	<div>
