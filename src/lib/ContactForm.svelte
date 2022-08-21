@@ -43,6 +43,7 @@
 <!-- TODO: error messages based on current locale -->
 
 <form name="contact" data-netlify="true" on:submit|preventDefault={handleSubmit}>
+	<input type="hidden" name="form-name" value="contact" />
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
@@ -111,7 +112,7 @@
 			label:not([for='privacy']) {
 				@apply text-sm hidden;
 			}
-			input:not([type='checkbox']),
+			input:not([id='privacy']),
 			textarea {
 				@apply p-3 border border-gray-300 shadow-md focus:outline-none focus:ring-2
 				focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
@@ -126,7 +127,8 @@
 		#privacy-wrapper {
 			@apply flex flex-row;
 			input {
-				@apply p-2 text-gray-800 focus:ring-0 focus:ring-offset-0 mt-1;
+				@apply p-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 mt-1
+				border-gray-300 focus:ring-gray-500;
 			}
 			label {
 				@apply cursor-pointer select-none;
