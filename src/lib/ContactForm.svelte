@@ -1,9 +1,10 @@
-<!-- TODO: add netfliy forms -->
 <script>
 	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
+
+	let privacyCheckbox = false;
 
 	// get form values from localstorage or set to empty
 	const messageData = writable(
@@ -22,29 +23,35 @@
 	/** @param { KeyboardEvent } e */
 	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
 
-	// trim possible whitespace on in form fields before submit
+	// trim possible whitespace n in form fields before submit
 	const trimWhitespace = () => {
 		Object.keys($messageData).forEach(
 			(k) => ($messageData[k] = $messageData[k].trim().replace(/\s+/g, ' '))
 		);
 	};
 
-	const handleSubmit = () => {
-		fetch('/', {
+	const handleSubmit = async () => {
+		const res = await fetch('contact.json', {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams($messageData).toString()
+			body: JSON.stringify($messageData)
 		})
-			.then(() => alert('Nachricht verschickt!'))
-			.catch((error) => alert(error));
+			.then((res) => res.json())
+			.then(({ message }) => {
+				console.log(message);
+				if (message === 'Success') {
+					// show success message
+					// clear form
+					Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
+					privacyCheckbox = false;
+				} else {
+					// show error message
+				}
+			});
 	};
 </script>
 
 <!-- TODO: error messages based on current locale -->
-
-<form name="contact" method="POST" data-netlify="true" on:submit|preventDefault={handleSubmit}>
-	<!-- for netlify -->
-	<input type="hidden" name="form-name" value="contact" />
+<form name="contact" on:submit|preventDefault={handleSubmit}>
 	<div>
 		<label for="name">{$LL.contact.form.name()}</label>
 		<input
@@ -97,7 +104,7 @@
 		/>
 	</div>
 	<div id="privacy-wrapper">
-		<input type="checkbox" name="privacy" id="privacy" required />
+		<input bind:checked={privacyCheckbox} type="checkbox" name="privacy" id="privacy" required />
 		<label for="privacy"><p>{$LL.contact.form.privacy()}</p></label>
 	</div>
 	<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
@@ -127,7 +134,7 @@
 		}
 		#privacy-wrapper {
 			@apply flex flex-row;
-			shadow input {
+			input {
 				@apply p-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 mt-1
 				border-gray-300 focus:ring-gray-500 shadow;
 			}

@@ -7,12 +7,6 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$i18n: './src/i18n'
-		},
-		prerender: {
-			crawl: true,
-			enabled: true,
-			onError: 'continue',
-			entries: ['*']
 		}
 	},
 
