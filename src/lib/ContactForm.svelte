@@ -28,15 +28,13 @@
 		);
 	};
 
-	const handleSubmit = () => {
-		console.log($messageData);
-		// fetch('/', {
-		// 	method: 'POST',
-		// 	headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-		// 	body: new URLSearchParams($messageData).toString()
-		// })
-		// 	.then(() => alert('Nachricht verschickt!'))
-		// 	.catch((error) => alert(error));
+	const handleSubmit = async () => {
+		const res = await fetch('contact.json', {
+			method: 'POST',
+			body: JSON.stringify($messageData)
+		})
+			.then((res) => res.json())
+			.then(({ message }) => console.log(message));
 	};
 </script>
 
