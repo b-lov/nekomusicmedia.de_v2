@@ -1,6 +1,4 @@
 <script>
-	import { compute_rest_props } from 'svelte/internal';
-
 	export let dark = false;
 </script>
 
@@ -13,6 +11,7 @@
 
 <style lang="postcss">
 	button {
-		@apply font-oswald px-6 py-4 font-normal shadow-md tracking-wide;
+		@apply font-oswald px-6 py-4 font-normal shadow-md tracking-wide focus:outline-none
+		focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
 	}
 </style>
