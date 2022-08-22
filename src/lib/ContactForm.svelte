@@ -4,6 +4,8 @@
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
 
+	let privacyCheckbox = false;
+
 	// get form values from localstorage or set to empty
 	const messageData = writable(
 		browser &&
@@ -21,7 +23,7 @@
 	/** @param { KeyboardEvent } e */
 	const disallowSpaces = (e) => e.code === 'Space' && e.preventDefault();
 
-	// trim possible whitespace on in form fields before submit
+	// trim possible whitespace n in form fields before submit
 	const trimWhitespace = () => {
 		Object.keys($messageData).forEach(
 			(k) => ($messageData[k] = $messageData[k].trim().replace(/\s+/g, ' '))
@@ -34,7 +36,17 @@
 			body: JSON.stringify($messageData)
 		})
 			.then((res) => res.json())
-			.then(({ message }) => console.log(message));
+			.then(({ message }) => {
+				console.log(message);
+				if (message === 'Success') {
+					// show success message
+					// clear form
+					Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
+					privacyCheckbox = false;
+				} else {
+					// show error message
+				}
+			});
 	};
 </script>
 
@@ -92,7 +104,7 @@
 		/>
 	</div>
 	<div id="privacy-wrapper">
-		<input type="checkbox" name="privacy" id="privacy" required />
+		<input bind:checked={privacyCheckbox} type="checkbox" name="privacy" id="privacy" required />
 		<label for="privacy"><p>{$LL.contact.form.privacy()}</p></label>
 	</div>
 	<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
