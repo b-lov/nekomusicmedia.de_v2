@@ -208,10 +208,15 @@ const de = {
 			privacy:
 				'Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.',
 			send_button: 'Abschicken!',
-			success_message:
-				'Deine Nachricht wurde erfolgreich versendet. Wir melden uns so schnell wie möglich.',
-			failure_message:
-				'Deine Nachricht konnte nicht versendet werden. Bitte kontaktiere uns unter info@nekomusicmedia.de.'
+			success_message: {
+				heading: 'Nachricht erfolgreich versendet!',
+				subheading: 'Wir melden uns so schnell wie möglich.'
+			},
+			failure_message: {
+				heading: 'Nachricht konnte nicht versendet werden!',
+				subheading:
+					'Bitte kontaktiere uns unter <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.'
+			}
 		},
 		contact_data: {
 			heading: 'Finde den Weg zu uns.',

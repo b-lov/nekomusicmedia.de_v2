@@ -3,8 +3,11 @@
 	import { writable } from 'svelte/store';
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
+	import Notificator from './Notificator.svelte';
 
 	let privacyCheckbox = false;
+	/** @type { _SvelteComponent }*/
+	let notificator;
 
 	// get form values from localstorage or set to empty
 	const messageData = writable(
@@ -37,14 +40,20 @@
 		})
 			.then((res) => res.json())
 			.then(({ message }) => {
-				console.log(message);
 				if (message === 'Success') {
-					// show success message
-					// clear form
+					notificator.notify(
+						'success',
+						$LL.contact.form.success_message.heading(),
+						$LL.contact.form.success_message.subheading()
+					);
 					Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
 					privacyCheckbox = false;
 				} else {
-					// show error message
+					notificator.notify(
+						'error',
+						$LL.contact.form.failure_message.heading(),
+						$LL.contact.form.failure_message.subheading()
+					);
 				}
 			});
 	};
@@ -111,6 +120,8 @@
 		{$LL.contact.form.send_button()}
 	</Button>
 </form>
+
+<Notificator bind:this={notificator} />
 
 <style lang="postcss">
 	form {

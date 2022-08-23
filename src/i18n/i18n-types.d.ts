@@ -615,14 +615,26 @@ type RootTranslation = {
 			 * Abschicken!
 			 */
 			send_button: string
-			/**
-			 * Deine Nachricht wurde erfolgreich versendet. Wir melden uns so schnell wie möglich.
-			 */
-			success_message: string
-			/**
-			 * Deine Nachricht konnte nicht versendet werden. Bitte kontaktiere uns unter info@nekomusicmedia.de.
-			 */
-			failure_message: string
+			success_message: {
+				/**
+				 * Nachricht erfolgreich versendet!
+				 */
+				heading: string
+				/**
+				 * Wir melden uns so schnell wie möglich.
+				 */
+				subheading: string
+			}
+			failure_message: {
+				/**
+				 * Nachricht konnte nicht versendet werden!
+				 */
+				heading: string
+				/**
+				 * Bitte kontaktiere uns unter <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.
+				 */
+				subheading: string
+			}
 		}
 		contact_data: {
 			/**
@@ -1272,14 +1284,26 @@ export type TranslationFunctions = {
 			 * Abschicken!
 			 */
 			send_button: () => LocalizedString
-			/**
-			 * Deine Nachricht wurde erfolgreich versendet. Wir melden uns so schnell wie möglich.
-			 */
-			success_message: () => LocalizedString
-			/**
-			 * Deine Nachricht konnte nicht versendet werden. Bitte kontaktiere uns unter info@nekomusicmedia.de.
-			 */
-			failure_message: () => LocalizedString
+			success_message: {
+				/**
+				 * Nachricht erfolgreich versendet!
+				 */
+				heading: () => LocalizedString
+				/**
+				 * Wir melden uns so schnell wie möglich.
+				 */
+				subheading: () => LocalizedString
+			}
+			failure_message: {
+				/**
+				 * Nachricht konnte nicht versendet werden!
+				 */
+				heading: () => LocalizedString
+				/**
+				 * Bitte kontaktiere uns unter <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.
+				 */
+				subheading: () => LocalizedString
+			}
 		}
 		contact_data: {
 			/**
