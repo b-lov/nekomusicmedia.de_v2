@@ -9,7 +9,7 @@
 	/** @type { _SvelteComponent }*/
 	let notificator;
 	let privacyChecked = false;
-	let submitting = true;
+	let submitting = false;
 
 	// get form values from localstorage or set to empty
 	const messageData = writable(

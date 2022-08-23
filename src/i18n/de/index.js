@@ -209,11 +209,11 @@ const de = {
 				'Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.',
 			send_button: 'Abschicken!',
 			success_message: {
-				heading: 'Nachricht erfolgreich versendet!',
+				heading: 'Nachricht erfolgreich verschickt!',
 				subheading: 'Wir melden uns so schnell wie möglich.'
 			},
 			failure_message: {
-				heading: 'Nachricht konnte nicht versendet werden!',
+				heading: 'Nachricht konnte nicht verschickt werden!',
 				subheading:
 					'Bitte kontaktiere uns unter <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.'
 			}
