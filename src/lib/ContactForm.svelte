@@ -4,10 +4,12 @@
 	import LL from '$i18n/i18n-svelte';
 	import Button from './Button.svelte';
 	import Notificator from './Notificator.svelte';
+	import Spinner from './Spinner.svelte';
 
-	let privacyCheckbox = false;
 	/** @type { _SvelteComponent }*/
 	let notificator;
+	let privacyChecked = false;
+	let submitting = true;
 
 	// get form values from localstorage or set to empty
 	const messageData = writable(
@@ -34,6 +36,7 @@
 	};
 
 	const handleSubmit = async () => {
+		submitting = true;
 		const res = await fetch('contact.json', {
 			method: 'POST',
 			body: JSON.stringify($messageData)
@@ -47,7 +50,7 @@
 						$LL.contact.form.success_message.subheading()
 					);
 					Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
-					privacyCheckbox = false;
+					privacyChecked = false;
 				} else {
 					notificator.notify(
 						'error',
@@ -55,6 +58,7 @@
 						$LL.contact.form.failure_message.subheading()
 					);
 				}
+				submitting = false;
 			});
 	};
 </script>
@@ -113,12 +117,20 @@
 		/>
 	</div>
 	<div id="privacy-wrapper">
-		<input bind:checked={privacyCheckbox} type="checkbox" name="privacy" id="privacy" required />
+		<input bind:checked={privacyChecked} type="checkbox" name="privacy" id="privacy" required />
 		<label for="privacy"><p>{$LL.contact.form.privacy()}</p></label>
 	</div>
-	<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
-		{$LL.contact.form.send_button()}
-	</Button>
+	{#if !submitting}
+		<!-- content here -->
+		<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
+			{$LL.contact.form.send_button()}
+		</Button>
+	{:else}
+		<div class="self-center">
+			<Spinner />
+		</div>
+		<!-- else content here -->
+	{/if}
 </form>
 
 <Notificator bind:this={notificator} />
