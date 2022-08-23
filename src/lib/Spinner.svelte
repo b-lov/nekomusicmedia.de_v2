@@ -5,9 +5,9 @@
 
 <style lang="postcss">
 	div {
-		@apply relative w-12 h-12;
+		@apply relative w-14 h-14 flex items-center justify-center;
 		span {
-			@apply absolute block w-full h-full rounded-full border-4 border-black;
+			@apply absolute block w-12 h-12 rounded-full border-4 border-black;
 		}
 		#outside {
 			@apply border-gray-300;

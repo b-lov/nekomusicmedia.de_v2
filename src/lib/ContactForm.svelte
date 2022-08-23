@@ -36,30 +36,31 @@
 	};
 
 	const handleSubmit = async () => {
-		submitting = true;
-		const res = await fetch('contact.json', {
-			method: 'POST',
-			body: JSON.stringify($messageData)
-		})
-			.then((res) => res.json())
-			.then(({ message }) => {
-				if (message === 'Success') {
-					notificator.notify(
-						'success',
-						$LL.contact.form.success_message.heading(),
-						$LL.contact.form.success_message.subheading()
-					);
-					Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
-					privacyChecked = false;
-				} else {
-					notificator.notify(
-						'error',
-						$LL.contact.form.failure_message.heading(),
-						$LL.contact.form.failure_message.subheading()
-					);
-				}
-				submitting = false;
-			});
+		submitting = !submitting;
+		// submitting = true;
+		// const res = await fetch('contact.json', {
+		// 	method: 'POST',
+		// 	body: JSON.stringify($messageData)
+		// })
+		// 	.then((res) => res.json())
+		// 	.then(({ message }) => {
+		// 		if (message === 'Success') {
+		// 			notificator.notify(
+		// 				'success',
+		// 				$LL.contact.form.success_message.heading(),
+		// 				$LL.contact.form.success_message.subheading()
+		// 			);
+		// 			Object.keys($messageData).forEach((k) => ($messageData[k] = ''));
+		// 			privacyChecked = false;
+		// 		} else {
+		// 			notificator.notify(
+		// 				'error',
+		// 				$LL.contact.form.failure_message.heading(),
+		// 				$LL.contact.form.failure_message.subheading()
+		// 			);
+		// 		}
+		// 		submitting = false;
+		// 	});
 	};
 </script>
 
