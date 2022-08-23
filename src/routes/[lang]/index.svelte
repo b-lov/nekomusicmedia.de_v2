@@ -39,7 +39,7 @@
 				@apply font-oswald text-3xl leading-normal;
 			}
 			h3 {
-				@apply text-xl text-gray-400 font-oswald font-light;
+				@apply text-xl text-gray-500 font-oswald font-light;
 			}
 		}
 		img {
