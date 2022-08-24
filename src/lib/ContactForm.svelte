@@ -36,7 +36,6 @@
 	};
 
 	const handleSubmit = async () => {
-		submitting = !submitting;
 		submitting = true;
 		const res = await fetch('contact.json', {
 			method: 'POST',

@@ -5,7 +5,7 @@
 
 <style lang="postcss">
 	div {
-		@apply relative w-14 h-14 flex items-center justify-center;
+		@apply relative w-14 h-14 flex items-center justify-center overflow-hidden;
 		span {
 			@apply absolute block w-12 h-12 rounded-full border-4 border-black;
 		}
