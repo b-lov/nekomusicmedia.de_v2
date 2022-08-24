@@ -3,7 +3,6 @@
 
 	import { LL, locale } from '$i18n/i18n-svelte';
 	import ScrollDown from './ScrollDown.svelte';
-	import { browser } from '$app/env';
 
 	export let image = '/images/placeholder.webp';
 	export let heading = 'Title';
