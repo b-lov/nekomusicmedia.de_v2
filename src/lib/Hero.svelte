@@ -44,7 +44,7 @@
 			.inner {
 				@apply flex flex-col gap-10;
 				h1 {
-					@apply font-oswald text-4xl leading-normal;
+					@apply font-oswald text-4xl sm:text-5xl leading-normal;
 				}
 				h3 {
 					@apply text-lg;
