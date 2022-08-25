@@ -2,8 +2,7 @@
 	import { locale } from '$i18n/i18n-svelte';
 	import NavButton from './Hamburger.svelte';
 	import Icon from './Icon.svelte';
-	import Navigation from './Navigation.svelte';
-	import { navMenuOpen } from './Navigation.svelte';
+	import MobileNav, { mobileNavOpen } from './MobileNav.svelte';
 
 	export let scrollOffset = 30;
 	export let scrollTolerance = 7;
@@ -19,7 +18,7 @@
 		if (scrollY < scrollOffset) return 'show';
 		if (Math.abs(scrolledAmount) <= scrollTolerance) return headerClass;
 		if (scrolledAmount < 0) {
-			navMenuOpen.set(false);
+			mobileNavOpen.set(false);
 			return 'hide';
 		}
 		return 'show';
@@ -33,7 +32,7 @@
 		<a href="/{$locale}"><Icon class="fill-gray-800" size={3.2} /></a>
 		<NavButton />
 	</div>
-	<Navigation />
+	<MobileNav />
 </header>
 
 <style lang="postcss">

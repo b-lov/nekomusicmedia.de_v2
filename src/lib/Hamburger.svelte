@@ -1,9 +1,9 @@
 <script>
-	import { toggleMenu, navMenuOpen } from './Navigation.svelte';
+	import { toggleMenu, mobileNavOpen } from './MobileNav.svelte';
 </script>
 
 <svg
-	class:active={$navMenuOpen}
+	class:active={$mobileNavOpen}
 	class="ham hamRotate ham1"
 	viewBox="0 0 100 100"
 	width="80"
