@@ -42,7 +42,7 @@
 		@apply w-full bg-white fixed top-0 transition-transform duration-200 ease-linear z-10
 		shadow-lg;
 		> div {
-			@apply h-20 flex justify-between items-center pl-3 overflow-hidden;
+			@apply h-20 flex justify-between items-center pl-3;
 		}
 		&.show {
 			@apply translate-y-0;
