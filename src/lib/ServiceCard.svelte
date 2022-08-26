@@ -8,33 +8,20 @@
 	export let link = '';
 </script>
 
-<article>
-	<img src={img} alt="" />
-	<span />
-	<h2>{title}</h2>
-	<p>{teaser}</p>
-	<a href={link}>
+<div
+	class="relative aspect-square flex flex-col items-center justify-evenly p-6 shadow-lg w-[350px]"
+>
+	<img class="absolute top-0 left-0 w-full h-full object-cover" src={img} alt="" />
+	<span class="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75" />
+	<h2 class="relative text-gray-100 font-oswald text-4xl">{title}</h2>
+	<p class="relative text-gray-100 prose text-center">{teaser}</p>
+	<a href={link} class="relative">
 		<Button>{$LL.services.more_button()}</Button>
 	</a>
-</article>
+</div>
 
 <style lang="postcss">
-	article {
-		@apply relative aspect-square flex flex-col items-center justify-evenly p-6 shadow-lg;
-		img {
-			@apply absolute top-0 left-0 w-full h-full object-cover;
-		}
-		span {
-			@apply absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75;
-		}
-		h2 {
-			@apply relative text-gray-100 font-oswald text-4xl;
-		}
-		p {
-			@apply relative text-gray-100 prose text-center;
-		}
-		a {
-			@apply relative;
-		}
+	h2 {
+		hyphens: auto;
 	}
 </style>
