@@ -1,5 +1,6 @@
 TODO: create rent catalogue route
 TODO: enhance and add language switcher
 TODO: add translations
-TODO: turn link buttons into links
+TODO: turn link buttons into anchors
 TODO: add dark mode
+TODO: remove unneeded tailwind applys
