@@ -64,9 +64,13 @@
 </script>
 
 <!-- TODO: error messages based on current locale -->
-<form name="contact" on:submit|preventDefault={handleSubmit}>
-	<div>
-		<label for="name">{$LL.contact.form.name()}</label>
+<form
+	class="flex flex-col gap-6 w-full max-w-2xl"
+	name="contact"
+	on:submit|preventDefault={handleSubmit}
+>
+	<div class="flex flex-col gap-2">
+		<label class="text-sm hidden" for="name">{$LL.contact.form.name()}</label>
 		<input
 			bind:value={$messageData.name}
 			type="text"
@@ -79,8 +83,8 @@
 			required
 		/>
 	</div>
-	<div>
-		<label for="email">{$LL.contact.form.email()}</label>
+	<div class="flex flex-col gap-2">
+		<label class="text-sm hidden" for="email">{$LL.contact.form.email()}</label>
 		<input
 			bind:value={$messageData.email}
 			type="email"
@@ -91,8 +95,8 @@
 			on:keydown={disallowSpaces}
 		/>
 	</div>
-	<div>
-		<label for="tel">{$LL.contact.form.tel()}</label>
+	<div class="flex flex-col gap-2">
+		<label class="text-sm hidden" for="tel">{$LL.contact.form.tel()}</label>
 		<input
 			bind:value={$messageData.tel}
 			type="tel"
@@ -104,8 +108,8 @@
 			title={$LL.contact.form.tel_error()}
 		/>
 	</div>
-	<div>
-		<label for="message">{$LL.contact.form.message()}</label>
+	<div class="flex flex-col gap-2">
+		<label class="text-sm hidden" for="message">{$LL.contact.form.message()}</label>
 		<textarea
 			bind:value={$messageData.message}
 			name="message"
@@ -116,9 +120,19 @@
 			required
 		/>
 	</div>
-	<div id="privacy-wrapper">
-		<input bind:checked={privacyChecked} type="checkbox" name="privacy" id="privacy" required />
-		<label for="privacy"><p>{$LL.contact.form.privacy()}</p></label>
+	<div class="flex flex-row gap-2">
+		<input
+			class="p-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 mt-1
+			border-gray-300 focus:ring-gray-500 shadow"
+			bind:checked={privacyChecked}
+			type="checkbox"
+			name="privacy"
+			id="privacy"
+			required
+		/>
+		<label class="cursor-pointer select-none" for="privacy">
+			<p class="prose prose-sm max-w-none">{$LL.contact.form.privacy()}</p>
+		</label>
 	</div>
 	{#if !submitting}
 		<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
@@ -134,37 +148,15 @@
 <Notificator bind:this={notificator} />
 
 <style lang="postcss">
-	form {
-		@apply flex flex-col gap-6 w-full;
-		div {
-			@apply flex flex-col gap-2;
-			label:not([for='privacy']) {
-				@apply text-sm hidden;
-			}
-			input:not([id='privacy']),
-			textarea {
-				@apply p-3 border border-gray-300 shadow-md focus:outline-none focus:ring-2
+	input:not([id='privacy']),
+	textarea {
+		@apply p-3 border border-gray-300 shadow-md focus:outline-none focus:ring-2
 				focus:ring-offset-2 focus:ring-gray-500 placeholder:text-gray-400;
-				&:invalid:not(:placeholder-shown) {
-					@apply bg-red-50;
-				}
-				&:valid:not(:placeholder-shown) {
-					@apply bg-green-50;
-				}
-			}
+		&:invalid:not(:placeholder-shown) {
+			@apply bg-red-50;
 		}
-		#privacy-wrapper {
-			@apply flex flex-row;
-			input {
-				@apply p-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 mt-1
-				border-gray-300 focus:ring-gray-500 shadow;
-			}
-			label {
-				@apply cursor-pointer select-none;
-				p {
-					@apply prose prose-sm;
-				}
-			}
+		&:valid:not(:placeholder-shown) {
+			@apply bg-green-50;
 		}
 	}
 </style>
