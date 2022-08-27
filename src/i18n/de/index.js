@@ -194,7 +194,7 @@ const de = {
 	},
 	contact: {
 		title: 'Kontakt',
-		heading: 'Schreib uns.',
+		heading: 'Schreib uns',
 		subheading:
 			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.',
 		form: {
@@ -219,7 +219,7 @@ const de = {
 			}
 		},
 		contact_data: {
-			heading: 'Finde den Weg zu uns.',
+			heading: 'Finde den Weg zu uns',
 			subheading: `Besuche uns in unserem Büro/Showroom in Mönchengladbach. Parkplätze vorhanden.`,
 			address: `Neko Music & Media GmbH
 				Adolf-Kempken-Weg 95-99

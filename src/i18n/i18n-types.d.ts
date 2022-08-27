@@ -575,7 +575,7 @@ type RootTranslation = {
 		 */
 		title: string
 		/**
-		 * Schreib uns.
+		 * Schreib uns
 		 */
 		heading: string
 		/**
@@ -617,7 +617,7 @@ type RootTranslation = {
 			send_button: string
 			success_message: {
 				/**
-				 * Nachricht erfolgreich versendet!
+				 * Nachricht erfolgreich verschickt!
 				 */
 				heading: string
 				/**
@@ -627,7 +627,7 @@ type RootTranslation = {
 			}
 			failure_message: {
 				/**
-				 * Nachricht konnte nicht versendet werden!
+				 * Nachricht konnte nicht verschickt werden!
 				 */
 				heading: string
 				/**
@@ -638,7 +638,7 @@ type RootTranslation = {
 		}
 		contact_data: {
 			/**
-			 * Finde den Weg zu uns.
+			 * Finde den Weg zu uns
 			 */
 			heading: string
 			/**
@@ -1244,7 +1244,7 @@ export type TranslationFunctions = {
 		 */
 		title: () => LocalizedString
 		/**
-		 * Schreib uns.
+		 * Schreib uns
 		 */
 		heading: () => LocalizedString
 		/**
@@ -1286,7 +1286,7 @@ export type TranslationFunctions = {
 			send_button: () => LocalizedString
 			success_message: {
 				/**
-				 * Nachricht erfolgreich versendet!
+				 * Nachricht erfolgreich verschickt!
 				 */
 				heading: () => LocalizedString
 				/**
@@ -1296,7 +1296,7 @@ export type TranslationFunctions = {
 			}
 			failure_message: {
 				/**
-				 * Nachricht konnte nicht versendet werden!
+				 * Nachricht konnte nicht verschickt werden!
 				 */
 				heading: () => LocalizedString
 				/**
@@ -1307,7 +1307,7 @@ export type TranslationFunctions = {
 		}
 		contact_data: {
 			/**
-			 * Finde den Weg zu uns.
+			 * Finde den Weg zu uns
 			 */
 			heading: () => LocalizedString
 			/**

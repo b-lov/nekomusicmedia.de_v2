@@ -16,7 +16,7 @@
 </script>
 
 <footer class="bg-gray-800 text-gray-200 px-4 py-6 flex flex-col items-stretch gap-8">
-	<section class="flex flex-wrap gap-6 justify-between w-full max-w-4xl mx-auto">
+	<section class="flex flex-col sm:flex-row gap-6 justify-between w-full max-w-4xl mx-auto">
 		<div class="mx-auto flex flex-col gap-8">
 			<!-- Heading -->
 			<hgroup class="flex flex-col gap-2 text-center">
@@ -39,7 +39,7 @@
 		</div>
 
 		<!-- Links -->
-		<div class="flex flex-wrap gap-6 justify-between px-4 mx-auto w-full max-w-xs">
+		<div class="flex flex-wrap gap-6 justify-between px-4 mx-auto w-full max-w-sm sm:max-w-xs">
 			<ul class="flex flex-col gap-2 text-sm text-gray-400">
 				<h4 class="font-oswald uppercase text-gray-200">{$LL.footer.links()}</h4>
 				<a href="/{$locale}">{$LL.index.title()}</a>
@@ -49,7 +49,7 @@
 				<a href="/{$locale}/datenschutz">Datenschutz</a>
 				<a href="/{$locale}/agb">AGB</a>
 			</ul>
-			<ul class="flex flex-col gap-2 text-sm text-gray-400">
+			<ul class="flex flex-col gap-2 text-sm text-gray-400 text-right sm:text-left">
 				<h4 class="font-oswald uppercase text-gray-200">{$LL.footer.all_services()}</h4>
 				{#each services as service}
 					<a href="/{$locale}/services/{service}">{$LL.services.all[service].title()}</a>
