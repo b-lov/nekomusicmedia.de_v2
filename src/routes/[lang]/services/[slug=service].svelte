@@ -7,7 +7,7 @@
 
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import ServicePageArticle from './ServicePageArticle.svelte';
+	import ServicePageArticle from '$lib/ServicePageArticle.svelte';
 	import ServicePageHero from '$lib/ServicePageHero.svelte';
 	import ServicePageBullets from '$lib/ServicePageBullets.svelte';
 	import ServicePageQuote from '$lib/ServicePageQuote.svelte';
