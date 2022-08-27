@@ -5,15 +5,19 @@
 </script>
 
 <main class="flex flex-col items-center gap-8 px-4 py-8 max-w-4xl mx-auto">
-	<h2 class="font-oswald text-4xl leading-normal">{$LL.contact.heading()}</h2>
-	<p class="prose text-center" style="white-space: pre-line">{$LL.contact.subheading()}</p>
+	<hgroup class="flex flex-col items-center gap-2">
+		<h2 class="font-oswald text-4xl leading-normal">{$LL.contact.heading()}</h2>
+		<p class="prose text-center" style="white-space: pre-line">{$LL.contact.subheading()}</p>
+	</hgroup>
 
 	<ContactForm />
 
-	<h2 class="font-oswald text-4xl leading-normal">{$LL.contact.contact_data.heading()}</h2>
-	<p class="prose text-center" style="white-space: pre-line">
-		{$LL.contact.contact_data.subheading()}
-	</p>
+	<hgroup class="flex flex-col items-center gap-2">
+		<h2 class="font-oswald text-4xl leading-normal">{$LL.contact.contact_data.heading()}</h2>
+		<p class="prose text-center" style="white-space: pre-line">
+			{$LL.contact.contact_data.subheading()}
+		</p>
+	</hgroup>
 
 	<GoogleMap />
 
