@@ -1,4 +1,4 @@
-<!-- TODO: dont wrap buttons in links -->
+<!-- TODO: #20 dont wrap buttons in links -->
 <script>
 	export let dark = false;
 </script>
