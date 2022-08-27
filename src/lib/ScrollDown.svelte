@@ -1,4 +1,4 @@
-<button on:click class="relative w-12 pt-20 focus:outline-none focus:ring-2">
+<button on:click class="relative w-12 pt-20 focus:outline-none focus:ring-2 focus:ring-gray-800">
 	{#each [1, 2, 3] as item}
 		<span
 			class="absolute top-0 border-l border-b border-gray-100 opacity-0 box-border
