@@ -1,9 +1,9 @@
 <script>
 	import { locale } from '$i18n/i18n-svelte';
-	import NavButton from './Hamburger.svelte';
+	import DesktopNav from './DesktopNav.svelte';
+	import Hamburger from './Hamburger.svelte';
 	import Icon from './Icon.svelte';
-	import Navigation from './Navigation.svelte';
-	import { navMenuOpen } from './Navigation.svelte';
+	import MobileNav, { mobileNavOpen } from './MobileNav.svelte';
 
 	export let scrollOffset = 30;
 	export let scrollTolerance = 7;
@@ -19,7 +19,7 @@
 		if (scrollY < scrollOffset) return 'show';
 		if (Math.abs(scrolledAmount) <= scrollTolerance) return headerClass;
 		if (scrolledAmount < 0) {
-			navMenuOpen.set(false);
+			mobileNavOpen.set(false);
 			return 'hide';
 		}
 		return 'show';
@@ -31,23 +31,24 @@
 <header class={headerClass}>
 	<div>
 		<a href="/{$locale}"><Icon class="fill-gray-800" size={3.2} /></a>
-		<NavButton />
+		<Hamburger />
+		<DesktopNav />
 	</div>
-	<Navigation />
+	<MobileNav />
 </header>
 
 <style lang="postcss">
 	header {
 		@apply w-full bg-white fixed top-0 transition-transform duration-200 ease-linear z-10
 		shadow-lg;
-		div {
-			@apply flex justify-between items-center pl-3 overflow-hidden;
+		> div {
+			@apply h-20 flex justify-between items-center pl-3;
 		}
-	}
-	.show {
-		@apply translate-y-0;
-	}
-	.hide {
-		@apply -translate-y-full;
+		&.show {
+			@apply translate-y-0;
+		}
+		&.hide {
+			@apply -translate-y-full;
+		}
 	}
 </style>

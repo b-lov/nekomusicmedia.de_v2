@@ -7,15 +7,13 @@
 
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import Icon from '$lib/Icon.svelte';
+	import ServicePageArticle from '$lib/ServicePageArticle.svelte';
 	import ServicePageHero from '$lib/ServicePageHero.svelte';
 	import ServicePageBullets from '$lib/ServicePageBullets.svelte';
 	import ServicePageQuote from '$lib/ServicePageQuote.svelte';
 
 	/** @type { keyof import('$i18n/i18n-types').Translation['services']['all'] } */
 	export let slug;
-
-	const bullets = Object.values($LL.services.all[slug].bullets);
 </script>
 
 <ServicePageHero
@@ -26,25 +24,21 @@
 	image={$LL.services.all[slug].img_hero()}
 />
 
-<article>
-	<Icon name="info" size={3} class="fill-gray-800" />
-	<p style="white-space: pre-line;">{$LL.services.all[slug].par1()}</p>
-</article>
+<main class="flex flex-col items-center max-w-4xl mx-auto">
+	<section class="flex flex-row flex-wrap ">
+		<div class="sm:w-1/2">
+			<ServicePageArticle iconName="info" text={$LL.services.all[slug].par1()} />
+		</div>
 
-<ServicePageBullets {bullets} title={$LL.services.products_title()} />
+		<div class="sm:w-1/2 flex items-center justify-center mx-auto mt-6">
+			<ServicePageBullets
+				bullets={Object.values($LL.services.all[slug].bullets)}
+				title={$LL.services.products_title()}
+			/>
+		</div>
+	</section>
 
-<article>
-	<Icon name="rocket" size={3} class="fill-gray-800" />
-	<p style="white-space: pre-line;">{$LL.services.all[slug].par2()}</p>
-</article>
+	<ServicePageArticle iconName="rocket" text={$LL.services.all[slug].par2()} />
 
-<ServicePageQuote quote={$LL.services.all[slug].quote()} />
-
-<style lang="postcss">
-	article {
-		@apply flex flex-col gap-4 px-4 py-8;
-		p {
-			@apply prose;
-		}
-	}
-</style>
+	<ServicePageQuote quote={$LL.services.all[slug].quote()} />
+</main>

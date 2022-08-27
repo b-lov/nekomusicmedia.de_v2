@@ -16,28 +16,18 @@
 	subheading={$LL.about.subheading()}
 />
 
-<section>
+<main class="flex flex-col items-stretch gap-8 px-4 py-10 max-w-5xl mx-auto">
 	{#each examples as example}
-		<AboutCard
-			heading={$LL.about.texts[example].title()}
-			image={$LL.about.texts[example].img()}
-			text={$LL.about.texts[example].text_card()}
-		/>
-		<div id="paragraph">
-			<Icon class="fill-gray-800" size={3} name={example} />
-			<p>{$LL.about.texts[example].text()}</p>
-		</div>
+		<section class="flex flex-col gap-6 sm:flex-row sm:even:flex-row-reverse">
+			<AboutCard
+				heading={$LL.about.texts[example].title()}
+				image={$LL.about.texts[example].img()}
+				text={$LL.about.texts[example].text_card()}
+			/>
+			<div class="flex flex-col gap-6 p-4">
+				<Icon class="fill-gray-800" size={3} name={example} />
+				<p class="prose">{$LL.about.texts[example].text()}</p>
+			</div>
+		</section>
 	{/each}
-</section>
-
-<style lang="postcss">
-	section {
-		@apply flex flex-col items-start gap-6 px-4 pt-8 pb-4;
-		#paragraph {
-			@apply flex flex-col gap-6 p-4;
-			p {
-				@apply prose;
-			}
-		}
-	}
-</style>
+</main>

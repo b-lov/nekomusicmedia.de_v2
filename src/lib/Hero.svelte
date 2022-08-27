@@ -3,7 +3,6 @@
 
 	import { LL, locale } from '$i18n/i18n-svelte';
 	import ScrollDown from './ScrollDown.svelte';
-	import { browser } from '$app/env';
 
 	export let image = '/images/placeholder.webp';
 	export let heading = 'Title';
@@ -31,23 +30,24 @@
 <style lang="postcss">
 	section {
 		@apply relative;
-		img {
+		> img {
 			@apply absolute h-full w-full object-cover;
 		}
-		span {
+		> span {
 			@apply absolute h-full w-full bg-gray-800 opacity-75;
 		}
-		.outer {
+		> .outer {
 			@apply relative h-full flex flex-col justify-evenly items-center
 			text-neutral-100 gap-12 p-4 text-center;
 			/* minus header */
 			min-height: calc(100vh - 80px);
-			.inner {
+			> .inner {
 				@apply flex flex-col gap-10;
-				h1 {
-					@apply font-oswald text-4xl leading-normal;
+				> h1 {
+					@apply font-oswald text-4xl sm:text-5xl;
+					line-height: normal;
 				}
-				h3 {
+				> h3 {
 					@apply text-lg;
 				}
 			}

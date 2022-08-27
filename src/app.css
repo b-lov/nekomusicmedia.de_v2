@@ -166,3 +166,19 @@
 			url('/fonts/ibm-plex-sans-v14-latin_cyrillic-700italic.woff') format('woff');
 	}
 }
+
+@layer utilities {
+	.link-underline {
+		&::after {
+			@apply absolute w-full h-1 bg-gray-800 left-0 transition duration-200 ease-in-out transform scale-x-0;
+			content: '';
+			bottom: 8px;
+		}
+		&:hover:after {
+			@apply scale-x-75;
+		}
+		&.active:after {
+			@apply scale-x-75;
+		}
+	}
+}

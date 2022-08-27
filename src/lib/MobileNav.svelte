@@ -2,9 +2,9 @@
 	import { writable } from 'svelte/store';
 	import { navigating, page } from '$app/stores';
 
-	export const navMenuOpen = writable(false);
+	export const mobileNavOpen = writable(false);
 	export const toggleMenu = () => {
-		navMenuOpen.update((n) => (n = !n));
+		mobileNavOpen.update((n) => (n = !n));
 	};
 </script>
 
@@ -16,7 +16,7 @@
 	const links = ['about', 'services', 'contact'];
 
 	$: if ($navigating) {
-		navMenuOpen.set(false);
+		mobileNavOpen.set(false);
 	}
 
 	/** @param { HTMLElement } node */
@@ -24,7 +24,7 @@
 		/** @param { MouseEvent } event */
 		const handleClick = (event) => {
 			const header = /** @type { HTMLElement } */ (document.querySelector('header'));
-			if (!event.composedPath().includes(header)) navMenuOpen.set(false);
+			if (!event.composedPath().includes(header)) mobileNavOpen.set(false);
 		};
 		document.addEventListener('click', handleClick);
 		return {
@@ -35,7 +35,7 @@
 	};
 </script>
 
-{#if $navMenuOpen}
+{#if $mobileNavOpen}
 	<nav transition:slide use:closeOnClickOutsideHeader>
 		{#each links as link}
 			<a class:active={$page.url.pathname.includes(`/${$locale}/${link}`)} href="/{$locale}/{link}">

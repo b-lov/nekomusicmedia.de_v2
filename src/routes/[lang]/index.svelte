@@ -15,41 +15,52 @@
 	subheading={$LL.index.subheading()}
 />
 
-{#each examples as example}
-	<section>
-		<div>
-			<h2>{$LL.index.examples[example].title()}</h2>
-			<h3>{$LL.index.examples[example].subtitle()}</h3>
-		</div>
-		<img src={$LL.index.examples[example].img()} alt="" />
-		<p>{$LL.index.examples[example].text()}</p>
-		<a href="/{$locale}/contact"><Button dark>{$LL.contact_button_offer()}</Button></a>
-	</section>
-{/each}
+<main>
+	{#each examples as example}
+		<section>
+			<article>
+				<div>
+					<h2>{$LL.index.examples[example].title()}</h2>
+					<h3>{$LL.index.examples[example].subtitle()}</h3>
+				</div>
+				<img src={$LL.index.examples[example].img()} alt="" />
+				<p>{$LL.index.examples[example].text()}</p>
+				<a href="/{$locale}/contact"><Button dark>{$LL.contact_button_offer()}</Button></a>
+			</article>
+			<img src={$LL.index.examples[example].img()} alt="" />
+		</section>
+	{/each}
+</main>
 
 <style lang="postcss">
-	section {
-		@apply flex flex-col gap-6 p-4;
-		&:last-child {
-			@apply pb-8;
-		}
-		div {
-			@apply flex flex-col gap-2;
-			h2 {
-				@apply font-oswald text-3xl leading-normal;
+	main {
+		@apply max-w-5xl mx-auto px-4 py-8 sm:py-12 flex flex-col gap-8 sm:gap-16;
+		> section {
+			@apply flex flex-row even:flex-row-reverse gap-8;
+			> article {
+				@apply flex flex-col gap-6 sm:w-1/2 justify-between;
+				> div {
+					@apply font-oswald flex flex-col gap-2;
+					> h2 {
+						@apply text-3xl;
+					}
+					> h3 {
+						@apply text-xl text-gray-500 font-light;
+					}
+				}
+				> img {
+					@apply shadow-lg sm:hidden;
+				}
+				> p {
+					@apply prose;
+				}
+				> a {
+					@apply self-start;
+				}
 			}
-			h3 {
-				@apply text-xl text-gray-500 font-oswald font-light;
+			> img {
+				@apply hidden sm:block w-1/2 object-cover shadow-xl;
 			}
-		}
-		img {
-			@apply shadow-lg;
-		}
-		p {
-			@apply prose;
-		}
-		a {
-			@apply self-start;
 		}
 	}
 </style>

@@ -10,19 +10,15 @@
 	<title>{$LL.services.title()}</title>
 </svelte:head>
 
-<section>
+<main class="flex flex-row flex-wrap px-2 py-8 justify-center max-w-6xl mx-auto">
 	{#each services as service}
-		<ServiceCard
-			title={$LL.services.all[service].title()}
-			teaser={$LL.services.all[service].teaser()}
-			link="/{$locale}/services/{service}"
-			img={$LL.services.all[service].img_card()}
-		/>
+		<div class="sm:w-1/2 lg:w-1/3 p-2">
+			<ServiceCard
+				title={$LL.services.all[service].title()}
+				teaser={$LL.services.all[service].teaser()}
+				link="/{$locale}/services/{service}"
+				img={$LL.services.all[service].img_card()}
+			/>
+		</div>
 	{/each}
-</section>
-
-<style lang="postcss">
-	section {
-		@apply flex flex-col gap-8 px-4 py-8;
-	}
-</style>
+</main>
