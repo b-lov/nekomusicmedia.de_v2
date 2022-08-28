@@ -65,3 +65,9 @@
 		<p>{$LL.footer.copyright({ year: new Date().getFullYear() })}</p>
 	</copyright>
 </footer>
+
+<style lang="postcss">
+	a {
+		@apply hover:opacity-75 transition-opacity duration-300;
+	}
+</style>
