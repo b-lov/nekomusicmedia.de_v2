@@ -36,23 +36,15 @@
 </script>
 
 {#if $mobileNavOpen}
-	<nav transition:slide use:closeOnClickOutsideHeader>
+	<nav class="flex flex-col" transition:slide use:closeOnClickOutsideHeader>
 		{#each links as link}
-			<a class:active={$page.url.pathname.includes(`/${$locale}/${link}`)} href="/{$locale}/{link}">
+			<a
+				class="p-4 font-oswald text-lg uppercase w-full text-right pr-6 text-gray-800"
+				class:underline={$page.url.pathname.includes(`/${$locale}/${link}`)}
+				href="/{$locale}/{link}"
+			>
 				{$LL[link].title()}
 			</a>
 		{/each}
 	</nav>
 {/if}
-
-<style lang="postcss">
-	nav {
-		@apply flex flex-col;
-		a {
-			@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6 text-gray-800;
-		}
-		.active {
-			@apply underline;
-		}
-	}
-</style>

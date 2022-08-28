@@ -20,7 +20,7 @@
 		text-neutral-100 gap-12 p-4 text-center min-h-[calc(100vh_-_80px)]"
 	>
 		<hgroup class="flex flex-col gap-10">
-			<h1 class="font-oswald text-4xl sm:text-5xl">{heading}</h1>
+			<h1 class="font-oswald text-4xl sm:text-5xl leading-normal">{heading}</h1>
 			<h3 class="text-lg">{subheading}</h3>
 		</hgroup>
 		<a href="/{$locale}/contact" class="button-light">{$LL.contact_button()}</a>
