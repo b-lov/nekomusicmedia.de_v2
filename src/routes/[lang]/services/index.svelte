@@ -12,7 +12,7 @@
 
 <main class="flex flex-row flex-wrap px-2 py-8 justify-center max-w-6xl mx-auto">
 	{#each services as service}
-		<div class="sm:w-1/2 lg:w-1/3 p-2">
+		<div class="sm:w-1/2 lg:w-1/3 p-2 lg:p-3">
 			<ServiceCard
 				title={$LL.services.all[service].title()}
 				teaser={$LL.services.all[service].teaser()}

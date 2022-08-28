@@ -2,7 +2,6 @@
 	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
 	import LL from '$i18n/i18n-svelte';
-	import Button from './Button.svelte';
 	import Notificator from './Notificator.svelte';
 	import Spinner from './Spinner.svelte';
 
@@ -135,9 +134,9 @@
 		</label>
 	</div>
 	{#if !submitting}
-		<Button on:mousedown={() => trimWhitespace()} class="self-center" dark>
+		<button on:mousedown={() => trimWhitespace()} class="self-center button-dark">
 			{$LL.contact.form.send_button()}
-		</Button>
+		</button>
 	{:else}
 		<div class="self-center">
 			<Spinner />

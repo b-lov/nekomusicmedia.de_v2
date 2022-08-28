@@ -1,8 +1,6 @@
 <script>
 	import Hero from '$lib/Hero.svelte';
-
 	import { LL, locale } from '$i18n/i18n-svelte';
-	import Button from '$lib/Button.svelte';
 
 	const examples =
 		/** @type {Array.<keyof import('$i18n/i18n-types').Translation['index']['examples']>} */
