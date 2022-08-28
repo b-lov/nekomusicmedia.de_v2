@@ -4,3 +4,6 @@ TODO: add translations
 TODO: turn link buttons into anchors
 TODO: add dark mode
 TODO: remove unneeded tailwind applys
+TODO: add tawk chat
+TODO: work through edge issues/suggestions
+TODO: fix the anchor tag/button problem you loser
