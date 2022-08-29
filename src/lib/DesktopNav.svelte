@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import { LL, locale } from '$i18n/i18n-svelte';
+	import NavLink from './NavLink.svelte';
 	import ServicesNav from './ServicesNav.svelte';
 	import { servicesNavOpen } from './ServicesNav.svelte';
 
@@ -15,13 +16,7 @@
 			on:mouseenter={() => link === 'services' && servicesNavOpen.set(true)}
 			on:mouseleave={() => servicesNavOpen.set(false)}
 		>
-			<a
-				class="relative p-4 font-oswald text-lg uppercase text-gray-800 link-underline"
-				class:active={$page.url.pathname.includes(`/${$locale}/${link}`)}
-				href="/{$locale}/{link}"
-			>
-				{$LL[link].title()}
-			</a>
+			<NavLink link="/{$locale}/{link}" text={$LL[link].title()} />
 			{#if link === 'services'}
 				<ServicesNav />
 			{/if}
