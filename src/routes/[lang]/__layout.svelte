@@ -11,14 +11,7 @@
 </script>
 
 <Header />
-<main>
+<main class="pt-20">
 	<slot />
 </main>
 <Footer />
-
-<style lang="postcss">
-	main {
-		/* minus header */
-		@apply pt-20;
-	}
-</style>

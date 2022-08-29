@@ -167,18 +167,21 @@
 	}
 }
 
+@layer components {
+	.button {
+		@apply font-oswald px-6 py-4 font-normal shadow-md tracking-wide transition duration-300
+		focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2;
+	}
+	.button-dark {
+		@apply button bg-gray-800 hover:bg-gray-600 text-gray-100;
+	}
+	.button-light {
+		@apply button bg-gray-100 hover:bg-gray-300 text-gray-800;
+	}
+}
+
 @layer utilities {
-	.link-underline {
-		&::after {
-			@apply absolute w-full h-1 bg-gray-800 left-0 transition duration-200 ease-in-out transform scale-x-0;
-			content: '';
-			bottom: 8px;
-		}
-		&:hover:after {
-			@apply scale-x-75;
-		}
-		&.active:after {
-			@apply scale-x-75;
-		}
+	.footer-shadow {
+		box-shadow: 0 -20px 25px -5px rgb(0 0 0 / 10%), 0 -8px 10px -6px rgb(0 0 0 / 10%);
 	}
 }

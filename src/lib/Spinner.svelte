@@ -1,28 +1,6 @@
-<div>
-	<span id="outside" />
-	<span id="inside" />
+<div class="relative w-14 h-14 flex items-center justify-center overflow-hidden">
+	<span class="absolute block w-12 h-12 rounded-full border-4 border-gray-300" />
+	<span
+		class="animate-spin absolute block w-12 h-12 rounded-full border-4 border-transparent border-t-gray-800"
+	/>
 </div>
-
-<style lang="postcss">
-	div {
-		@apply relative w-14 h-14 flex items-center justify-center overflow-hidden;
-		span {
-			@apply absolute block w-12 h-12 rounded-full border-4 border-black;
-		}
-		#outside {
-			@apply border-gray-300;
-		}
-		#inside {
-			@apply border-transparent border-t-gray-800;
-			animation: rotate 1s linear infinite;
-		}
-		@keyframes rotate {
-			from {
-				transform: rotate(0deg);
-			}
-			to {
-				transform: rotate(359deg);
-			}
-		}
-	}
-</style>

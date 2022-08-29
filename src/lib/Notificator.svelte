@@ -8,21 +8,20 @@
 	let visible = false;
 	const duration = 5000;
 
+	// TODO: dont notify again if notify function already running
+	// TODO: allow multiple notifications to be queued, work with arrays
 	/**
 	 * @param { 'success' | 'error' | 'info'} newType
 	 * @param { String } newHeading
 	 * @param { String } newSubheading
 	 */
-	// TODO: dont notify again if notify function already running
 	export const notify = (newType, newHeading, newSubheading) => {
-		// console.log('start notify');
 		type = newType;
 		heading = newHeading;
 		subheading = newSubheading;
 		visible = true;
 		setTimeout(() => {
 			visible = false;
-			// console.log('end notify');
 		}, duration);
 	};
 
@@ -39,31 +38,22 @@
 </script>
 
 {#if visible}
-	<article out:fly in:slide class={setColors()}>
-		<h1>{heading}</h1>
-		<p>{@html subheading}</p>
-		<div id="bar">
-			<span style="animation-duration: {duration}ms;" class={setColors('bar')} />
+	<article
+		out:fly
+		in:slide
+		class="{setColors()} fixed bottom-0 right-0 m-4 flex flex-col gap-2 p-3 pb-5 text-right shadow-lg"
+	>
+		<h1 class="text-sm text-gray-300 font-medium">{heading}</h1>
+		<p class="text-xs text-gray-300">{@html subheading}</p>
+		<div class="absolute flex h-1.5 w-full bottom-0 left-0">
+			<span style="animation-duration: {duration}ms;" class="{setColors('bar')} h-full w-full" />
 		</div>
 	</article>
 {/if}
 
 <style lang="postcss">
-	article {
-		@apply fixed bottom-0 right-0 m-4 flex flex-col gap-2 p-3 pb-5 text-right shadow-lg;
-		h1 {
-			@apply text-sm text-gray-300 font-medium;
-		}
-		p {
-			@apply text-xs text-gray-300;
-		}
-		#bar {
-			@apply absolute flex h-1.5 w-full bottom-0 left-0;
-			span {
-				@apply h-full w-full;
-				animation: bar-animation linear forwards;
-			}
-		}
+	span {
+		animation: bar-animation linear forwards;
 	}
 	@keyframes bar-animation {
 		form {

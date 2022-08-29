@@ -5,50 +5,36 @@
 	import Icon from './Icon.svelte';
 	import MobileNav, { mobileNavOpen } from './MobileNav.svelte';
 
-	export let scrollOffset = 30;
-	export let scrollTolerance = 7;
-
-	let headerClass = 'show';
+	let headerState = 'show';
+	let scrollOffset = 30;
+	let scrollTolerance = 7;
 	let scrollY = 0;
 	let lastY = 0;
 	let scrolledAmount = 0;
 
-	$: headerClass = (() => {
+	$: headerState = (() => {
 		scrolledAmount = lastY === 0 ? 0 : lastY - scrollY;
 		lastY = scrollY;
 		if (scrollY < scrollOffset) return 'show';
-		if (Math.abs(scrolledAmount) <= scrollTolerance) return headerClass;
+		if (Math.abs(scrolledAmount) <= scrollTolerance) return headerState;
 		if (scrolledAmount < 0) {
 			mobileNavOpen.set(false);
-			return 'hide';
+			return '-translate-y-full';
 		}
-		return 'show';
+		return 'translate-y-0';
 	})();
 </script>
 
 <svelte:window bind:scrollY />
 
-<header class={headerClass}>
-	<div>
+<header
+	class="{headerState} w-full bg-white fixed top-0 transition-transform duration-200
+	  ease-linear z-10 shadow-lg"
+>
+	<div class="h-20 flex justify-between items-center pl-3">
 		<a href="/{$locale}"><Icon class="fill-gray-800" size={3.2} /></a>
 		<Hamburger />
 		<DesktopNav />
 	</div>
 	<MobileNav />
 </header>
-
-<style lang="postcss">
-	header {
-		@apply w-full bg-white fixed top-0 transition-transform duration-200 ease-linear z-10
-		shadow-lg;
-		> div {
-			@apply h-20 flex justify-between items-center pl-3;
-		}
-		&.show {
-			@apply translate-y-0;
-		}
-		&.hide {
-			@apply -translate-y-full;
-		}
-	}
-</style>

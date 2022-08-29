@@ -11,6 +11,7 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
 	import { slide } from 'svelte/transition';
+	import NavLink from './NavLink.svelte';
 
 	/** @type { Array.<keyof Pick<import('$i18n/i18n-types').Translation, 'about' | 'services' | 'contact'>> } */
 	const links = ['about', 'services', 'contact'];
@@ -36,23 +37,9 @@
 </script>
 
 {#if $mobileNavOpen}
-	<nav transition:slide use:closeOnClickOutsideHeader>
+	<nav class="flex flex-col" transition:slide use:closeOnClickOutsideHeader>
 		{#each links as link}
-			<a class:active={$page.url.pathname.includes(`/${$locale}/${link}`)} href="/{$locale}/{link}">
-				{$LL[link].title()}
-			</a>
+			<NavLink link="/{$locale}/{link}" text={$LL[link].title()} />
 		{/each}
 	</nav>
 {/if}
-
-<style lang="postcss">
-	nav {
-		@apply flex flex-col;
-		a {
-			@apply p-4 font-oswald text-lg uppercase w-full text-right pr-6 text-gray-800;
-		}
-		.active {
-			@apply underline;
-		}
-	}
-</style>

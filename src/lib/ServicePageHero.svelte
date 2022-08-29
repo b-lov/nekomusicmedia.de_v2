@@ -1,6 +1,4 @@
 <script>
-	import Button from './Button.svelte';
-
 	export let heading = '';
 	export let subheading = '';
 	export let link = '';
@@ -8,39 +6,18 @@
 	export let image = '';
 </script>
 
-<article>
-	<img src={image} alt="" />
-	<span />
-	<div>
-		<h1>{heading}</h1>
-		<h3>{subheading}</h3>
+<article class="relative flex flex-col items-center justify-center p-4 py-10 gap-20">
+	<img class="absolute w-full h-full object-cover" src={image} alt="" />
+	<span class="absolute w-full h-full bg-gray-800 opacity-75" />
+	<div class="relative text-center flex flex-col gap-6">
+		<h1 class="text-gray-100 font-oswald text-5xl">{heading}</h1>
+		<h3 class="text-gray-100 text-xl">{subheading}</h3>
 	</div>
-	<a href={link}>
-		<Button>{button_text}</Button>
-	</a>
+	<a href={link} class="button-light relative">{button_text}</a>
 </article>
 
 <style lang="postcss">
-	article {
-		@apply relative flex flex-col items-center justify-center p-4 py-10 gap-20;
-		img {
-			@apply absolute w-full h-full object-cover;
-		}
-		span {
-			@apply absolute w-full h-full bg-gray-800 opacity-75;
-		}
-		div {
-			@apply relative text-center flex flex-col gap-6;
-			h1 {
-				@apply text-gray-100 font-oswald text-5xl;
-				hyphens: auto;
-			}
-			h3 {
-				@apply text-gray-100 text-xl;
-			}
-		}
-		a {
-			@apply relative;
-		}
+	h1 {
+		hyphens: auto;
 	}
 </style>
