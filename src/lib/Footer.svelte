@@ -15,7 +15,6 @@
 	];
 </script>
 
-<!-- TODO: footer shadow -->
 <footer class="bg-gray-800 text-gray-200 px-4 py-6 flex flex-col items-stretch gap-8 footer-shadow">
 	<section class="flex flex-col sm:flex-row gap-6 justify-between w-full max-w-4xl mx-auto">
 		<div class="mx-auto flex flex-col gap-8">
