@@ -13,8 +13,6 @@
 	import { slide } from 'svelte/transition';
 	import NavLink from './NavLink.svelte';
 
-	// /** @type { Array.<keyof Pick<import('$i18n/i18n-types').Translation, 'about' | 'services' | 'contact'>> } */
-	// const links = ['about', 'services', 'contact'];
 	/** @type { Array.<keyof Pick<import('$i18n/i18n-types').Translation, 'about' | 'services' | 'catalog' | 'contact'>> } */
 	const links = ['about', 'services', 'catalog', 'contact'];
 
