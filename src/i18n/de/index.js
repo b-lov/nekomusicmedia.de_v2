@@ -192,6 +192,9 @@ const de = {
 			}
 		}
 	},
+	catalog: {
+		title: 'Mietkatalog'
+	},
 	contact: {
 		title: 'Kontakt',
 		heading: 'Schreib uns',

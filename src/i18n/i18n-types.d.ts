@@ -569,6 +569,12 @@ type RootTranslation = {
 			}
 		}
 	}
+	catalog: {
+		/**
+		 * Mietkatalog
+		 */
+		title: string
+	}
 	contact: {
 		/**
 		 * Kontakt
@@ -1237,6 +1243,12 @@ export type TranslationFunctions = {
 				img_hero: () => LocalizedString
 			}
 		}
+	}
+	catalog: {
+		/**
+		 * Mietkatalog
+		 */
+		title: () => LocalizedString
 	}
 	contact: {
 		/**
