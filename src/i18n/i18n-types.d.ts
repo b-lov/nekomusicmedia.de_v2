@@ -569,6 +569,156 @@ type RootTranslation = {
 			}
 		}
 	}
+	catalog: {
+		/**
+		 * Mietkatalog
+		 */
+		title: string
+		table: {
+			/**
+			 * Hersteller
+			 */
+			manufacturer: string
+			/**
+			 * Modell
+			 */
+			model: string
+			/**
+			 * Tagespreis brutto
+			 */
+			price: string
+		}
+		categories: {
+			sound: {
+				/**
+				 * Sound
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Lautsprecher
+					 */
+					speakers: string
+				}
+			}
+			microphones: {
+				/**
+				 * Mikrofonie & Monitoring
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Kabellos
+					 */
+					wireless: string
+					/**
+					 * Kabelgebunden
+					 */
+					wired: string
+				}
+			}
+			mixers: {
+				/**
+				 * Mischpulte
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Analog
+					 */
+					analogue: string
+					/**
+					 * Digital
+					 */
+					digital: string
+					/**
+					 * DJ
+					 */
+					dj: string
+				}
+			}
+			light: {
+				/**
+				 * Licht & Atmosphäre
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Moving Light
+					 */
+					moving: string
+					/**
+					 * Stage Light
+					 */
+					stage: string
+					/**
+					 * Lightcontroller
+					 */
+					controller: string
+					/**
+					 * Akku
+					 */
+					battery: string
+					/**
+					 * Nebel- & Effektmaschinen
+					 */
+					effects: string
+				}
+			}
+			video: {
+				/**
+				 * Video
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Beamer
+					 */
+					projectors: string
+					/**
+					 * Leinwände
+					 */
+					screens: string
+				}
+			}
+			recording: {
+				/**
+				 * Recording
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Audio-Midi Interfaces
+					 */
+					interfaces: string
+					/**
+					 * Monitoring
+					 */
+					monitoring: string
+				}
+			}
+			michellaneous: {
+				/**
+				 * Weiteres
+				 */
+				title: string
+				subcategories: {
+					/**
+					 * Strom
+					 */
+					electronics: string
+					/**
+					 * Bühne
+					 */
+					stage: string
+					/**
+					 * Ständer & Stative
+					 */
+					stands: string
+				}
+			}
+		}
+	}
 	contact: {
 		/**
 		 * Kontakt
@@ -1235,6 +1385,156 @@ export type TranslationFunctions = {
 				 * /img/services/webp/service_hero.webp
 				 */
 				img_hero: () => LocalizedString
+			}
+		}
+	}
+	catalog: {
+		/**
+		 * Mietkatalog
+		 */
+		title: () => LocalizedString
+		table: {
+			/**
+			 * Hersteller
+			 */
+			manufacturer: () => LocalizedString
+			/**
+			 * Modell
+			 */
+			model: () => LocalizedString
+			/**
+			 * Tagespreis brutto
+			 */
+			price: () => LocalizedString
+		}
+		categories: {
+			sound: {
+				/**
+				 * Sound
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Lautsprecher
+					 */
+					speakers: () => LocalizedString
+				}
+			}
+			microphones: {
+				/**
+				 * Mikrofonie & Monitoring
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Kabellos
+					 */
+					wireless: () => LocalizedString
+					/**
+					 * Kabelgebunden
+					 */
+					wired: () => LocalizedString
+				}
+			}
+			mixers: {
+				/**
+				 * Mischpulte
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Analog
+					 */
+					analogue: () => LocalizedString
+					/**
+					 * Digital
+					 */
+					digital: () => LocalizedString
+					/**
+					 * DJ
+					 */
+					dj: () => LocalizedString
+				}
+			}
+			light: {
+				/**
+				 * Licht & Atmosphäre
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Moving Light
+					 */
+					moving: () => LocalizedString
+					/**
+					 * Stage Light
+					 */
+					stage: () => LocalizedString
+					/**
+					 * Lightcontroller
+					 */
+					controller: () => LocalizedString
+					/**
+					 * Akku
+					 */
+					battery: () => LocalizedString
+					/**
+					 * Nebel- & Effektmaschinen
+					 */
+					effects: () => LocalizedString
+				}
+			}
+			video: {
+				/**
+				 * Video
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Beamer
+					 */
+					projectors: () => LocalizedString
+					/**
+					 * Leinwände
+					 */
+					screens: () => LocalizedString
+				}
+			}
+			recording: {
+				/**
+				 * Recording
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Audio-Midi Interfaces
+					 */
+					interfaces: () => LocalizedString
+					/**
+					 * Monitoring
+					 */
+					monitoring: () => LocalizedString
+				}
+			}
+			michellaneous: {
+				/**
+				 * Weiteres
+				 */
+				title: () => LocalizedString
+				subcategories: {
+					/**
+					 * Strom
+					 */
+					electronics: () => LocalizedString
+					/**
+					 * Bühne
+					 */
+					stage: () => LocalizedString
+					/**
+					 * Ständer & Stative
+					 */
+					stands: () => LocalizedString
+				}
 			}
 		}
 	}

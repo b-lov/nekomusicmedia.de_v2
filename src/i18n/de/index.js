@@ -192,6 +192,69 @@ const de = {
 			}
 		}
 	},
+	catalog: {
+		title: 'Mietkatalog',
+		table: {
+			manufacturer: 'Hersteller',
+			model: 'Modell',
+			price: 'Tagespreis brutto'
+		},
+		categories: {
+			sound: {
+				title: 'Sound',
+				subcategories: {
+					speakers: 'Lautsprecher'
+				}
+			},
+			microphones: {
+				title: 'Mikrofonie & Monitoring',
+				subcategories: {
+					wireless: 'Kabellos',
+					wired: 'Kabelgebunden'
+				}
+			},
+			mixers: {
+				title: 'Mischpulte',
+				subcategories: {
+					analogue: 'Analog',
+					digital: 'Digital',
+					dj: 'DJ'
+				}
+			},
+			light: {
+				title: 'Licht & Atmosphäre',
+				subcategories: {
+					moving: 'Moving Light',
+					stage: 'Stage Light',
+					controller: 'Lightcontroller',
+					battery: 'Akku',
+					effects: 'Nebel- & Effektmaschinen'
+				}
+			},
+			video: {
+				title: 'Video',
+				subcategories: {
+					projectors: 'Beamer',
+					screens: 'Leinwände'
+				}
+			},
+			recording: {
+				title: 'Recording',
+				subcategories: {
+					interfaces: 'Audio-Midi Interfaces',
+					monitoring: 'Monitoring'
+				}
+			},
+			michellaneous: {
+				title: 'Weiteres',
+				subcategories: {
+					electronics: 'Strom',
+					stage: 'Bühne',
+					stands: 'Ständer & Stative'
+				}
+			}
+		}
+	},
 	contact: {
 		title: 'Kontakt',
 		heading: 'Schreib uns',

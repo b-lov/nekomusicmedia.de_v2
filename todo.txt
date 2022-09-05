@@ -1,10 +1,10 @@
-TODO: create rent catalogue route
+TODO: #24 create rent catalogue route
 TODO: enhance and add language switcher
 TODO: add translations
 TODO: turn link buttons into anchors
 TODO: add dark mode
 TODO: add tawk chat
 TODO: work through edge issues/suggestions
-TODO: #22 fix the anchor tag/button problem you loser
+TODO: seo
 TODO: fun intersectionobserver stuff
 TODO: put fonts in separate css

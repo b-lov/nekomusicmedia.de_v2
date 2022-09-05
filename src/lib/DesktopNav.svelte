@@ -5,8 +5,8 @@
 	import ServicesNav from './ServicesNav.svelte';
 	import { servicesNavOpen } from './ServicesNav.svelte';
 
-	/** @type { Array.<keyof Pick<import('$i18n/i18n-types').Translation, 'about' | 'services' | 'contact'>> } */
-	const links = ['about', 'services', 'contact'];
+	/** @type { Array.<keyof Pick<import('$i18n/i18n-types').Translation, 'about' | 'services' | 'catalog' | 'contact'>> } */
+	const links = ['about', 'services', 'catalog', 'contact'];
 </script>
 
 <nav class="hidden sm:flex">

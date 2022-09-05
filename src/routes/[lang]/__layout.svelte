@@ -10,8 +10,10 @@
 	};
 </script>
 
-<Header />
-<main class="pt-20">
-	<slot />
-</main>
-<Footer />
+<div class="flex flex-col min-h-screen">
+	<Header />
+	<main class="pt-20 flex-grow">
+		<slot />
+	</main>
+	<Footer />
+</div>
