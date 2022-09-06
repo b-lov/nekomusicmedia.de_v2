@@ -8,7 +8,7 @@
 <script>
 	import { LL, locale } from '$i18n/i18n-svelte';
 	import ServicePageArticle from '$lib/ServicePageArticle.svelte';
-	import ServicePageHero from '$lib/ServicePageHero.svelte';
+	import HalfHero from '$lib/HalfHero.svelte';
 	import ServicePageBullets from '$lib/ServicePageBullets.svelte';
 	import ServicePageQuote from '$lib/ServicePageQuote.svelte';
 
@@ -16,9 +16,10 @@
 	export let slug;
 </script>
 
-<ServicePageHero
+<HalfHero
 	heading={$LL.services.all[slug].title()}
 	subheading={$LL.services.all[slug].subtitle()}
+	button
 	link="/{$locale}/contact"
 	button_text={$LL.contact_button_offer()}
 	image={$LL.services.all[slug].img_hero()}
