@@ -1,6 +1,7 @@
 <script>
 	import items from './catalog';
 	import LL from '$i18n/i18n-svelte';
+	import Hero from '$lib/Hero.svelte';
 
 	var formatter = new Intl.NumberFormat('de-DE', {
 		style: 'currency',
@@ -27,6 +28,12 @@
 		return $LL.catalog.categories[categoryName].subcategories[subcategoryName]();
 	};
 </script>
+
+<Hero
+	image={$LL.catalog.img_hero()}
+	heading={$LL.catalog.heading()}
+	subheading={$LL.catalog.subheading()}
+/>
 
 <main
 	class="prose max-w-4xl mx-auto px-4 py-8 prose-h1:font-oswald prose-h2:font-oswald prose-headings:font-medium"

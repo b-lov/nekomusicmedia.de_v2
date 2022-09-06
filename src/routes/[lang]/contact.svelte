@@ -2,14 +2,16 @@
 	import LL from '$i18n/i18n-svelte';
 	import ContactForm from '$lib/ContactForm.svelte';
 	import GoogleMap from '$lib/GoogleMap.svelte';
+	import HalfHero from '$lib/HalfHero.svelte';
 </script>
 
-<main class="flex flex-col items-center gap-8 px-4 py-8 max-w-4xl mx-auto">
-	<hgroup class="flex flex-col items-center gap-2">
-		<h2 class="font-oswald text-4xl leading-normal">{$LL.contact.heading()}</h2>
-		<p class="prose text-center" style="white-space: pre-line">{$LL.contact.subheading()}</p>
-	</hgroup>
+<HalfHero
+	heading={$LL.contact.heading()}
+	subheading={$LL.contact.subheading()}
+	image={$LL.contact.img_hero()}
+/>
 
+<main class="flex flex-col items-center gap-8 px-4 py-8 max-w-4xl mx-auto">
 	<ContactForm />
 
 	<hgroup class="flex flex-col items-center gap-2">
