@@ -1,3 +1,4 @@
+TODO: #26 add heros to services, catalog and contact
 TODO: #24 create rent catalogue route
 TODO: enhance and add language switcher
 TODO: add translations
