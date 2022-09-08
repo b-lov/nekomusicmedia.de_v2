@@ -25,8 +25,8 @@
 	image={$LL.services.all[slug].img_hero()}
 />
 
-<main class="flex flex-col items-center max-w-4xl mx-auto">
-	<section class="flex flex-row flex-wrap ">
+<main class="flex flex-col items-center max-w-4xl mx-auto sm:pb-6 sm:pt-4 gap-6">
+	<section class="flex flex-row flex-wrap">
 		<div class="sm:w-1/2">
 			<ServicePageArticle iconName="info" text={$LL.services.all[slug].par1()} />
 		</div>
