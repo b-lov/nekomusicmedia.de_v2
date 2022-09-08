@@ -8,9 +8,9 @@ const de = {
 	contact_button_offer: 'kostenlos Angebot anfordern',
 	index: {
 		title: 'Startseite',
-		heading: 'Dein Auftrag ist unser Antrieb!',
+		heading: 'Dein Auftrag ist unser Antrieb',
 		subheading:
-			'NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.',
+			'NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management',
 		img_hero: '/img/index/webp/hero.webp',
 		examples: {
 			events: {
@@ -42,7 +42,7 @@ const de = {
 	about: {
 		title: 'Über uns',
 		heading: 'Erfahren. Persönlich. Vielseitig. Servicestark.',
-		subheading: 'Unsere Leitsätze für Deinen Erfolg!',
+		subheading: 'Unsere Leitsätze für Deinen Erfolg',
 		img_hero: '/img/about/webp/hero.webp',
 		texts: {
 			experienced: {
@@ -77,6 +77,9 @@ const de = {
 	},
 	services: {
 		title: 'Leistungen',
+		heading: 'Alles rund um Dein Event',
+		subheading: 'Schöpfe aus unserem umfangreichen Serviceangebot',
+		img_hero: '/img/services/webp/hero.webp',
 		more_button: 'mehr erfahren',
 		products_title: 'Produktpalette',
 		all: {
@@ -194,6 +197,9 @@ const de = {
 	},
 	catalog: {
 		title: 'Mietkatalog',
+		heading: 'Mieten statt kaufen',
+		subheading: 'Wir stellen eine breite Palette an Equipment für Dein Event zur Verfügung.',
+		img_hero: '/img/catalog/webp/hero.webp',
 		table: {
 			manufacturer: 'Hersteller',
 			model: 'Modell',
@@ -257,9 +263,10 @@ const de = {
 	},
 	contact: {
 		title: 'Kontakt',
-		heading: 'Schreib uns',
+		heading: 'Melde Dich',
 		subheading:
-			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.',
+			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir antworten so schnell wie möglich, versprochen!',
+		img_hero: '/img/contact/webp/hero.webp',
 		form: {
 			name: 'Name',
 			name_error:

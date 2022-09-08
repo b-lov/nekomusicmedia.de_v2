@@ -27,11 +27,11 @@ type RootTranslation = {
 		 */
 		title: string
 		/**
-		 * Dein Auftrag ist unser Antrieb!
+		 * Dein Auftrag ist unser Antrieb
 		 */
 		heading: string
 		/**
-		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
+		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management
 		 */
 		subheading: string
 		/**
@@ -123,7 +123,7 @@ type RootTranslation = {
 		 */
 		heading: string
 		/**
-		 * Unsere Leitsätze für Deinen Erfolg!
+		 * Unsere Leitsätze für Deinen Erfolg
 		 */
 		subheading: string
 		/**
@@ -210,6 +210,18 @@ type RootTranslation = {
 		 * Leistungen
 		 */
 		title: string
+		/**
+		 * Alles rund um Dein Event
+		 */
+		heading: string
+		/**
+		 * Schöpfe aus unserem umfangreichen Serviceangebot
+		 */
+		subheading: string
+		/**
+		 * /img/services/webp/hero.webp
+		 */
+		img_hero: string
 		/**
 		 * mehr erfahren
 		 */
@@ -574,6 +586,18 @@ type RootTranslation = {
 		 * Mietkatalog
 		 */
 		title: string
+		/**
+		 * Mieten statt kaufen
+		 */
+		heading: string
+		/**
+		 * Wir stellen eine breite Palette an Equipment für Dein Event zur Verfügung.
+		 */
+		subheading: string
+		/**
+		 * /img/catalog/webp/hero.webp
+		 */
+		img_hero: string
 		table: {
 			/**
 			 * Hersteller
@@ -725,13 +749,17 @@ type RootTranslation = {
 		 */
 		title: string
 		/**
-		 * Schreib uns
+		 * Melde Dich
 		 */
 		heading: string
 		/**
-		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.
+		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir antworten so schnell wie möglich, versprochen!
 		 */
 		subheading: string
+		/**
+		 * /img/contact/webp/hero.webp
+		 */
+		img_hero: string
 		form: {
 			/**
 			 * Name
@@ -846,11 +874,11 @@ export type TranslationFunctions = {
 		 */
 		title: () => LocalizedString
 		/**
-		 * Dein Auftrag ist unser Antrieb!
+		 * Dein Auftrag ist unser Antrieb
 		 */
 		heading: () => LocalizedString
 		/**
-		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management.
+		 * NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management
 		 */
 		subheading: () => LocalizedString
 		/**
@@ -942,7 +970,7 @@ export type TranslationFunctions = {
 		 */
 		heading: () => LocalizedString
 		/**
-		 * Unsere Leitsätze für Deinen Erfolg!
+		 * Unsere Leitsätze für Deinen Erfolg
 		 */
 		subheading: () => LocalizedString
 		/**
@@ -1029,6 +1057,18 @@ export type TranslationFunctions = {
 		 * Leistungen
 		 */
 		title: () => LocalizedString
+		/**
+		 * Alles rund um Dein Event
+		 */
+		heading: () => LocalizedString
+		/**
+		 * Schöpfe aus unserem umfangreichen Serviceangebot
+		 */
+		subheading: () => LocalizedString
+		/**
+		 * /img/services/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		/**
 		 * mehr erfahren
 		 */
@@ -1393,6 +1433,18 @@ export type TranslationFunctions = {
 		 * Mietkatalog
 		 */
 		title: () => LocalizedString
+		/**
+		 * Mieten statt kaufen
+		 */
+		heading: () => LocalizedString
+		/**
+		 * Wir stellen eine breite Palette an Equipment für Dein Event zur Verfügung.
+		 */
+		subheading: () => LocalizedString
+		/**
+		 * /img/catalog/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		table: {
 			/**
 			 * Hersteller
@@ -1544,13 +1596,17 @@ export type TranslationFunctions = {
 		 */
 		title: () => LocalizedString
 		/**
-		 * Schreib uns
+		 * Melde Dich
 		 */
 		heading: () => LocalizedString
 		/**
-		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir melden uns so schnell wie möglich, versprochen! Alternativ kannst Du auch direkt mit uns chatten.
+		 * Hinterlasse eine Nachticht mit Deinem Anliegen. Wir antworten so schnell wie möglich, versprochen!
 		 */
 		subheading: () => LocalizedString
+		/**
+		 * /img/contact/webp/hero.webp
+		 */
+		img_hero: () => LocalizedString
 		form: {
 			/**
 			 * Name
