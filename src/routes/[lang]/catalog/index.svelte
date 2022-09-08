@@ -36,7 +36,7 @@
 />
 
 <main
-	class="prose max-w-4xl mx-auto px-4 py-8 prose-h1:font-oswald prose-h2:font-oswald prose-headings:font-medium"
+	class="prose prose-sm sm:prose-base max-w-4xl mx-auto px-4 py-8 prose-h1:font-oswald prose-h2:font-oswald prose-headings:font-medium"
 >
 	{#each items as category}
 		<section class="pb-4">
@@ -48,15 +48,15 @@
 						<tr>
 							<th>{$LL.catalog.table.manufacturer()}</th>
 							<th>{$LL.catalog.table.model()}</th>
-							<th>{$LL.catalog.table.price()}</th>
+							<th class="text-right">{$LL.catalog.table.price()}</th>
 						</tr>
 					</thead>
 					<tbody>
 						{#each Object.values(subcategory)[0] as product}
-							<tr>
+							<tr class="hover:bg-gray-300">
 								<td>{product.manufacturer}</td>
 								<td>{product.model}</td>
-								<td>{formatter.format(product.price)}</td>
+								<td class="text-right">{formatter.format(product.price)}</td>
 							</tr>
 						{/each}
 					</tbody>
