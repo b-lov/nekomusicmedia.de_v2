@@ -4,7 +4,7 @@
 	export let text = 'lorem ipsum dolor sit amet consectetur adipisicing elit.';
 </script>
 
-<article class="shadow-xl">
+<article class="shadow-xl sm:w-1/2">
 	<div class="relative flex items-center justify-center p-6 bg-blue-300">
 		<img src={image} alt="" class="absolute top-0 left-0 w-full h-full object-cover" />
 		<span class="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75" />
