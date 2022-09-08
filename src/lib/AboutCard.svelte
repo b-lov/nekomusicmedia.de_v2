@@ -4,32 +4,11 @@
 	export let text = 'lorem ipsum dolor sit amet consectetur adipisicing elit.';
 </script>
 
-<article>
-	<div id="head">
-		<img src={image} alt="" />
-		<span />
-		<h2>{heading}</h2>
+<article class="shadow-xl">
+	<div class="relative flex items-center justify-center p-6 bg-blue-300">
+		<img src={image} alt="" class="absolute top-0 left-0 w-full h-full object-cover" />
+		<span class="absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75" />
+		<h2 class="relative text-gray-100 font-oswald text-3xl">{heading}</h2>
 	</div>
-	<p>{text}</p>
+	<p class="p-4 prose">{text}</p>
 </article>
-
-<style lang="postcss">
-	article {
-		@apply shadow-xl;
-		#head {
-			@apply relative flex items-center justify-center p-6 bg-blue-300;
-			img {
-				@apply absolute top-0 left-0 w-full h-full object-cover;
-			}
-			span {
-				@apply absolute top-0 left-0 w-full h-full bg-gray-800 opacity-75;
-			}
-			h2 {
-				@apply relative text-gray-100 font-oswald text-3xl;
-			}
-		}
-		p {
-			@apply p-4 prose;
-		}
-	}
-</style>
