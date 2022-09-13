@@ -1,4 +1,4 @@
-TODO: enhance and add language switcher
+TODO: #28 enhance and add language switcher
 TODO: add translations
 TODO: add dark mode
 TODO: add tawk chat
