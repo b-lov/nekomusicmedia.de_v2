@@ -53,8 +53,10 @@
 
 <svelte:window on:popstate={handlePopStateEvent} />
 
-{#each locales as locale}
-	<button type="button" on:click={() => switchLocale(locale)}>
-		{locale}
-	</button>
-{/each}
+<div class="flex gap-2">
+	{#each locales as locale}
+		<button type="button" on:click={() => switchLocale(locale)}>
+			{locale}
+		</button>
+	{/each}
+</div>
