@@ -16,13 +16,13 @@ const de = {
 			events: {
 				title: 'Events',
 				subtitle: 'Jede Veranstaltung ist einmalig',
-				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird!',
+				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird.',
 				img: '/img/index/webp/events.webp'
 			},
 			exhibitions: {
 				title: 'Messen & Aussteller',
 				subtitle: 'Überlass nichts dem Zufall',
-				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Messepräsenz.',
+				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Präsenz.',
 				img: '/img/index/webp/exhibitions.webp'
 			},
 			seminars: {
