@@ -29,7 +29,7 @@
 <svelte:window bind:scrollY />
 
 <header
-	class="{headerState} w-full bg-white fixed top-0 transition-transform duration-200
+	class="{headerState} w-full bg-white fixed top-0 transition-transform duration-150
 	  ease-linear z-10 shadow-lg"
 >
 	<div class="h-20 flex justify-between items-center pl-3">
