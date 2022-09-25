@@ -11,8 +11,8 @@
 	class="flex items-center {right_align ? 'justify-end' : ' justify-center '} p-4 group"
 >
 	<span
-		class="relative block font-oswald text-lg uppercase text-gray-800
-      after:content-[''] group-hover:after:scale-x-110"
+		class="relative font-oswald text-lg uppercase text-gray-800
+      after:content-[''] group-hover:after:scale-x-110 whitespace-nowrap"
 		class:currently-visiting={$page.url.pathname.includes(link)}
 	>
 		<!-- class:currently-visiting={$page.url.pathname === link} -->
