@@ -5,243 +5,243 @@
 /** @type { Translation } */
 const en = {
 	contact_button: 'Contact now',
-	contact_button_offer: 'kostenlos Angebot anfordern',
+	contact_button_offer: 'Request offer',
 	index: {
-		title: 'Startseite',
-		heading: 'Dein Auftrag ist unser Antrieb',
+		title: 'Start',
+		heading: 'Your mission is our drive',
 		subheading:
-			'NEKO ist Dein kompetenter und zuverlässiger Full-Service-Partner im Bereich Veranstaltungstechnik und -management',
+			'NEKO is your competent and reliable full-service partner in the field of event technology and management',
 		img_hero: '/img/index/webp/hero.webp',
 		examples: {
 			events: {
 				title: 'Events',
-				subtitle: 'Jede Veranstaltung ist einmalig',
-				text: 'NEKO stattet Dein Event mit qualitativer und fortschrittlicher Technik aus. Durch exzellente Beratung, fachgerechte Planung sowie professionelle Umsetzung sorgen wir dafür, dass Deine Veranstaltung unvergesslich wird.',
+				subtitle: 'Every event is unique',
+				text: 'NEKO equips your event with high-quality and state-of-the-art technology. Through excellent advice, professional planning and implementation, we ensure that your event will be unforgettable.',
 				img: '/img/index/webp/events.webp'
 			},
 			exhibitions: {
-				title: 'Messen & Aussteller',
-				subtitle: 'Überlass nichts dem Zufall',
-				text: 'Wir meistern alle technischen und logistischen Herausforderungen Deines Messeauftritts. Mit Ideenreichtum und jahrelanger Erfahrung im Messe- und Standbau sorgen wir für individuelle und einmalige Präsenz.',
+				title: 'Fairs & Exhibitors',
+				subtitle: 'Leave nothing to chance',
+				text: 'We master all technical and logistical challenges of your trade fair appearance. With creativity and years of experience in stand construction, we ensure individual and unique presence.',
 				img: '/img/index/webp/exhibitions.webp'
 			},
 			seminars: {
-				title: 'Kongresse & Seminare',
-				subtitle: 'Im großen oder kleinen Stil',
-				text: 'Mit modernster Konferenz- und Medientechnik und unserem Full-Service-Ansatz übernehmen wir die Konzeption Deines Business-Programms und sorgen für einen reibungslosen Ablauf.',
+				title: 'Conferences & Seminars',
+				subtitle: 'Big or small',
+				text: 'With state-of-the-art conference and media technology and our full-service approach, we create a plan for your business program and ensure a smooth procedure.',
 				img: '/img/index/webp/seminars.webp'
 			},
 			hotels: {
 				title: 'Hotels',
-				subtitle: 'Event- und Treffpunkt',
-				text: 'Ob Geschäftsmeeting, Hochzeit oder privates Fest – mit unserem Know-how beraten wir Dich bei der Auswahl des richtigen Veranstaltungsequipments und setzen Dein Hotel-Event perfekt ins Szene.',
+				subtitle: 'Event and meeting location',
+				text: 'Business meetings, weddings or private parties - with our expertise we advise you on the selection of the right event equipment and set the stage for your hotel event.',
 				img: '/img/index/webp/hotels.webp'
 			}
 		}
 	},
 	about: {
-		title: 'Über uns',
-		heading: 'Erfahren. Persönlich. Vielseitig. Servicestark.',
-		subheading: 'Unsere Leitsätze für Deinen Erfolg',
+		title: 'About',
+		heading: 'Experienced. Personal. Versatile. Service-oriented.',
+		subheading: 'Our guiding principles for your success',
 		img_hero: '/img/about/webp/hero.webp',
 		texts: {
 			experienced: {
-				title: 'Erfahren.',
+				title: 'Experienced.',
 				text_card:
-					'Seit mehr als 10 Jahren gestalten und inszenieren wir unvergessliche Events und Veranstaltungen mit professionellem Equipment und solidem Know-how.',
-				text: 'NEKO versteht sich als technischer Allround-Dienstleister mit individuellen Lösungsansätzen in den Segmenten Ton-, Licht-, Video-, Präsentationstechnik sowie Bühnenbau. Wir bieten eine breitgefächerte Palette an Equipment und Service für Veranstaltungen jeder Dimension an.',
+					'For over 10 years we have been designing and staging unforgettable events and offering professional equipment and solid know-how.',
+				text: 'NEKO is an all-inclusive service provider with individual solutions in the segments of sound, light, video, presentation technology and stage construction. We offer a wide range of equipment and services encompassing events of any size.',
 				img: '/img/about/webp/experienced.webp'
 			},
 			personal: {
-				title: 'Persönlich.',
+				title: 'Personal.',
 				text_card:
-					'Gerne empfangen wir Dich zu einem unverbindlichen Gespräch in unserem Showroom in Mönchengladbach, wo Du Dich vom professionellen Equipment aus hauseigenem Technikbestand überzeugen kannst.',
-				text: 'Ob Du auf einzelne Bereiche der Eventtechnik zurückgreifen möchtest, den ganzheitlichen Allround-Ansatz bevorzugst oder Dein eigenes Equipment in Reparatur geben möchtest – nimm jetzt unverbindlich Kontakt mit uns auf.',
+					'We are happy to welcome you in our showroom in Mönchengladbach, where you can see the variety of our professional equipment in person and talk about potential solutions.',
+				text: 'Whether you need support with individual areas of event planning, whether you prefer the holistic all-inclusive approach or just want to send your own equipment for repair - contact us now.',
 				img: '/img/about/webp/personal.webp'
 			},
 			diverse: {
-				title: 'Vielfältig.',
+				title: 'Versatile.',
 				text_card:
-					'Konzert, Gala, Tagung, Konferenz, Präsentation oder Messeauftritt. Was steht als nächstes auf Deiner Agenda? Als Partner haben wir unsere Leistungspalette an die allseitigen Herausforderungen unterschiedlichster Szenarien angepasst.',
-				text: 'Mit unserem professionellen Netzwerk aus Kooperationspartnern planen und realisieren wir lokale und internationale Events. Dabei geben wir uns mit 08/15-Lösungen genauso wenig zufrieden wie unsere Kunden. Aus Deinen Ideen und Vorstellungen kreieren wir innovative, maßgeschneiderte Konzepte und inszenieren stimmungsvolle, unvergessliche Events.',
+					"Concert, gala, conference, presentation or trade fair appearance. What's next on your agenda? As your partner, we adapt our range of services to the challenges of countless different scenarios.",
+				text: 'Our network of cooperation partners allows us to implement solutions for local and international events. Just as our customers we are not satisfied with one-size-fits-all solutions. Starting with your ideas we will build innovative, tailored concepts and create unforgettable events.',
 				img: '/img/about/webp/diverse.webp'
 			},
 			servicestrong: {
-				title: 'Servicestark.',
+				title: 'Service-oriented.',
 				text_card:
-					'Bei uns bekommst Du nicht nur hochwertiges Equipment, sondern auf Wunsch auch Beratungs- und Serviceleistungen wie Unterstützung bei der Eventplanunglanung, Aufbau, Installation, Reparatur und vieles mehr.',
-				text: 'Unser Team aus Toningeneuren, Informatikern, Bühnen- & Veranstaltungstechnikern, Licht- & Videooperatoren, Technischen Planern und Bühnenhelfern berät Dich bei sämtlichen Herausforderungen. Stets kompetent, budgetorientiert und technisch versiert! Ob regional oder international, groß oder klein – Dein Auftrag ist unser Antrieb!',
+					'On top of high-quality equipment, we also offer consulting and technical services such as event planning, assembly, installation, repair and much more.',
+				text: 'Our team of sound engineers, IT specialists, stage and event technicians, lighting and video operators, technical planners and stagehands will advise you on all your questions. Always competent, budget-oriented and technically skilled.',
 				img: '/img/about/webp/servicestrong.webp'
 			}
 		}
 	},
 	services: {
-		title: 'Leistungen',
-		heading: 'Alles rund um Dein Event',
-		subheading: 'Schöpfe aus unserem umfangreichen Serviceangebot',
+		title: 'Services',
+		heading: 'Everything for your event',
+		subheading: 'Draw from our extensive range of services',
 		img_hero: '/img/services/webp/hero.webp',
-		more_button: 'mehr erfahren',
-		products_title: 'Produktpalette',
+		more_button: 'Learn more',
+		products_title: 'Portfolio',
 		all: {
 			sound: {
-				title: 'Tontechnik',
-				subtitle: 'Wir sorgen für guten Ton!',
+				title: 'Sound',
+				subtitle: 'We ensure good sound',
 				teaser:
-					'NEKO liefert optimale Beschallung, egal welche technischen Herausforderungen der Veranstaltungsort mit sich bringen mag.',
-				par1: `Ob Tagungen, Hotels oder Konzerthallen – die technischen und örtlichen Gegebenheiten sind in jeder Location unterschiedlich und beeinflussen die Klangqualität in entscheidendem Maße. Sauberer Klang ist eine unabdingbare Komponente für den Erfolg Deiner Veranstaltung. NEKO liefert die optimale Beschallung, egal welche Herausforderungen der Veranstaltungsort mit sich bringen mag.`,
-				par2: `Zusammen machen wir einen Plan und stellen Dir ausgezeichnetes Equipment von namhaften Herstellern zur Verfügung. Darüber hinaus installieren wir die Technik und führen die Veranstaltung fachlich versiert und Deinen Erwartungen entsprechend durch. Es kommen ausschließlich aufeinander abgestimmte Soundsysteme, moderne Mikrophone und leistungsfähige Peripheriegeräte zum Einsatz.`,
+					'NEKO provides the optimal sound, no matter what technical challenges the event location may bring.',
+				par1: 'Conferences, hotels or concert halls - the technical conditions that differ from location to location influence the sound quality to a decisive extent. Clean sound is an indispensable component for your success. NEKO provides the optimal sound, no matter what technical challenges the event location may bring.',
 				bullets: [
-					'Aktive und Passive Lautsprecher',
-					'Endstufen und Soundmanager',
-					'Kabel- und Funkmikrofone',
-					'Mischpulte und Monitore',
-					'DJ Technik'
+					'Active and passive speakers',
+					'Amplifiers and sound managers',
+					'Wired and wireless microphones',
+					'Mixing consoles and monitors',
+					'DJ technology'
 				],
-				quote: 'Spüre mit uns die ganze Kraft des Klanges!',
+				par2: 'Together we create a plan and provide you with excellent equipment from well-known manufacturers. In addition, we install and test everything on location to assure your event proceeds professionally and according to your expectations. Only compatible sound systems, modern microphones and powerful peripherals are used.',
+				quote: 'Feel the full power of sound!',
 				img_card: '/img/services/webp/sound_card.webp',
 				img_hero: '/img/services/webp/sound_hero.webp'
 			},
 			light: {
-				title: 'Lichttechnik',
-				subtitle: 'Wir bringen Licht ins Dunkel!',
-				teaser: 'Bewegtes Licht, LED oder beides? Bühne, Show oder Messestand? Licht ist Pflicht!',
-				par1: `Bewegtes Licht, LED oder beides? Bühne, Show oder Messestand? Eins steht fest: Licht ist Pflicht und Du hast die Wahl! NEKO hat einen außergewöhnlich breiten Lichttechnik-Park, der keinen Deiner Wünsche offen lässt. Verzaubere Dein Publikum und profitiere von modernen, spektakulären Lichteffekten.`,
-				par2: `Keine Komponente der Veranstaltungstechnik berührt so sehr wie das Lichtdesign. Es ist ein Gestaltungsmittel, welches Räume in eine beeindruckende Atmosphäre rückt und wirkungsvolle Stimmungen erzeugt. Unsere Lichtdesigner wissen, wie man dieses Mittel gekonnt einsetzt und entwickeln ein überzeugendes Lichtkonzept, das Deinen Räumen Charakter verleiht. Wir beraten Dich bei der Auswahl und bieten Dir Dein ganz individuelles Lichtspektakel.`,
+				title: 'Light',
+				subtitle: 'We bring light into the darkness',
+				teaser: 'Moving lights, LEDs or both? Stage, show or trade fair? Light is indispensable!',
+				par1: 'Moving lights, LEDs or both? Stage, show or trade fair? One thing is certain: light is mandatory and you have an overwhelming choice. NEKO has an exceptionally wide range of lighting technology that leaves nothing to be desired. Enchant your audience and benefit from modern, spectacular light effects.',
 				bullets: [
-					'Kunst- und Tageslichtscheinwerfer',
-					'LED Scheinwerfer und LED Panels',
-					'Movinglights und Followspots',
-					'Profilscheinwerfer und Outdoorstrahler',
-					'Farbwechsler und Nebelgeräte',
-					'Lichtsteuerungen, Dimmer und Switches',
-					'Stromverteilungen und -generatoren',
-					'Traversen und Lichtstative'
+					'Artificial and daylight spotlights',
+					'LED projectors and panels',
+					'Moving lights and followspots',
+					'Profile and outdoor spotlights',
+					'Color changers and fog machines',
+					'Lighting controls, dimmers and switches',
+					'Power distribution and generators',
+					'Trusses and light stands'
 				],
-				quote: 'Erst ein gekonnt inszeniertes Lichtdesign macht aus Deinem Event ein Highlight.',
+				par2: 'No component of event technology touches the heart as much as light design. Light is a tool that makes for impressive atmospheres and creates affecting moods. Our light designers know how to skillfully develop a convincing concept and give your rooms character. We advise you on the right equipment and contribute to your very own light spectacle.',
+				quote: 'A skillfully staged light design turns your event into a highlight.',
 				img_card: '/img/services/webp/light_card.webp',
 				img_hero: '/img/services/webp/light_hero.webp'
 			},
 			video: {
-				title: 'Videotechnik',
-				subtitle: 'Wir bringen Deine Bilder in Bewegung!',
+				title: 'Video',
+				subtitle: 'We bring your images to life',
 				teaser:
-					'Animationen, Imagefilme, Präsentationscharts oder Grafiken - mit uns gibst Du immer ein gutes Bild ab.',
-				par1: `Durch ein reibungsloses Zusammenspiel von Bild und Ton hinterlässt Du bei Deinen Zuschauern einen bleibenden Eindruck. Eine visuelle Untermalung verleiht dem Gesagten mehr Ausdruck, fokussiert die Sinne der Zuschauer auf die Kernbotschaften des Vortrags und hebt diese eindrucksvoll und nachhaltig hervor.`,
-				par2: `Wir bringen unsere ganze Erfahrung mit der medientechnischen Umsetzung von Vorträgen, Reportagen und Live-Übertragungen in Deinen Auftrag ein. Unser kompetentes Berater- und Technikerteam zeigt Dir, welche Methoden und Techniken sich in Abhängigkeit von den örtlichen und bautechnischen Besonderheiten des Veranstaltungsortes am besten in Dein Eventkonzept integrieren lassen.`,
+					'Animations, image films, presentation charts or graphics - with our help you always get the full picture.',
+				par1: 'Through seamless interaction of image and sound you leave a lasting impression on your audience. A visual accompaniment gives the spoken word more expression, focuses the audiences senses on the core messages of your presentation and highlights them impressively and sustainably.',
 				bullets: [
-					'LCD- und Plasmabildschirme',
-					'Videokameras',
-					'Video-Mischpulte und Interfaces',
-					'Beamer und Prjektoren'
+					'LCD and plasma screens',
+					'Video cameras',
+					'Video mixing consoles and interfaces',
+					'Projectors and projectors'
 				],
-				quote: 'Lass Deine Bilder für sich sprechen.',
+				par2: 'We offer years of experience with the media-technical assistance of lectures, reports and live transmissions. Our competent team of consulters and technicians will show you methods and techniques that can best be integrated into your concept depending on the local and structural challenges of the event location.',
+				quote: 'Let your images speak for themselves.',
 				img_card: '/img/services/webp/video_card.webp',
 				img_hero: '/img/services/webp/video_hero.webp'
 			},
 			stage: {
-				title: 'Bühnenbau',
-				subtitle: 'Wir sorgen für Deinen großen Auftritt!',
+				title: 'Stage',
+				subtitle: 'We make your appearance memorable',
 				teaser:
-					'The stage is yours - der Mittelpunkt Deiner Inszenierung und das zentrale Element des gesamten Location- und Eventdesigns.',
-				par1: `Die Bühne ist das zentrale Element des gesamten Location- und Eventdesigns. Ob Gala, Kongress oder Messe – überlass auch in puncto Bühnenbau nichts dem Zufall! Im Bereich Bühnen- und Messebau greift NEKO auf eine 10-jährige Erfahrung zurück, welche wir in zahlreichen Aufträgen für namhafte Firmen und Veranstalter sammeln durften. Diese Erfahrung lassen wir auch in Dein Projekt einfließen.`,
-				par2: `Für Deinen Bühnen- und Messeauftritt haben wir das gesamte technische Equipment. Mal ist es nur das Licht, mal nur die Audio- oder Videoanlage, mal eine Aluminium- bzw. Traversenstruktur. Manchmal sind es aber auch alle Elemente zusammen. Neben der sorgfältigen Erstellung technisch optimaler Konstruktionen berücksichtigen wir auch optische Aspekte. Durch ansprechenden Dekorationsbau können beispielsweise technische Einrichtungen kinderleicht kaschiert werden. Damit verbinden wir zwei wesentliche Anforderungen: Sicherheit und Ästhetik.`,
+					'The stage is yours - the center of your presence and the main element of our location and event design.',
+				par1: "The stage is the central element of the entire event design. No matter if you're preparing a gala, congress or trade fair - leave nothing to chance when it comes to stage construction! Over 15 years of working in the field and taking numerous orders from well-known companies and event organizers allowed us to gather a plethora of experience in stage planning and building. All of that experience will flow into your next project.",
 				bullets: [
-					'Bühnenpodeste',
-					'Bühnenrückwände',
-					'Trennvorhänge',
-					'Truss Systeme',
-					'Planung und Aufbau'
+					'Podiums',
+					'Backdrops',
+					'Separation curtains',
+					'Truss systems',
+					'Planning and construction'
 				],
-				quote: 'Lass Dich mit einem Bühnenkonzept perfekt in Szene setzen.',
+				par2: "We provide the entire technical equipment for your event appearance. Whether it's just the light, the audio or video equipment, an aluminum truss structure or all the elements together. In addition to the careful creation of technically optimal constructions, we also take into account visual and aesthetic aspects. Through appealing decoration, technical facilities can be easily disguised. This way we are able to solve three essential requirements: safety, reliability and visual appeal.",
+				quote: 'Let us set the stage for you - professionally.',
 				img_card: '/img/services/webp/stage_card.webp',
 				img_hero: '/img/services/webp/stage_hero.webp'
 			},
 			presentation: {
-				title: 'Präsentationstechnik',
-				subtitle: 'Wir verschaffen Dir Aufmerksamkeit!',
+				title: 'Presentation',
+				subtitle: "We'll get you noticed!",
 				teaser:
-					'Bei Produktpräsentationen, Seminaren und Tagungen ist multimediale Kommunikation auf höchstem Niveau gefragt.',
-				par1: `Produktpräsentationen, Seminare und Tagungen stellen eine besondere Herausforderung dar. Hier ist multimediale Kommunikation auf höchstem Niveau gefragt. Unser Expertenteam sorgt für optimale Akustik und ein gestochen scharfes Bild. Gemeinsam finden wir maßgeschneiderte Lösungen für Dein ganz persönliches Business-Programm und eine gelungene, störungsfreie Konferenz.`,
-				par2: `Es spielt keine Rolle in welchen Dimensionen Deine Tagung geplant ist. NEKO hat für alle Belange das passende Equipment und die Kompetenz, alle Komponenten einzurichten und aufeinander abzustimmen. Unsere Produktpalette besteht ausschließlich aus modernster Technik. So werden Deine Botschaften besonders wirksam und finden Anklang bei allen Zuschauern.`,
+					'Efficient multimedia communication is key for successful product presentations, seminars and conferences.',
+				par1: 'Product presentations, seminars and conferences present a special challenge. They require multimedia communication at the highest level. Our team of experts ensures optimal acoustics and visuals. Together we find tailor-made solutions for your very own successful presentation free of any disturbances.',
+				par2: 'No matter the size of your particular presentation. NEKO has the right equipment for all circumstances paired with the expertise to set up and coordinate all components. Our product range consists of state-of-the-art technology only. This way you can be sure, that your messages will be effective and resonarte with all your viewers and listeners.',
 				bullets: [
-					'Beamer und Leinwände',
-					'LED-Wände und Bildschirme',
-					'Videokonferenzsysteme',
-					'Audiotechnik',
-					'Befestigungssysteme'
+					'Projectors and screens',
+					'LED walls and screens',
+					'Video conferencing systems',
+					'Audio technology',
+					'Mounting systems'
 				],
-				quote: 'Unser Know-how und Hingabe – Dein erfolgreicher Auftritt!',
+				quote: 'Our know-how and dedication - your success!',
 				img_card: '/img/services/webp/presentation_card.webp',
 				img_hero: '/img/services/webp/presentation_hero.webp'
 			},
 			service: {
-				title: 'Service & Reparatur',
-				subtitle: 'Wir sind für Dich da.',
+				title: 'Service & Repairs',
+				subtitle: 'We are there for you.',
 				teaser:
-					'Von individuellen Reparatur- und Wartungsleistungen bis zum Service auf Abruf mit kurzen Reaktionszeiten.',
-				par1: `Ganz egal was Du vorhast: Wir sind da, wenn Du uns brauchst. Vom Briefing, über die Konzeption und Durchführung des Events, bis hin zur Wartung und Installation von Equipment. In enger Zusammenarbeit eruieren wir den Umfang Deines Vorhabens und prüfen den Auftrag auf technische Umsetzbarkeit sowie Budgetvorstellung. Bei der Konzeption greifen wir voll und ganz auf unsere jahrelange Erfahrung im Bereich des Veranstaltungsmanagements zurück.`,
-				par2: `Aus Deinen Vorgaben und unserem Know-how entsteht ein persönliches, einzigartiges Konzept und ein präziser Aufbau- und Ablaufplan der Veranstaltung. Daraufhin erwecken wir diesen Plan bis zum letzten Detail zum Leben. Doch damit ist unsere Arbeit noch nicht getan: Individuelle Reparatur- und Wartungsleistungen und kurzfristiger Service auf Abruf sind bei uns standart. Die Sicherheit der Beteiligten und die Makellosigkeit des Equipments sind das A und O eines gelungenen Events. Auf Wunsch bieten wir einen Techniker-Notdienst sowie einen Hotline-Support an.`,
+					'Individual repair and maintenance and service on demand with short response times.',
+				par1: "Whether you're looking for assistance for a one-time event or a long-term cooperation - we are here for you. Starting with the briefing, through the conception and execution stage, to the maintenance and installation of the equipment. In close cooperation we will determine the scope of your project and check your order for technical feasibility and budget expectations. When it comes to our services we rely on years of experience in the field of technical event management.",
+				par2: 'In combination of your requirements and our know-how a unique concept and a precise plan will be created. The roadmap will then be followed down to the last detail up until the events successful conclusion. But that is not all: Individual repair and maintenance plans and short-term on demand services are standard with us. The safety of all participants and the faultness of the equipment are key factors for a successful event. Apart from that we also offer technical emergency services as well as 24-hour hotline support.',
 				bullets: [
-					'Briefing und Konzepterstellung',
-					'Erstellung eines Event-Ablaufplans',
-					'Aufbau und Installation',
-					'Hotline-Support',
-					'Techniker-Notdienst',
-					'Reparatur und Wartung'
+					'Planning and conception',
+					'Creation of a schedule',
+					'Assembly and installation',
+					'Hotline support',
+					'Emergency service',
+					'Repair and maintenance'
 				],
-				quote: 'Dein Erfolg ist für uns das Wichtigste!',
+				quote: 'Your success is our top priority!',
 				img_card: '/img/services/webp/service_card.webp',
 				img_hero: '/img/services/webp/service_hero.webp'
 			}
 		}
 	},
 	catalog: {
-		title: 'Mietkatalog',
-		heading: 'Mieten statt kaufen',
-		subheading: 'Wir stellen eine breite Palette an Equipment für Dein Event zur Verfügung.',
+		title: 'Products',
+		heading: "Don't buy - rent!",
+		subheading: 'We offer a wide range of equipment for your event.',
 		img_hero: '/img/catalog/webp/hero.webp',
 		table: {
-			manufacturer: 'Hersteller',
-			model: 'Modell',
-			price: 'Tagespreis brutto'
+			manufacturer: 'Manufacturer',
+			model: 'Model',
+			price: 'Price (per day)'
 		},
 		categories: {
 			sound: {
 				title: 'Sound',
 				subcategories: {
-					speakers: 'Lautsprecher'
+					speakers: 'Speakers'
 				}
 			},
 			microphones: {
-				title: 'Mikrofonie & Monitoring',
+				title: 'Microphones & Monitoring',
 				subcategories: {
-					wireless: 'Kabellos',
-					wired: 'Kabelgebunden'
+					wireless: 'Wireless',
+					wired: 'Wired'
 				}
 			},
 			mixers: {
-				title: 'Mischpulte',
+				title: 'Mixers',
 				subcategories: {
-					analogue: 'Analog',
+					analogue: 'Analogue',
 					digital: 'Digital',
 					dj: 'DJ'
 				}
 			},
 			light: {
-				title: 'Licht & Atmosphäre',
+				title: 'Light & Atmosphere',
 				subcategories: {
 					moving: 'Moving Light',
 					stage: 'Stage Light',
 					controller: 'Lightcontroller',
-					battery: 'Akku',
-					effects: 'Nebel- & Effektmaschinen'
+					battery: 'Battery',
+					effects: 'Fog & Effect Machines'
 				}
 			},
 			video: {
 				title: 'Video',
 				subcategories: {
-					projectors: 'Beamer',
-					screens: 'Leinwände'
+					projectors: 'Projectors',
+					screens: 'Screens'
 				}
 			},
 			recording: {
@@ -252,45 +252,44 @@ const en = {
 				}
 			},
 			michellaneous: {
-				title: 'Weiteres',
+				title: 'Miscellaneous',
 				subcategories: {
-					electronics: 'Strom',
-					stage: 'Bühne',
-					stands: 'Ständer & Stative'
+					electronics: 'Electronics',
+					stage: 'Stage',
+					stands: 'Stands & Tripods'
 				}
 			}
 		}
 	},
 	contact: {
-		title: 'Kontakt',
-		heading: 'Melde Dich',
-		subheading:
-			'Hinterlasse eine Nachticht mit Deinem Anliegen. Wir antworten so schnell wie möglich, versprochen!',
+		title: 'Contact',
+		heading: 'Get in touch!',
+		subheading: 'Leave us a message and we will get back to you as soon as possible.',
 		img_hero: '/img/contact/webp/hero.webp',
 		form: {
 			name: 'Name',
 			name_error:
-				'Die Eingabe muss mindestens 2 Zeichen enthalten. Nur Buchstaben sowie "-" und  "." erlaubt.',
+				'The input must contain at least 2 characters. Only letters as well as "-" and "." are allowed.',
 			email: 'E-Mail',
-			tel: 'Tel (optional)',
-			tel_error: 'Die Eingabe muss mindestens 4 Zeichen enthalten. Nur Zahlen und "+" erlaubt.',
-			message: 'Nachricht',
+			tel: 'Phone (optional)',
+			tel_error: 'The input must contain at least 4 characters. Only numbers and "+" are allowed.',
+			message: 'Message',
 			privacy:
-				'Ich stimme der Verarbeitung meiner Daten zum Zweck der Kontaktaufnahme durch die NEKO Music & Media GmbH zu und akzeptiere den Datenschutz.',
-			send_button: 'Abschicken!',
+				'I agree to the processing of my data for the purpose of contacting the NEKO Music & Media GmbH and accept the privacy policy (The data will be deleted after the completion of your request).',
+			send_button: 'Send!',
 			success_message: {
-				heading: 'Nachricht erfolgreich verschickt!',
-				subheading: 'Wir melden uns so schnell wie möglich.'
+				heading: 'Message successfully sent!',
+				subheading: 'We will get back to you as soon as possible.'
 			},
 			failure_message: {
-				heading: 'Nachricht konnte nicht verschickt werden!',
+				heading: 'Message could not be sent!',
 				subheading:
-					'Bitte kontaktiere uns unter <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.'
+					'Please contact us at <a class="underline" href="mailto:info@nekomusicmedia.de">info@nekomusicmedia.de</a>.'
 			}
 		},
 		contact_data: {
-			heading: 'Finde den Weg zu uns',
-			subheading: `Besuche uns in unserem Büro/Showroom in Mönchengladbach. Parkplätze vorhanden.`,
+			heading: 'Find us',
+			subheading: 'Visit us in our office/showroom in Mönchengladbach. Parking spaces available.',
 			address: `Neko Music & Media GmbH
 				Adolf-Kempken-Weg 95-99
 				41189 Mönchengladbach
@@ -300,10 +299,10 @@ const en = {
 		}
 	},
 	footer: {
-		social_media_heading: 'Auf Social Media unterwegs?',
-		social_media_subheading: 'Kontaktiere uns auf folgenden Plattformen.',
+		social_media_heading: 'Follow us on social media!',
+		social_media_subheading: 'Contact us on the following platforms.',
 		links: 'Links',
-		all_services: 'Alle Leistungen',
+		all_services: 'All services',
 		copyright: 'Copyright © {year} NEKO Music & Media GmbH'
 	}
 };

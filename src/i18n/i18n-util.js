@@ -22,7 +22,9 @@ export const baseLocale = 'de'
 
 /** @type { Locales[] } */
 export const locales = [
-	'de'
+	'de',
+	'en',
+	'ru'
 ]
 
 export const loadedLocales = /** @type { Record<Locales, Translations> } */ ({})
